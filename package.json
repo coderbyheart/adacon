@@ -1,5 +1,5 @@
 {
-  "name": "@coderbyheart/adacon23",
+  "name": "@ada-con/adacon",
   "version": "0.0.0-development",
   "description": "Ada Con Norway 2023 in Oslo",
   "scripts": {
@@ -9,19 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coderbyheart/adacon23.git"
+    "url": "git+https://github.com/ada-con/adacon.git"
   },
   "keywords": [
-    "adacon23",
-    "techwomen",
+    "ada-con",
     "norway"
   ],
   "author": "Tech Women Norway",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coderbyheart/adacon23/issues"
+    "url": "https://github.com/ada-con/adacon/issues"
   },
-  "homepage": "https://github.com/coderbyheart/adacon23#readme",
+  "homepage": "https://github.com/ada-con/adacon#readme",
   "devDependencies": {
     "@nordicsemiconductor/asset-tracker-cloud-code-style": "11.0.183",
     "@nordicsemiconductor/eslint-config-asset-tracker-cloud-typescript": "11.0.4",

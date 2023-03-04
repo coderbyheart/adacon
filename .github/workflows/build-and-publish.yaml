@@ -50,7 +50,7 @@ jobs:
         env:
           VERSION: ${{ steps.version.outputs.nextRelease }}
         run: |
-          npm run build -- --base=/${{ github.event.repository.name }}/
+          npm run build
           cp -L -r ./static ./build/client
 
       - name: Semantic release
