@@ -43,7 +43,6 @@ const EmbedPlaylist = ({ list, title }: { list: string; title: string }) => (
 	<ViewportObserver
 		render={({ inView, entry }) => {
 			if (!inView) return null
-			console.log(entry)
 			const width = entry?.boundingClientRect.width ?? 560
 			const height = (width / 560) * 315
 			return (
