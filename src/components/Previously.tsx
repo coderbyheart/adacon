@@ -17,7 +17,7 @@ export const Previously = () => (
 						</a>{' '}
 						in Oslo. You can enjoy the recordings of the talk on{' '}
 						<a
-							href="https://www.youtube.com/@TechWomenNorway"
+							href="https://www.youtube.com/@AdaConNo"
 							target="_blank"
 							rel="me"
 						>

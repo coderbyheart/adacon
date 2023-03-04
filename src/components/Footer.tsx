@@ -14,7 +14,7 @@ export const Footer = () => (
 							<Instagram />
 						</a>
 						<a
-							href="https://www.youtube.com/@TechWomenNorway"
+							href="https://www.youtube.com/@AdaConNo"
 							rel="me"
 							title="Ada Con Norway on YouTube"
 							class="ms-4"
