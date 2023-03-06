@@ -7,7 +7,7 @@ export const Footer = () => (
 				<div class="col-12 pt-4 pb-4">
 					<nav>
 						<a
-							href="https://www.instagram.com/techwomenno/"
+							href="https://www.instagram.com/adacon_no/"
 							rel="me"
 							title="Ada Con Norway on Instagram"
 						>
