@@ -44,6 +44,17 @@ export const Sponsors = () => (
 					<br />
 					Video Sponsor
 				</p>
+				<p>
+					<a href="https://variant.no/" rel="friend met">
+						<img
+							src="./static/variant.svg"
+							alt="variant"
+							class="img-fluid mt-4 mb-2"
+						/>
+					</a>
+					<br />
+					Travel Sponsor
+				</p>
 			</div>
 			<div class="row py-lg-5">
 				<div class="col-md-6 offset-md-3">
