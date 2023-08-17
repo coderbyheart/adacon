@@ -65,8 +65,9 @@ export const Sponsors = () => (
 					</p>
 					<p>
 						Sponsoring opportunities include (but are not limited to): Food,
-						Drinks, Speaker travel and accommodation, CV review and 1-on-1
-						career coaching, T-Shirts, and Stickers.
+						Drinks, Speaker travel and accommodation, Speaker gifts, Conference
+						Badges, CV review and 1-on-1 career coaching, T-Shirts, and
+						Stickers.
 					</p>
 				</div>
 			</div>
