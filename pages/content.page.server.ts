@@ -1,4 +1,4 @@
-import type { Page } from '@context/Pages'
+import type { Page } from '#context/Pages'
 import { readdir } from 'node:fs/promises'
 import path from 'node:path'
 import { loadMarkdownContent } from './loadMarkdownContent'

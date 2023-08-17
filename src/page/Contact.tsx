@@ -1,6 +1,6 @@
-import { ContactForm } from '@components/ContactForm'
-import { Footer } from '@components/Footer'
-import { HeaderNav } from '@components/HeaderNav'
+import { ContactForm } from '#components/ContactForm'
+import { Footer } from '#components/Footer'
+import { HeaderNav } from '#components/HeaderNav'
 
 export const Contact = () => (
 	<>

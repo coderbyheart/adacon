@@ -1,6 +1,6 @@
-import { Footer } from '@components/Footer'
-import { HeaderNav } from '@components/HeaderNav'
-import type { Page } from '@context/Pages'
+import { Footer } from '#components/Footer'
+import { HeaderNav } from '#components/HeaderNav'
+import type { Page } from '#context/Pages'
 
 export const Content = ({ page }: { page: Page }) => (
 	<>

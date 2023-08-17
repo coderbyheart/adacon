@@ -1,13 +1,13 @@
-import { ConfStats } from '@components/ConfStats'
-import { Footer } from '@components/Footer'
-import { Header } from '@components/Header'
-import { HeaderNav } from '@components/HeaderNav'
-import { Location } from '@components/Location'
-import { Previously } from '@components/Previously'
-import { Speakers } from '@components/Speakers'
-import { Sponsors } from '@components/Sponsors'
-import { Tickets } from '@components/Tickets'
-import type { Page } from '@context/Pages'
+import { ConfStats } from '#components/ConfStats'
+import { Footer } from '#components/Footer'
+import { Header } from '#components/Header'
+import { HeaderNav } from '#components/HeaderNav'
+import { Location } from '#components/Location'
+import { Previously } from '#components/Previously'
+import { Speakers } from '#components/Speakers'
+import { Sponsors } from '#components/Sponsors'
+import { Tickets } from '#components/Tickets'
+import type { Page } from '#context/Pages'
 
 export const Start = ({ page }: { page: Page }) => (
 	<>

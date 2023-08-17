@@ -1,6 +1,6 @@
-import { Footer } from '@components/Footer'
-import { HeaderNav } from '@components/HeaderNav'
-import type { LogoColors } from '@components/Logo'
+import { Footer } from '#components/Footer'
+import { HeaderNav } from '#components/HeaderNav'
+import type { LogoColors } from '#components/Logo'
 import {
 	Business,
 	Dark,
@@ -11,7 +11,7 @@ import {
 	Random,
 	TransBlack,
 	TransBlue,
-} from '@components/Logo'
+} from '#components/Logo'
 import { useState } from 'preact/hooks'
 import { styled } from 'styled-components'
 

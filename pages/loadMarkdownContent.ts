@@ -1,4 +1,4 @@
-import type { Page } from '@context/Pages'
+import type { Page } from '#context/Pages'
 import { readdir, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import format from 'rehype-format'

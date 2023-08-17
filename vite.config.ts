@@ -22,10 +22,10 @@ export default defineConfig({
 	},
 	resolve: {
 		alias: [
-			{ find: '@components/', replacement: '/src/components/' },
-			{ find: '@context/', replacement: '/src/context/' },
-			{ find: '@utils/', replacement: '/src/utils/' },
-			{ find: '@page/', replacement: '/src/page/' },
+			{ find: '#components/', replacement: '/src/components/' },
+			{ find: '#context/', replacement: '/src/context/' },
+			{ find: '#utils/', replacement: '/src/utils/' },
+			{ find: '#page/', replacement: '/src/page/' },
 		],
 	},
 	build: {

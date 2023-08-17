@@ -1,3 +1,3 @@
-import { Contact } from '@page/Contact'
+import { Contact } from '#page/Contact'
 
 export const Page = () => <Contact />

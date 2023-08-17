@@ -1,33 +1,33 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ES2022",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "noEmit": true,
-    "noFallthroughCasesInSwitch": true,
-    "verbatimModuleSyntax": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact",
-    "baseUrl": "src",
-    "paths": {
-      "react": ["../node_modules/preact/compat/"],
-      "react-dom": ["../node_modules/preact/compat/"],
-      "@components/*": ["components/*"],
-      "@context/*": ["context/*"],
-      "@utils/*": ["utils/*"],
-      "@page/*": ["page/*"]
-    }
-  }
+	"compilerOptions": {
+		"target": "esnext",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "ES2022",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"noEmit": true,
+		"noFallthroughCasesInSwitch": true,
+		"verbatimModuleSyntax": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"jsx": "react-jsx",
+		"jsxImportSource": "preact",
+		"baseUrl": "src",
+		"paths": {
+			"react": ["../node_modules/preact/compat/"],
+			"react-dom": ["../node_modules/preact/compat/"],
+			"#components/*": ["components/*"],
+			"#context/*": ["context/*"],
+			"#utils/*": ["utils/*"],
+			"#page/*": ["page/*"]
+		}
+	}
 }
