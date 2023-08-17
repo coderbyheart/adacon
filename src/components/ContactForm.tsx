@@ -48,7 +48,7 @@ export const ContactForm = () => {
 					id="message"
 					name="message"
 					placeholder='e.g. "Here is an idea ..."'
-				></textarea>
+				/>
 				<div id="messageHelp" class="form-text">
 					What would you like to tell us?
 				</div>

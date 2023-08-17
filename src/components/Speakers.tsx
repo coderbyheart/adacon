@@ -9,7 +9,11 @@ export const Speakers = () => (
 					<p>
 						Help us build an amazing line-up by tipping us great speakers and
 						workshop facilitators using our{' '}
-						<a href="https://forms.gle/53atUvDmZvn3ypTc6" target="_blank">
+						<a
+							href="https://forms.gle/53atUvDmZvn3ypTc6"
+							target="_blank"
+							rel="noreferrer noopener"
+						>
 							speaker submission form
 						</a>
 						.

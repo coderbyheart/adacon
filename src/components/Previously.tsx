@@ -11,7 +11,7 @@ export const Previously = () => (
 						<a
 							href="https://techwomen.no/ada-lovelace-day-2019.html"
 							target="_blank"
-							rel="me"
+							rel="me noreferrer noopener"
 						>
 							Ada Lovelace Day Mini-Conference
 						</a>{' '}
@@ -19,7 +19,7 @@ export const Previously = () => (
 						<a
 							href="https://www.youtube.com/@AdaConNo"
 							target="_blank"
-							rel="me"
+							rel="me noreferrer noopener"
 						>
 							our YouTube channel
 						</a>
@@ -54,9 +54,9 @@ const EmbedPlaylist = ({ list, title }: { list: string; title: string }) => (
 					frameBorder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					allowFullScreen
-				></iframe>
+				/>
 			)
 		}}
 		options={{ triggerOnce: true }}
-	></ViewportObserver>
+	/>
 )

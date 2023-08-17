@@ -5,10 +5,12 @@ export const Pluralize = ({
 	plural,
 	value,
 }: {
-	singular: (value: number) => VNode<any>
-	plural: (value: number) => VNode<any>
+	singular: (value: number) => VNode<unknown>
+	plural: (value: number) => VNode<unknown>
 	value: number
-}): VNode<any> => {
-	if (value !== 1) return plural(value)
+}): VNode<unknown> => {
+	if (value !== 1) {
+		return plural(value)
+	}
 	return singular(value)
 }

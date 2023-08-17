@@ -42,10 +42,10 @@ const images = [
 ]
 shuffleArray(images)
 
-function* iter(array: any[]): Iterator<string> {
+function* iter(array: string[]): Iterator<string> {
 	let i = 0
 	while (true) {
-		yield array[i]
+		yield array[i] as string
 		if (++i > array.length - 1) i = 0
 	}
 }

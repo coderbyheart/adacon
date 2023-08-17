@@ -49,8 +49,8 @@ export const Logos = () => {
 								To learn more about this logo visit{' '}
 								<a
 									href="https://techwomen.no/trud-antzee-logo-design/"
-									rel="me"
 									target="_blank"
+									rel="me noreferrer noopener"
 								>
 									Creating the Tech Women Norway Logo
 								</a>

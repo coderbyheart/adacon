@@ -1,4 +1,4 @@
-import { Map } from 'lucide-preact'
+import { MapIcon } from 'lucide-preact'
 import { ViewportObserver } from 'preact-intersection-observer'
 import { styled } from 'styled-components'
 
@@ -40,12 +40,17 @@ export const Location = () => (
 				<div class="col-12 col-lg-7">
 					<h3 class="py-4">Rebel</h3>
 					<p>
-						Universitetsgata 2<br />
+						Universitetsgata 2
+						<br />
 						0164 Oslo
 					</p>
 					<p>
-						<a href="https://goo.gl/maps/EtBqWKXHNEsUAddr5" target="_blank">
-							<Map /> Open in Google Maps
+						<a
+							href="https://goo.gl/maps/EtBqWKXHNEsUAddr5"
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							<MapIcon /> Open in Google Maps
 						</a>
 					</p>
 					<h4 class="mt-4 mb-3">How To Get Here</h4>
@@ -121,7 +126,7 @@ export const Location = () => (
 							)
 						}}
 						options={{ triggerOnce: true }}
-					></ViewportObserver>
+					/>
 				</div>
 			</div>
 		</div>

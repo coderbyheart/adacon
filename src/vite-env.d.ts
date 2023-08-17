@@ -4,7 +4,7 @@ declare const VERSION: string
 declare const HOMEPAGE: string
 declare const BUILD_TIME: string
 
-// eslint-disable-next-line @typescript-eslint/consistent-type-definitions
+// rome-ignore lint/correctness/noUnusedVariables: defines global type
 interface ImportMeta {
 	readonly env: ImportMetaEnv
 }

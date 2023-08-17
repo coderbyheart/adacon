@@ -3,8 +3,8 @@ import type { VNode } from 'preact'
 import { hydrate } from 'preact'
 import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client'
 
-type Page = (pageProps: PageProps) => VNode<any>
-type PageProps = Record<string, any>
+type Page = (pageProps: PageProps) => VNode<unknown>
+type PageProps = Record<string, unknown>
 
 export type PageContextCustom = {
 	Page: Page
@@ -24,7 +24,7 @@ export const render = (pageContext: PageContextClient) => {
 	const { Page, pageProps } = pageContext
 	const pageViewElement = document.getElementById('page-view')
 	if (pageViewElement === null)
-		throw new Error(`Could not find page-view element!`)
+		throw new Error('Could not find page-view element!')
 
 	console.debug('version', VERSION)
 	console.debug(

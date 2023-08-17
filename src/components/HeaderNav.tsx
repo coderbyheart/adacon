@@ -37,13 +37,13 @@ const MobileNavigation = styled.nav`
 `
 
 const navItems: [link: string, title: string, button?: boolean][] = [
-	[`./#about`, 'About'],
-	[`./#speakers`, 'Speakers'],
-	[`./#location`, 'Location'],
-	[`./#sponsors`, 'Sponsors'],
-	[`./matrix`, 'Chat'],
-	[`./contact`, 'Contact'],
-	[`./#tickets`, 'Tickets', true],
+	['./#about', 'About'],
+	['./#speakers', 'Speakers'],
+	['./#location', 'Location'],
+	['./#sponsors', 'Sponsors'],
+	['./matrix', 'Chat'],
+	['./contact', 'Contact'],
+	['./#tickets', 'Tickets', true],
 ]
 
 export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
@@ -130,7 +130,8 @@ export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 							<ul class="nav flex-column">
 								{navItems.map(([link, title, button]) => (
 									<li class="nav-item">
-										<a
+										<button
+											type="button"
 											class={
 												button === true
 													? 'btn btn-secondary ms-3 mt-2 mb-4'
@@ -143,7 +144,7 @@ export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 											}}
 										>
 											{title}
-										</a>
+										</button>
 									</li>
 								))}
 							</ul>

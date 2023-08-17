@@ -10,7 +10,11 @@ export const Tickets = () => (
 					<p>The registration opens on the 1st of September 2023.</p>
 					<p>
 						If you want to get notified once the ticket registration opens,{' '}
-						<a href="https://forms.gle/xZUiepTYBAbmV49u8" target="_blank">
+						<a
+							href="https://forms.gle/xZUiepTYBAbmV49u8"
+							target="_blank"
+							rel="noreferrer noopener"
+						>
 							please fill out this form
 						</a>
 						.
