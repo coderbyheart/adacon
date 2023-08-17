@@ -176,7 +176,7 @@ export const Logo = ({
 					link.parentNode?.removeChild(link)
 				}, 0)
 			}}
-			title="Ada Con Logo"
+			title="AdaCon Logo"
 		>
 			<defs id="defs819">
 				<clipPath id="clipPath8880" clipPathUnits="userSpaceOnUse">

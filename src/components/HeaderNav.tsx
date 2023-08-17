@@ -90,7 +90,7 @@ export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 								width="40"
 								height="32"
 								src="./static/ada.svg"
-								alt="Ada Con Norway"
+								alt="AdaCon Norway"
 							/>
 							<span class="fs-4">#adacon23</span>
 						</a>

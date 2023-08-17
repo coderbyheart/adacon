@@ -9,14 +9,14 @@ export const Footer = () => (
 						<a
 							href="https://www.instagram.com/adacon_no/"
 							rel="me"
-							title="Ada Con Norway on Instagram"
+							title="AdaCon Norway on Instagram"
 						>
 							<Instagram />
 						</a>
 						<a
 							href="https://www.youtube.com/@AdaConNo"
 							rel="me"
-							title="Ada Con Norway on YouTube"
+							title="AdaCon Norway on YouTube"
 							class="ms-4"
 						>
 							<Youtube />
@@ -24,7 +24,7 @@ export const Footer = () => (
 						<a
 							href="https://oslo.town/@adacon"
 							rel="me"
-							title="Ada Con Norway on Mastodon"
+							title="AdaCon Norway on Mastodon"
 							class="ms-4"
 						>
 							<svg
@@ -49,7 +49,7 @@ export const Footer = () => (
 						<a
 							href="https://matrix.to/#/#space:adacon.no"
 							rel="me"
-							title="Ada Con on Matrix"
+							title="AdaCon on Matrix"
 							class="ms-4"
 						>
 							<svg
@@ -77,9 +77,9 @@ export const Footer = () => (
 							</svg>
 						</a>
 						<a
-							href="https://github.com/ada-con"
+							href="https://github.com/adacon-norway"
 							rel="me"
-							title="Ada Con on GitHub"
+							title="AdaCon on GitHub"
 							class="ms-4"
 						>
 							<Github />
@@ -116,7 +116,7 @@ export const Footer = () => (
 							</a>
 							,{' '}
 							<a
-								href="https://github.com/ada-con/adacon"
+								href="https://github.com/adacon-norway/adacon"
 								target="_blank"
 								rel="noopener noreferrer"
 							>

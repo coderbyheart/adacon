@@ -1,9 +1,9 @@
 ---
-title: Ada Con Norway on Matrix
+title: AdaCon Norway on Matrix
 ---
 
 > tl;dr&gt; >
-> [find all Ada Con Norway chat rooms here](https://matrix.to/#/#space:adacon.no)
+> [find all AdaCon Norway chat rooms here](https://matrix.to/#/#space:adacon.no)
 
 We use the open and distributed communication protocol
 [Matrix](https://matrix.org/) for our chat.
@@ -26,12 +26,12 @@ many [public homeservers](https://joinmatrix.org/servers/), for example
 [matrix.im](https://matrix.im). Visit the homeserver and register a new account.
 
 In order to keep the costs down we do not allow to register new accounts on the
-Ada Con homeserver, because if these accounts are used to join channels on other
+AdaCon homeserver, because if these accounts are used to join channels on other
 Matrix homeservers, incoming federation traffic will be significantly increased.
 
-## Join the Ada Con space
+## Join the AdaCon space
 
-Join the Ada Con space using [this link](https://matrix.to/#/#space:adacon.no)
+Join the AdaCon space using [this link](https://matrix.to/#/#space:adacon.no)
 to find all the relevant channels.
 
 ## Optional: Install mobile applications
@@ -44,7 +44,7 @@ Android and iOS and a [web-based client](https://app.element.io/).
 ## Requesting additional channels
 
 You may at any time request additional public or private channels, just reach
-out to one of Ada Con Matrix homeserver admins:
+out to one of AdaCon Matrix homeserver admins:
 
 - [`@coderbyheart:matrix.im`](https://matrix.to/#/@coderbyheart:matrix.im)
   (Markus Tacker)

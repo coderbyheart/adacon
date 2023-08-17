@@ -1,7 +1,7 @@
 {
-	"name": "@ada-con/adacon",
+	"name": "@adacon-norway/adacon",
 	"version": "0.0.0-development",
-	"description": "Ada Con Norway 2023 in Oslo",
+	"description": "AdaCon Norway 2023 in Oslo",
 	"scripts": {
 		"prepare": "husky install",
 		"start": "vite",
@@ -9,15 +9,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ada-con/adacon.git"
+		"url": "git+https://github.com/adacon-norway/adacon.git"
 	},
-	"keywords": ["ada-con", "norway"],
+	"keywords": ["adacon-norway", "norway"],
 	"author": "Tech Women Norway",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/ada-con/adacon/issues"
+		"url": "https://github.com/adacon-norway/adacon/issues"
 	},
-	"homepage": "https://github.com/ada-con/adacon#readme",
+	"homepage": "https://github.com/adacon-norway/adacon#readme",
 	"devDependencies": {
 		"@preact/preset-vite": "2.5.0",
 		"@types/node": "20.5.0",

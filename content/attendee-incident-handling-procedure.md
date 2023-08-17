@@ -40,7 +40,7 @@ cell phone, you can use any hotel phone or simply ask a staff member.
 the community, and they will not be tolerated. The silver lining is that, in
 many cases, these incidents present a chance for the offenders, and the
 community at large, to grow, learn, and become better. We request to be your
-first resource when reporting a _Ada Con Norway_-related incident, so that we
+first resource when reporting a _AdaCon Norway_-related incident, so that we
 may enforce the Code of Conduct and take quick action toward a resolution.
 
 If at all possible, all reports should be made directly to

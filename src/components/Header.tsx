@@ -95,7 +95,7 @@ export const Header = () => {
 			<div class="container">
 				<div class="text-secondary py-5">
 					<div class="py-5">
-						<h1 class="text-white">Ada Con Norway 2023</h1>
+						<h1 class="text-white">AdaCon Norway 2023</h1>
 						<p class="fs-4 font-headline text-white">
 							<Calendar />{' '}
 							{Con.date.toLocaleDateString(undefined, {

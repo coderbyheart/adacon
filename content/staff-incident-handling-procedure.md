@@ -22,7 +22,7 @@ to gather include the following:
 - Other people involved in the incident
 
 Prepare an initial response to the incident. This initial response is very
-important and will set the tone for _Ada Con Norway_. Depending on the
+important and will set the tone for _AdaCon Norway_. Depending on the
 severity/details of the incident, please follow these guidelines:
 
 - If there is any general threat to attendees or the safety of anyone including
