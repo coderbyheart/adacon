@@ -43,10 +43,7 @@
 		}
 	},
 	"lint-staged": {
-		"*.{ts,tsx,json,yaml,yml,html}": [
-			"npx rome format --write",
-			"npx rome lint"
-		]
+		"*.{ts,tsx,json,html}": ["npx rome format --write", "npx rome lint"]
 	},
 	"engines": {
 		"node": ">=18.0.0",
