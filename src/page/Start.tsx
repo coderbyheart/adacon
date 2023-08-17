@@ -8,8 +8,12 @@ import { Speakers } from '#components/Speakers'
 import { Sponsors } from '#components/Sponsors'
 import { Tickets } from '#components/Tickets'
 import type { Page } from '#context/Pages'
+import type { Speaker } from '../../pages/content.page.server'
 
-export const Start = ({ page }: { page: Page }) => (
+export const Start = ({
+	page,
+	speakers,
+}: { page: Page; speakers: Speaker[] }) => (
 	<>
 		<HeaderNav transparent={true} />
 		<Header />
@@ -35,7 +39,7 @@ export const Start = ({ page }: { page: Page }) => (
 			</div>
 			<Tickets />
 			<Previously />
-			<Speakers />
+			<Speakers speakers={speakers} />
 			<Location />
 			<Sponsors />
 		</main>

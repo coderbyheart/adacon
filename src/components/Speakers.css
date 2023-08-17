@@ -1,0 +1,37 @@
+.speakers {
+    display: grid;
+    grid-template: auto / 1fr;
+
+
+}
+.speakers .speaker {
+    background-color: #781e7c17;
+    padding: 0;
+}
+.speakers .speaker img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+}
+.speakers .speaker h3 {
+    font-weight: 300;
+}
+
+@media screen and (min-width: 600px) {
+    .speakers {
+    grid-template: auto / 1fr 1fr;
+
+    grid-gap: 1rem;
+  }
+  }
+  @media screen and (min-width: 1000px) {
+    .speakers {
+    grid-template: auto / 1fr 1fr 1fr;
+  }
+  }
+
+@media screen and (min-width: 1200px) {
+    .speakers {
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+  }
+  }

@@ -3,14 +3,23 @@ import { readdir } from 'node:fs/promises'
 import path from 'node:path'
 import { loadMarkdownContent } from './loadMarkdownContent'
 
-export type IndexPageProps = { pages: Page[]; page: Page }
+export type Speaker = {
+	name: string
+	slug: string
+	html: string
+	photo?: string
+	pronouns?: string
+}
+
+export type IndexPageProps = { pages: Page[]; page: Page; speakers: Speaker[] }
 
 export const onBeforeRender = async (args: {
 	routeParams: { slug: string }
 }): Promise<{
 	pageContext: { pageProps: IndexPageProps }
 }> => {
-	const pages = await loadMarkdownContent()
+	const pages = await loadMarkdownContent<Page>('content')
+	const speakers = await loadMarkdownContent<Speaker>('speakers')
 	const index = pages.find(({ slug }) => slug === args.routeParams.slug)
 	if (index === undefined)
 		throw new Error(`Failed to find content for "${args.routeParams.slug}"!`)
@@ -19,6 +28,7 @@ export const onBeforeRender = async (args: {
 			pageProps: {
 				pages,
 				page: index,
+				speakers,
 			},
 		},
 	}

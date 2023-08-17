@@ -1,4 +1,3 @@
-import type { Page } from '#context/Pages'
 import { readdir, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import format from 'rehype-format'
@@ -15,23 +14,24 @@ const parseMarkdown = remark()
 	.use(remark2rehype)
 	.use(format)
 	.use(html)
-export const loadMarkdownContent = async (): Promise<Page[]> => {
-	const resourceFiles = (
-		await readdir(path.join(process.cwd(), 'content'))
-	).filter((f) => f.endsWith('.md'))
+export const loadMarkdownContent = async <
+	T extends { html: string; slug: string },
+>(
+	type: 'content' | 'speakers',
+): Promise<T[]> => {
+	const resourceFiles = (await readdir(path.join(process.cwd(), type))).filter(
+		(f) => f.endsWith('.md'),
+	)
 
 	return await Promise.all(
 		resourceFiles.map(async (f) => {
-			const source = await readFile(
-				path.join(process.cwd(), 'content', f),
-				'utf-8',
-			)
+			const source = await readFile(path.join(process.cwd(), type, f), 'utf-8')
 			const md = await parseMarkdown.process(source)
 			return {
 				...md.data,
 				html: md.value,
 				slug: f.replace(/\.md$/, ''),
-			} as Page
+			} as T
 		}),
 	)
 }

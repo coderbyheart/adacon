@@ -1,0 +1,1 @@
+export default '/speaker/@speaker'
