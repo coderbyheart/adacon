@@ -10,7 +10,7 @@ export const Speakers = ({ speakers }: { speakers: Speaker[] }) => (
 				<h2 class="py-4">Speakers</h2>
 			</div>
 
-			<div class="row py-lg-5 speakers">
+			<div class="py-lg-5 speakers">
 				{speakers
 					.sort(({ name: n1 }, { name: n2 }) => n1.localeCompare(n2))
 					.sort(
@@ -29,7 +29,7 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
 	<div
 		class="speaker d-flex justify-content-between flex-column"
 		style={{
-			transform: `rotate(${Math.random() * 10 - 5}deg)`,
+			transform: `rotate(${Math.random() * 8 - 4}deg)`,
 		}}
 	>
 		<div>
