@@ -21,7 +21,7 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 					</header>
 				</div>
 				<div class="row mb-4">
-					<div class="col-lg-6 mx-auto">
+					<div class="col-lg-6 mx-auto mb-4 mb-lg-0">
 						<div
 							class="markdown"
 							// rome-ignore lint/security/noDangerouslySetInnerHtml: needed here
@@ -30,7 +30,7 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 							}}
 						/>
 					</div>
-					<div class="col-lg-3 mx-auto">
+					<div class="col-lg-3 mx-auto mt-4 mt-lg-0">
 						{speaker.photo !== undefined && (
 							<img
 								alt={speaker.name}

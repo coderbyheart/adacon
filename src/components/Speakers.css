@@ -1,12 +1,12 @@
 .speakers {
     display: grid;
     grid-template: auto / 1fr;
-
-
 }
 .speakers .speaker {
-    background-color: #781e7c17;
+    background-color: #fff;
     padding: 0;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+		border: 20px solid #fff;
 }
 .speakers .speaker img {
     max-width: 100%;
@@ -18,20 +18,20 @@
 }
 
 @media screen and (min-width: 600px) {
-    .speakers {
+  .speakers {
     grid-template: auto / 1fr 1fr;
-
     grid-gap: 1rem;
   }
-  }
-  @media screen and (min-width: 1000px) {
-    .speakers {
+}
+
+@media screen and (min-width: 1000px) {
+  .speakers {
     grid-template: auto / 1fr 1fr 1fr;
   }
-  }
+}
 
 @media screen and (min-width: 1200px) {
     .speakers {
     grid-template: auto / 1fr 1fr 1fr 1fr;
   }
-  }
+}
