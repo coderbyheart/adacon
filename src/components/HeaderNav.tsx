@@ -130,8 +130,8 @@ export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 							<ul class="nav flex-column">
 								{navItems.map(([link, title, button]) => (
 									<li class="nav-item">
-										<button
-											type="button"
+										{/* rome-ignore lint/a11y/useValidAnchor: needs to close the overlay */}
+										<a
 											class={
 												button === true
 													? 'btn btn-secondary ms-3 mt-2 mb-4'
@@ -144,7 +144,7 @@ export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 											}}
 										>
 											{title}
-										</button>
+										</a>
 									</li>
 								))}
 							</ul>
