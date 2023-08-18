@@ -1,5 +1,5 @@
 export const Tickets = () => (
-	<section id="tickets" class="mt-4">
+	<section id="tickets" class="mt-4 bg-highlight text-white">
 		<div class="container mt-4">
 			<div class="row text-center py-4">
 				<h2 class="py-4">Tickets</h2>

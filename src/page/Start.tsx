@@ -37,11 +37,11 @@ export const Start = ({
 					/>
 				</div>
 			</div>
-			<Tickets />
-			<Previously />
 			<Speakers speakers={speakers} />
-			<Location />
+			<Previously />
+			<Tickets />
 			<Sponsors />
+			<Location />
 		</main>
 		<Footer />
 	</>

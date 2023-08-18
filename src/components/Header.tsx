@@ -17,6 +17,11 @@ const TitleWrapper = styled.header`
 	display: flex;
 	align-items: center;
 `
+
+const TitleWrapperSmall = styled(TitleWrapper)`
+	min-height: 30vh;
+`
+
 const BG = styled.div`
 	background-size: cover;
 	background-position: center;
@@ -52,7 +57,7 @@ function* iter(array: string[]): Iterator<string> {
 
 const imagesIter = iter(images)
 
-export const Header = () => {
+export const Header = ({ small }: { small?: true }) => {
 	const bgEl = useRef<HTMLDivElement>(null)
 	const [size, setSize] = useState<[number, number]>()
 	const [currentImage, setCurrentImage] = useState<string>(
@@ -89,8 +94,10 @@ export const Header = () => {
 		bg = `${currentImage}?${imageArgs.toString()}`
 	}
 
+	const Wrapper = small ? TitleWrapperSmall : TitleWrapper
+
 	return (
-		<TitleWrapper ref={bgEl}>
+		<Wrapper ref={bgEl}>
 			<BG style={{ backgroundImage: `url(${bg})` }} />
 			<div class="container">
 				<div class="text-secondary py-5">
@@ -124,6 +131,6 @@ export const Header = () => {
 					</div>
 				</div>
 			</div>
-		</TitleWrapper>
+		</Wrapper>
 	)
 }

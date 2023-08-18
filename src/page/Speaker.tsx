@@ -7,7 +7,7 @@ import './Speaker.css'
 export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 	<>
 		<HeaderNav transparent={true} />
-		<Header />
+		<Header small />
 		<main class="bg-off-white">
 			<div class="container py-4">
 				<div class="row pb-4">
@@ -30,7 +30,7 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 							}}
 						/>
 					</div>
-					<div class="col-lg-3 mx-auto mt-4 mt-lg-0">
+					<div class="col-lg-3 mx-auto mt-4 mt-lg-0 d-flex justify-content-center">
 						{speaker.photo !== undefined && (
 							<img
 								alt={speaker.name}

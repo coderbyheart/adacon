@@ -5,9 +5,9 @@ import { ViewportObserver } from 'preact-intersection-observer'
 import { useState, useEffect } from 'preact/hooks'
 
 export const Speakers = ({ speakers }: { speakers: Speaker[] }) => (
-	<section id="speakers" class="py-4">
+	<section id="speakers" class="bg-highlight py-4">
 		<div class="container mt-4">
-			<div class="row text-center py-4">
+			<div class="row text-center py-4 text-white ">
 				<h2 class="py-4">Speakers</h2>
 			</div>
 

@@ -39,8 +39,8 @@ const MobileNavigation = styled.nav`
 const navItems: [link: string, title: string, button?: boolean][] = [
 	['./#about', 'About'],
 	['./#speakers', 'Speakers'],
-	['./#location', 'Location'],
 	['./#sponsors', 'Sponsors'],
+	['./#location', 'Location'],
 	['./matrix', 'Chat'],
 	['./contact', 'Contact'],
 	['./#tickets', 'Tickets', true],
