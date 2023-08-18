@@ -2,6 +2,7 @@ import { MoveRight } from 'lucide-preact'
 import type { Speaker } from '../../pages/content.page.server'
 import './Speakers.css'
 import { ViewportObserver } from 'preact-intersection-observer'
+import { useState, useEffect } from 'preact/hooks'
 
 export const Speakers = ({ speakers }: { speakers: Speaker[] }) => (
 	<section id="speakers" class="py-4">
@@ -33,29 +34,7 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
 		}}
 	>
 		<div>
-			{speaker.photo !== undefined && (
-				<ViewportObserver
-					render={({ inView, entry }) => {
-						if (!inView) return <Placeholder speaker={speaker} />
-						const w =
-							Math.floor(entry?.boundingClientRect?.width ?? 250) *
-							(window.devicePixelRatio ?? 1)
-						return (
-							<img
-								alt={speaker.name}
-								src={`${speaker.photo}?${new URLSearchParams({
-									fm: 'webp',
-									w: w.toString(),
-									h: w.toString(),
-									q: '80',
-									crop: 'center',
-									fit: 'crop',
-								}).toString()}`}
-							/>
-						)
-					}}
-				/>
-			)}
+			{speaker.photo !== undefined && <Photo speaker={speaker} />}
 			{speaker.photo === undefined && <Placeholder speaker={speaker} />}
 			<h3 class="mt-4 p-0">{speaker.name}</h3>
 			{speaker.pronouns !== undefined && (
@@ -84,3 +63,39 @@ const Placeholder = ({ speaker }: { speaker: Speaker }) => (
 		style={{ backgroundColor: '#6b6b6b29' }}
 	/>
 )
+
+const Photo = ({ speaker }: { speaker: Speaker }) => {
+	const [imageUrl, setImageURL] = useState<string>()
+	const [size, setSize] = useState<number>()
+
+	useEffect(() => {
+		if (size === undefined) return
+		const photoUrl = `${speaker.photo}?${new URLSearchParams({
+			fm: 'webp',
+			w: size.toString(),
+			h: size.toString(),
+			q: '80',
+			crop: 'center',
+			fit: 'crop',
+		}).toString()}`
+
+		fetch(photoUrl, { mode: 'no-cors' }).then(() => {
+			setImageURL(photoUrl)
+		})
+	}, [size])
+
+	if (imageUrl !== undefined) return <img alt={speaker.name} src={imageUrl} />
+
+	return (
+		<ViewportObserver
+			render={({ inView, entry }) => {
+				if (inView)
+					setSize(
+						Math.floor(entry?.boundingClientRect?.width ?? 250) *
+							(window.devicePixelRatio ?? 1),
+					)
+				return <Placeholder speaker={speaker} />
+			}}
+		/>
+	)
+}
