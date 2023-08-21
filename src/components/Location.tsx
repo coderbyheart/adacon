@@ -3,31 +3,31 @@ import { ViewportObserver } from 'preact-intersection-observer'
 import { styled } from 'styled-components'
 
 const Tiles = styled.div`
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	div {
-		padding: 1rem;
-		border: 1px solid #ffffff;
-	}
-	grid-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  div {
+    padding: 1rem;
+    border: 1px solid #ffffff;
+  }
+  grid-gap: 1.5rem;
 `
 
 const Figures = styled.div`
-	img {
-		box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
-		border: 10px solid #fff;
-		max-width: 100%;
-		max-height: 350px;
-		&:nth-child(1) {
-			transform: rotate(-4deg);
-			z-index: 2;
-		}
-		&:nth-child(2) {
-			transform: rotate(2deg);
-			z-index: 2;
-			margin-top: -1rem;
-		}
-	}
+  img {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+    border: 10px solid #fff;
+    max-width: 100%;
+    max-height: 350px;
+    &:nth-child(1) {
+      transform: rotate(-4deg);
+      z-index: 2;
+    }
+    &:nth-child(2) {
+      transform: rotate(2deg);
+      z-index: 2;
+      margin-top: -1rem;
+    }
+  }
 `
 
 export const Location = () => (

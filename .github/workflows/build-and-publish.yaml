@@ -36,8 +36,7 @@ jobs:
         run: npm ci --no-audit
 
       - name: Get current release
-        run:
-          echo "currentRelease=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
+        run: echo "currentRelease=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
 
       - name: Determine next release version
         uses: nordicsemiconductor/cloud-get-next-version-action@saga

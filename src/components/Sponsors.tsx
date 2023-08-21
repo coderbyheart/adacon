@@ -1,9 +1,9 @@
 import { styled } from 'styled-components'
 
 const Section = styled.section`
-	img {
-		max-width: 250px;
-	}
+  img {
+    max-width: 250px;
+  }
 `
 
 export const Sponsors = () => (

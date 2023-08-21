@@ -13,7 +13,10 @@ import type { Speaker } from '../../pages/content.page.server'
 export const Start = ({
 	page,
 	speakers,
-}: { page: Page; speakers: Speaker[] }) => (
+}: {
+	page: Page
+	speakers: Speaker[]
+}) => (
 	<>
 		<HeaderNav transparent={true} />
 		<Header />

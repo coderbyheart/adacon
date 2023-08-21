@@ -3,37 +3,37 @@ import { useEffect, useRef, useState } from 'preact/hooks'
 import { styled } from 'styled-components'
 
 const FixedNav = styled.div`
-	ul.nav {
-		font-size: 14px;
-		font-family: var(--headline-font);
-		font-weight: var(--headline-font-weight);
-		a {
-			color: white;
-		}
-	}
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	z-index: 1001;
+  ul.nav {
+    font-size: 14px;
+    font-family: var(--headline-font);
+    font-weight: var(--headline-font-weight);
+    a {
+      color: white;
+    }
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1001;
 `
 
 const FixedOpaqueNav = styled(FixedNav)`
-	background-color: var(--color-dark-bg);
+  background-color: var(--color-dark-bg);
 `
 
 const MobileNavigation = styled.nav`
-	padding-top: 100px;
-	padding-bottom: 50px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1000;
-	background-color: var(--color-dark-bg);
-	a {
-		color: white;
-	}
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--color-dark-bg);
+  a {
+    color: white;
+  }
 `
 
 const navItems: [link: string, title: string, button?: boolean][] = [

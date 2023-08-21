@@ -25,9 +25,6 @@
 		},
 		"globals": ["BUILD_TIME", "VERSION", "ImportMetaEnv"]
 	},
-	"organizeImports": {
-		"enabled": true
-	},
 	"files": {
 		"ignore": ["./build"]
 	}

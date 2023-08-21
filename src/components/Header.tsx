@@ -6,34 +6,34 @@ import { shuffleArray } from '../shuffleArray'
 import { Countdown } from './Countdown'
 
 const TitleWrapper = styled.header`
-	width: 100%;
-	background-color: var(--color-dark-bg);
-	position: relative;
-	& > * {
-		z-index: 100;
-		position: relative;
-	}
-	min-height: 50vh;
-	display: flex;
-	align-items: center;
+  width: 100%;
+  background-color: var(--color-dark-bg);
+  position: relative;
+  & > * {
+    z-index: 100;
+    position: relative;
+  }
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
 `
 
 const TitleWrapperSmall = styled(TitleWrapper)`
-	min-height: 30vh;
+  min-height: 30vh;
 `
 
 const BG = styled.div`
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 99;
-	opacity: 0.25;
-	filter: blur(1px);
-	transition: background-image 1s linear;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  opacity: 0.25;
+  filter: blur(1px);
+  transition: background-image 1s linear;
 `
 const images = [
 	'https://cdn.sanity.io/images/q0ipzqdg/production/0de63fc64eec56092fe8908a58424ac5914fc041-4556x3417.jpg',

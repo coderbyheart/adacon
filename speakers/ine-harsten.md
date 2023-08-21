@@ -24,7 +24,7 @@ Grew up on the Norwegian south coast, Sørlandet. Elementary school from 1950 �
 1984 – 94 : Independent consultant. Project included:
 
 - Wrote customer systems for Norwegian Savings Banks.
-- Wrote booking system for Gullivers Reiser A/S, small Norwegian tour operator. System worked from day one and quickly transformed Gulliver from a niche operator to a medium sized operator on the Norwegian market. Rewrote to different computer architecture  1989 – 90. Algol & COBOL & WFL.
+- Wrote booking system for Gullivers Reiser A/S, small Norwegian tour operator. System worked from day one and quickly transformed Gulliver from a niche operator to a medium sized operator on the Norwegian market. Rewrote to different computer architecture 1989 – 90. Algol & COBOL & WFL.
 - 1985 – 86 : wrote system integration middleware for Fellesdata (NCR CTOS system, C & C++).
 - 1990 – 91 : Worked for Unisys Egypt, trying to sell healthcare system to Egyptian military (during Gulf war I). Lived in Cairo during that time. Surreal project.
 - 1992 : Wrote screen User interface generator for Metalogic, Luxembourg. Unisys main frame systems. Unisys extended Algol.

@@ -16,14 +16,14 @@ import { useState } from 'preact/hooks'
 import { styled } from 'styled-components'
 
 const Main = styled.div`
-	svg {
-		max-width: 100%;
-		height: 250px;
-		&.small {
-			height: 33%;
-			width: 33%;
-		}
-	}
+  svg {
+    max-width: 100%;
+    height: 250px;
+    &.small {
+      height: 33%;
+      width: 33%;
+    }
+  }
 `
 
 export const Logos = () => {

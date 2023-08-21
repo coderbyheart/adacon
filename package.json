@@ -25,6 +25,7 @@
 		"lint-staged": "14.0.0",
 		"lucide": "0.268.0",
 		"preact-render-to-string": "6.2.1",
+		"prettier": "3.0.2",
 		"rehype-format": "4.0.1",
 		"rehype-stringify": "9.0.4",
 		"remark": "14.0.3",
@@ -43,7 +44,8 @@
 		}
 	},
 	"lint-staged": {
-		"*.{ts,tsx,json,html}": ["npx rome format --write", "npx rome lint"]
+		"*.{md,yaml,yml}": ["prettier --write"],
+		"*.{json,ts,tsx}": ["npx rome format --write", "npx rome lint"]
 	},
 	"engines": {
 		"node": ">=18.0.0",
@@ -65,6 +67,5 @@
 		"lucide-preact": "0.268.0",
 		"preact-intersection-observer": "2.3.6",
 		"styled-components": "6.0.0-beta.11"
-	},
-	"prettier": "@nordicsemiconductor/asset-tracker-cloud-code-style/.prettierrc"
+	}
 }
