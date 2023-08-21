@@ -1,6 +1,7 @@
 import { Footer } from '#components/Footer'
 import { Header } from '#components/Header'
 import { HeaderNav } from '#components/HeaderNav'
+import { Home, Twitter } from 'lucide-preact'
 import type { Speaker as TSpeaker } from '../../pages/content.page.server'
 import './Speaker.css'
 
@@ -29,6 +30,30 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 								__html: speaker.html,
 							}}
 						/>
+						{speaker.homepage !== undefined && (
+							<p class="mb-0">
+								<Home />{' '}
+								<a
+									href={speaker.homepage}
+									target="_blank"
+									rel="noreferrer noopener friend"
+								>
+									{speaker.name}'s website
+								</a>
+							</p>
+						)}
+						{speaker.twitter !== undefined && (
+							<p class="mb-0">
+								<Twitter />{' '}
+								<a
+									href={`https://twitter.com/@${speaker.twitter}`}
+									target="_blank"
+									rel="noreferrer noopener friend"
+								>
+									@{speaker.twitter}
+								</a>
+							</p>
+						)}
 					</div>
 					<div class="col-lg-3 mx-auto mt-4 mt-lg-0 d-flex justify-content-center">
 						{speaker.photo !== undefined && (

@@ -1,4 +1,4 @@
-import { MoveRight } from 'lucide-preact'
+import { Home, MoveRight, Twitter } from 'lucide-preact'
 import type { Speaker } from '../../pages/content.page.server'
 import './Speakers.css'
 import { ViewportObserver } from 'preact-intersection-observer'
@@ -43,15 +43,46 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
 				</small>
 			)}
 		</div>
-		<div>
+		<div class="d-flex justify-content-between flex-row-reverse">
 			{speaker.html.length > 0 && (
 				<a href={`/speaker/${speaker.slug}`} class="text-decoration-none">
 					Read more <MoveRight />
 				</a>
 			)}
+			<Links speaker={speaker} />
 		</div>
 	</div>
 )
+
+const Links = ({ speaker }: { speaker: Speaker }) => {
+	const links = []
+	if (speaker.homepage !== undefined)
+		links.push(
+			<a
+				href={speaker.homepage}
+				rel="noopener noreferrer"
+				target="_blank"
+				title={`${speaker.name}'s Homepage`}
+				class="me-2"
+			>
+				<Home />
+			</a>,
+		)
+	if (speaker.twitter !== undefined)
+		links.push(
+			<a
+				href={`https://twitter.com/@${speaker.twitter}`}
+				rel="noopener noreferrer"
+				target="_blank"
+				title={`${speaker.name} on Twitter`}
+				class="me-2"
+			>
+				<Twitter />
+			</a>,
+		)
+	if (links.length === 0) return null
+	return <nav>{links}</nav>
+}
 
 const Placeholder = ({ speaker }: { speaker: Speaker }) => (
 	<img

@@ -9,6 +9,8 @@ export type Speaker = {
 	html: string
 	photo?: string
 	pronouns?: string
+	homepage?: string
+	twitter?: string
 }
 
 export type IndexPageProps = { pages: Page[]; page: Page; speakers: Speaker[] }
