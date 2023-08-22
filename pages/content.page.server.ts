@@ -11,6 +11,7 @@ export type Speaker = {
 	pronouns?: string
 	homepage?: string
 	twitter?: string
+	bluesky?: string
 }
 
 export type IndexPageProps = { pages: Page[]; page: Page; speakers: Speaker[] }

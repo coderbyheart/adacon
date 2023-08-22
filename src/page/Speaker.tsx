@@ -1,7 +1,7 @@
 import { Footer } from '#components/Footer'
 import { Header } from '#components/Header'
 import { HeaderNav } from '#components/HeaderNav'
-import { Home, Twitter } from 'lucide-preact'
+import { Blocks, Home, Twitter } from 'lucide-preact'
 import type { Speaker as TSpeaker } from '../../pages/content.page.server'
 import './Speaker.css'
 
@@ -51,6 +51,18 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 									rel="noreferrer noopener friend"
 								>
 									@{speaker.twitter}
+								</a>
+							</p>
+						)}
+						{speaker.bluesky !== undefined && (
+							<p class="mb-0">
+								<Blocks />{' '}
+								<a
+									href={`https://${speaker.bluesky}`}
+									target="_blank"
+									rel="noreferrer noopener friend"
+								>
+									@{speaker.bluesky}
 								</a>
 							</p>
 						)}

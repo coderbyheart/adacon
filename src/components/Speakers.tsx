@@ -1,4 +1,4 @@
-import { Home, MoveRight, Twitter } from 'lucide-preact'
+import { Blocks, Home, MoveRight, Twitter } from 'lucide-preact'
 import type { Speaker } from '../../pages/content.page.server'
 import './Speakers.css'
 import { ViewportObserver } from 'preact-intersection-observer'
@@ -78,6 +78,18 @@ const Links = ({ speaker }: { speaker: Speaker }) => {
 				class="me-2"
 			>
 				<Twitter />
+			</a>,
+		)
+	if (speaker.bluesky !== undefined)
+		links.push(
+			<a
+				href={`https://${speaker.bluesky}`}
+				rel="noopener noreferrer"
+				target="_blank"
+				title={`${speaker.name} on Bluesky`}
+				class="me-2"
+			>
+				<Blocks />
 			</a>,
 		)
 	if (links.length === 0) return null
