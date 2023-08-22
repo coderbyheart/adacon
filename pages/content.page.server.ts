@@ -10,7 +10,13 @@ export type Speaker = {
 	photo?: string
 	pronouns?: string
 	homepage?: string
+	/**
+	 * @deprecated Avoid, full of Nazis.
+	 */
 	twitter?: string
+	/**
+	 * @deprecated Avoid, full of Nazis.
+	 */
 	bluesky?: string
 }
 

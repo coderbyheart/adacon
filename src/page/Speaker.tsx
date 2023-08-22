@@ -45,25 +45,17 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 						{speaker.twitter !== undefined && (
 							<p class="mb-0">
 								<Twitter />{' '}
-								<a
-									href={`https://twitter.com/@${speaker.twitter}`}
-									target="_blank"
-									rel="noreferrer noopener friend"
-								>
+								<abbr title={`${speaker.name}'s Twitter handle`}>
 									@{speaker.twitter}
-								</a>
+								</abbr>
 							</p>
 						)}
 						{speaker.bluesky !== undefined && (
 							<p class="mb-0">
 								<Blocks />{' '}
-								<a
-									href={`https://${speaker.bluesky}`}
-									target="_blank"
-									rel="noreferrer noopener friend"
-								>
+								<abbr title={`${speaker.name}'s Bluesky handle`}>
 									@{speaker.bluesky}
-								</a>
+								</abbr>
 							</p>
 						)}
 					</div>
