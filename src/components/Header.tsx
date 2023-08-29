@@ -67,8 +67,12 @@ export const Header = ({ small }: { small?: true }) => {
 	useEffect(() => {
 		if (bgEl.current === null) return
 		const el = bgEl.current
-		const w = Math.floor(el.clientWidth / 100) * 100
-		const h = Math.floor(el.clientHeight / 100) * 100
+		const w = Math.floor(
+			(el.clientWidth / 100) * 100 * (window.devicePixelRatio ?? 1),
+		)
+		const h = Math.floor(
+			(el.clientHeight / 100) * 100 * (window.devicePixelRatio ?? 1),
+		)
 		setSize([w, h])
 	}, [bgEl])
 

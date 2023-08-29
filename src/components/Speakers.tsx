@@ -110,8 +110,10 @@ const Photo = ({ speaker }: { speaker: Speaker }) => {
 			render={({ inView, entry }) => {
 				if (inView)
 					setSize(
-						Math.floor(entry?.boundingClientRect?.width ?? 250) *
-							(window.devicePixelRatio ?? 1),
+						Math.floor(
+							(entry?.boundingClientRect?.width ?? 250) *
+								(window.devicePixelRatio ?? 1),
+						),
 					)
 				return <Placeholder speaker={speaker} />
 			}}
