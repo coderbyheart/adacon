@@ -18,6 +18,7 @@ export const Sponsors = () => (
 								src="./static/turtlesec.svg"
 								alt="TurtleSec"
 								class="img-fluid mt-4 mb-2"
+								style={{ maxWidth: '300px' }}
 							/>
 						</a>
 						<br />
@@ -29,6 +30,7 @@ export const Sponsors = () => (
 								src="./static/rebel.png"
 								alt="Rebel"
 								class="img-fluid mt-4 mb-2"
+								style={{ maxWidth: '300px' }}
 							/>
 						</a>
 						<br />
@@ -40,6 +42,7 @@ export const Sponsors = () => (
 								src="./static/ndc.png"
 								alt="NDC Conferences"
 								class="img-fluid mt-4 mb-2"
+								style={{ maxWidth: '300px' }}
 							/>
 						</a>
 						<br />
@@ -57,7 +60,7 @@ export const Sponsors = () => (
 								src="./static/variant.svg"
 								alt="variant"
 								class="img-fluid mt-4 mb-2"
-								style={{ maxWidth: '25%' }}
+								style={{ maxWidth: '150px' }}
 							/>
 						</a>
 					</p>
