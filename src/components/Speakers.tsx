@@ -34,8 +34,10 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
 		}}
 	>
 		<div>
-			{speaker.photo !== undefined && <Photo speaker={speaker} />}
-			{speaker.photo === undefined && <Placeholder speaker={speaker} />}
+			<a href={`/speaker/${speaker.slug}`} class="text-decoration-none">
+				{speaker.photo !== undefined && <Photo speaker={speaker} />}
+				{speaker.photo === undefined && <Placeholder speaker={speaker} />}
+			</a>
 			<h3 class="mt-4 p-0">{speaker.name}</h3>
 			{speaker.pronouns !== undefined && (
 				<small class="text-secondary" style={{ fontSize: 14 }}>

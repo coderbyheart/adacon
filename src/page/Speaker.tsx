@@ -59,7 +59,7 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 							</p>
 						)}
 					</div>
-					<div class="col-lg-3 mx-auto mt-4 mt-lg-0 d-flex justify-content-center">
+					<div class="col-lg-3 mx-auto mt-4 mt-lg-0 d-flex justify-content-center align-items-start">
 						{speaker.photo !== undefined && (
 							<img
 								alt={speaker.name}
