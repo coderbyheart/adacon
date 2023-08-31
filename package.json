@@ -2,6 +2,7 @@
 	"name": "@adacon-norway/adacon",
 	"version": "0.0.0-development",
 	"description": "AdaCon Norway 2023 in Oslo",
+	"type": "module",
 	"scripts": {
 		"prepare": "husky install",
 		"start": "vite",
@@ -20,12 +21,12 @@
 	"homepage": "https://github.com/adacon-norway/adacon#readme",
 	"devDependencies": {
 		"@preact/preset-vite": "2.5.0",
-		"@types/node": "20.5.1",
+		"@types/node": "20.5.7",
 		"husky": "8.0.3",
-		"lint-staged": "14.0.0",
-		"lucide": "0.268.0",
+		"lint-staged": "14.0.1",
+		"lucide": "0.274.0",
 		"preact-render-to-string": "6.2.1",
-		"prettier": "3.0.2",
+		"prettier": "3.0.3",
 		"rehype-format": "4.0.1",
 		"rehype-stringify": "9.0.4",
 		"remark": "14.0.3",
@@ -33,10 +34,10 @@
 		"remark-frontmatter": "4.0.1",
 		"remark-rehype": "10.1.0",
 		"rome": "12.1.3-nightly.4c8cf32",
-		"typescript": "5.1.6",
+		"typescript": "5.2.2",
 		"vite": "4.4.9",
-		"vite-plugin-ssr": "0.4.136",
-		"yaml": "2.3.1"
+		"vite-plugin-ssr": "0.4.140",
+		"yaml": "2.3.2"
 	},
 	"husky": {
 		"hooks": {
@@ -64,7 +65,7 @@
 		"bootstrap": "5.3.1",
 		"classnames": "2.3.2",
 		"date-fns": "2.30.0",
-		"lucide-preact": "0.268.0",
+		"lucide-preact": "0.274.0",
 		"preact-intersection-observer": "2.3.6",
 		"styled-components": "6.0.0-beta.11"
 	}
