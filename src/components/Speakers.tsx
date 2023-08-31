@@ -1,4 +1,4 @@
-import { Home, MoveRight } from 'lucide-preact'
+import { AtSign, Home, Linkedin, MoveRight } from 'lucide-preact'
 import { ViewportObserver } from 'preact-intersection-observer'
 import { useEffect, useState } from 'preact/hooks'
 import type { Speaker } from '../../pages/content.page.server'
@@ -68,6 +68,30 @@ const Links = ({ speaker }: { speaker: Speaker }) => {
 				class="me-2"
 			>
 				<Home />
+			</a>,
+		)
+	if (speaker.linkedIn !== undefined)
+		links.push(
+			<a
+				href={`https://linkedin.com/in/${speaker.linkedIn}`}
+				rel="noopener noreferrer"
+				target="_blank"
+				title={`${speaker.name} on LinkedIn`}
+				class="me-2"
+			>
+				<Linkedin />
+			</a>,
+		)
+	if (speaker.email !== undefined)
+		links.push(
+			<a
+				href={`mailto:${speaker.email}`}
+				rel="noopener noreferrer"
+				target="_blank"
+				title={`${speaker.name}'s email`}
+				class="me-2"
+			>
+				<AtSign />
 			</a>,
 		)
 	if (links.length === 0) return null

@@ -1,7 +1,7 @@
 import { Footer } from '#components/Footer'
 import { Header } from '#components/Header'
 import { HeaderNav } from '#components/HeaderNav'
-import { Blocks, Home, Twitter } from 'lucide-preact'
+import { AtSign, Blocks, Home, Linkedin, Twitter } from 'lucide-preact'
 import type { Speaker as TSpeaker } from '../../pages/content.page.server'
 import './Speaker.css'
 
@@ -31,19 +31,47 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 							}}
 						/>
 						{speaker.homepage !== undefined && (
-							<p class="mb-0">
+							<p class="mb-1">
 								<Home />{' '}
 								<a
 									href={speaker.homepage}
 									target="_blank"
 									rel="noreferrer noopener friend"
+									title={`${speaker.name}'s Homepage`}
 								>
-									{speaker.name}'s website
+									Homepage
 								</a>
 							</p>
 						)}
+						{speaker.linkedIn !== undefined && (
+							<p class="mb-1">
+								<Linkedin />{' '}
+								<a
+									href={speaker.linkedIn}
+									target="_blank"
+									rel="noreferrer noopener friend"
+									title={`${speaker.name} on LinkedIn`}
+								>
+									LinkedIn
+								</a>
+							</p>
+						)}
+						{speaker.email !== undefined && (
+							<p class="mb-1">
+								<AtSign />{' '}
+								<a
+									href={`mailto:${speaker.email}`}
+									target="_blank"
+									rel="noreferrer noopener friend"
+									title={`${speaker.name}'s email`}
+								>
+									{speaker.email}
+								</a>
+							</p>
+						)}
+
 						{speaker.twitter !== undefined && (
-							<p class="mb-0">
+							<p class="mb-1">
 								<Twitter />{' '}
 								<abbr title={`${speaker.name}'s Twitter handle`}>
 									@{speaker.twitter}
@@ -51,7 +79,7 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 							</p>
 						)}
 						{speaker.bluesky !== undefined && (
-							<p class="mb-0">
+							<p class="mb-1">
 								<Blocks />{' '}
 								<abbr title={`${speaker.name}'s Bluesky handle`}>
 									@{speaker.bluesky}
