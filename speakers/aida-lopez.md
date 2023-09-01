@@ -1,3 +1,0 @@
----
-name: Aida C. López
----
