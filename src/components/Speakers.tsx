@@ -1,4 +1,4 @@
-import { AtSign, Home, Linkedin, MoveRight } from 'lucide-preact'
+import { AtSign, Github, Home, Linkedin, MoveRight } from 'lucide-preact'
 import { ViewportObserver } from 'preact-intersection-observer'
 import { useEffect, useState } from 'preact/hooks'
 import type { Speaker } from '../../pages/content.page.server'
@@ -80,6 +80,18 @@ const Links = ({ speaker }: { speaker: Speaker }) => {
 				class="me-2"
 			>
 				<Linkedin />
+			</a>,
+		)
+	if (speaker.gitHub !== undefined)
+		links.push(
+			<a
+				href={`https://github.com/${speaker.gitHub}`}
+				rel="noopener noreferrer"
+				target="_blank"
+				title={`${speaker.name} on GitHub`}
+				class="me-2"
+			>
+				<Github />
 			</a>,
 		)
 	if (speaker.email !== undefined)

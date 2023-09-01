@@ -11,6 +11,7 @@ export type Speaker = {
 	pronouns?: string
 	homepage?: string
 	linkedIn?: string
+	gitHub?: string
 	email?: string
 	/**
 	 * @deprecated Avoid, full of Nazis.

@@ -1,7 +1,7 @@
 import { Footer } from '#components/Footer'
 import { Header } from '#components/Header'
 import { HeaderNav } from '#components/HeaderNav'
-import { AtSign, Blocks, Home, Linkedin, Twitter } from 'lucide-preact'
+import { AtSign, Blocks, Github, Home, Linkedin, Twitter } from 'lucide-preact'
 import type { Speaker as TSpeaker } from '../../pages/content.page.server'
 import './Speaker.css'
 
@@ -53,6 +53,19 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 									title={`${speaker.name} on LinkedIn`}
 								>
 									LinkedIn
+								</a>
+							</p>
+						)}
+						{speaker.gitHub !== undefined && (
+							<p class="mb-1">
+								<Github />{' '}
+								<a
+									href={speaker.linkedIn}
+									target="_blank"
+									rel="noreferrer noopener friend"
+									title={`${speaker.name} on GitHub`}
+								>
+									GitHub
 								</a>
 							</p>
 						)}
