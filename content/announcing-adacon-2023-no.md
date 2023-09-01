@@ -23,6 +23,6 @@ På _Ada Lovelace Day 2023_, på [Rebel ved St.Olavs plass i Oslo](https://goo.g
 
 Som sist sponser [NDC](https://ndcconferences.com/) filming og streaming på YouTube av talkene og Rebel sponser oss med lokalene. Vi prøver nå å få på plass nok sponsorer til å dekke mat til alle deltagere. Vi har allerede et par som har sagt ja, men vi trenger flere!
 
-Målsetningen med AdaCon er å løfte fram rollemodeller. For hvis vi vil at alle deler av samfunnet skal delta i tech, så må vi vise folk som tenker på det at det finnes andre som dem som ikke bare lykkes, men som er lidenskapelige rundt faget sitt.
+Målsetningen med AdaCon er å løfte fram rollemodeller. For hvis vi vil at alle deler av samfunnet skal delta i tech, så må vi vise folk som tenker på det, at det finnes andre som dem som ikke bare lykkes, men som er lidenskapelige rundt faget sitt.
 
 Ta kontakt med Patricia Aas på [patricia@turtlesec.no](mailto:patricia@turtlesec.no) eller på telefon [+4799004322](99004322) for mer info.
