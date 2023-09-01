@@ -3,8 +3,10 @@ import { useContext } from 'preact/hooks'
 
 export type Page = {
 	title: string
+	subtitle?: string
 	slug: string
 	html: string
+	lang?: string
 }
 
 export const PagesContext = createContext<{
