@@ -13,7 +13,11 @@ export const Sponsors = () => (
 				<div class="col">
 					<h2 class="py-4">Sponsors</h2>
 					<p>
-						<a href="https://www.turtlesec.no/" rel="friend met">
+						<a
+							href="https://www.turtlesec.no/"
+							rel="friend met noopener noreferrer"
+							target="_blank"
+						>
 							<img
 								src="./static/turtlesec.svg"
 								alt="TurtleSec"
@@ -25,7 +29,11 @@ export const Sponsors = () => (
 						Gold Sponsor
 					</p>
 					<p>
-						<a href="https://www.rebel.no/" rel="friend met">
+						<a
+							href="https://www.rebel.no/"
+							rel="friend met noopener noreferrer"
+							target="_blank"
+						>
 							<img
 								src="./static/rebel.png"
 								alt="Rebel"
@@ -37,7 +45,11 @@ export const Sponsors = () => (
 						Location Sponsor
 					</p>
 					<p>
-						<a href="https://ndcconferences.com/" rel="friend met">
+						<a
+							href="https://ndcconferences.com/"
+							rel="friend met noopener noreferrer"
+							target="_blank"
+						>
 							<img
 								src="./static/ndc.png"
 								alt="NDC Conferences"
@@ -53,9 +65,33 @@ export const Sponsors = () => (
 			<div class="row text-center py-4">
 				<div class="col">
 					<hr />
+					<h3 class="my-4">Food sponsors</h3>
+					<p>
+						<a
+							href="https://www.redpill-linpro.com/"
+							rel="friend met noopener noreferrer"
+							target="_blank"
+						>
+							<img
+								src="./static/redpill-linpro.svg"
+								alt="Redpill Linpro"
+								class="img-fluid mt-4 mb-2"
+								style={{ maxWidth: '150px' }}
+							/>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="row text-center py-4">
+				<div class="col">
+					<hr />
 					<h3 class="my-4">Speaker sponsors</h3>
 					<p>
-						<a href="https://variant.no/" rel="friend met">
+						<a
+							href="https://variant.no/"
+							rel="friend met noopener noreferrer"
+							target="_blank"
+						>
 							<img
 								src="./static/variant.svg"
 								alt="variant"
