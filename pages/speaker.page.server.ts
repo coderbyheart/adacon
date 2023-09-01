@@ -3,6 +3,7 @@ import path from 'node:path'
 import { loadMarkdownContent } from './loadMarkdownContent.js'
 import type { Speaker } from './content.page.server.js'
 import type { Page } from '#context/Pages.js'
+import type { PageMeta } from '../renderer/_default.page.server.js'
 
 export type SpeakerPageProps = { speaker: Speaker; pages: Page[] }
 
@@ -15,7 +16,7 @@ export const prerender = async (): Promise<string[]> =>
 export const onBeforeRender = async (args: {
 	routeParams: { speaker: string }
 }): Promise<{
-	pageContext: { pageProps: SpeakerPageProps }
+	pageContext: { pageProps: SpeakerPageProps; pageMeta: PageMeta }
 }> => {
 	const pages = await loadMarkdownContent<Page>('content')
 	const speakers = await loadMarkdownContent<Speaker>('speakers')
@@ -28,6 +29,9 @@ export const onBeforeRender = async (args: {
 			pageProps: {
 				speaker,
 				pages,
+			},
+			pageMeta: {
+				title: speaker.name,
 			},
 		},
 	}

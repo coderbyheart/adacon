@@ -3,16 +3,22 @@ import { ServerStyleSheet } from 'styled-components'
 import { dangerouslySkipEscape, escapeInject } from 'vite-plugin-ssr/server'
 import { version } from '../siteInfo'
 import type { PageContextCustom } from './_default.page.client'
-import type { Page as TPage } from '#context/Pages'
 
-export const render = async (pageContext: PageContextCustom) => {
+export type PageMeta = {
+	title?: string
+	lang?: string
+}
+
+export const render = async (
+	pageContext: PageContextCustom<Record<string, unknown>>,
+) => {
 	const { Page, pageProps } = pageContext
 	const sheet = new ServerStyleSheet()
 	const viewHtml = renderPreact(sheet.collectStyles(<Page {...pageProps} />))
-	const page = (pageContext.pageProps as { page: TPage }).page
+	const meta = pageContext.pageMeta
 
 	return escapeInject`<!DOCTYPE html>
-    <html lang="${page.lang ?? 'en'}">
+    <html lang="${meta?.lang ?? 'en'}">
       <head>
         <meta charset="utf-8" />
         <meta
@@ -22,7 +28,9 @@ export const render = async (pageContext: PageContextCustom) => {
         <meta name="application-name" content="AdaCon Norway 2023" />
         <base href="${import.meta.env.BASE_URL}">
         <title>
-          AdaCon Norway 2023 in Oslo · ${page.title}
+          AdaCon Norway 2023 in Oslo${
+						meta?.title !== undefined ? ` · ${meta.title}` : ''
+					}
         </title>
         <meta
           name="description"

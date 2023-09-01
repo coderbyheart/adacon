@@ -2,6 +2,7 @@ import type { Page } from '#context/Pages'
 import { readdir } from 'node:fs/promises'
 import path from 'node:path'
 import { loadMarkdownContent } from './loadMarkdownContent'
+import type { PageMeta } from '../renderer/_default.page.server'
 
 export type Speaker = {
 	name: string
@@ -28,19 +29,23 @@ export type IndexPageProps = { pages: Page[]; page: Page; speakers: Speaker[] }
 export const onBeforeRender = async (args: {
 	routeParams: { slug: string }
 }): Promise<{
-	pageContext: { pageProps: IndexPageProps }
+	pageContext: { pageProps: IndexPageProps; pageMeta: PageMeta }
 }> => {
 	const pages = await loadMarkdownContent<Page>('content')
 	const speakers = await loadMarkdownContent<Speaker>('speakers')
-	const index = pages.find(({ slug }) => slug === args.routeParams.slug)
-	if (index === undefined)
+	const page = pages.find(({ slug }) => slug === args.routeParams.slug)
+	if (page === undefined)
 		throw new Error(`Failed to find content for "${args.routeParams.slug}"!`)
 	return {
 		pageContext: {
 			pageProps: {
 				pages,
-				page: index,
+				page,
 				speakers,
+			},
+			pageMeta: {
+				title: page.title,
+				lang: page.lang,
 			},
 		},
 	}

@@ -1,14 +1,17 @@
 import { formatDistanceToNow } from 'date-fns'
 import type { VNode } from 'preact'
 import { hydrate } from 'preact'
-import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client'
+import type { PageMeta } from './_default.page.server'
+import type { PageContextBuiltInClientWithServerRouting as PageContextBuiltInClient } from 'vite-plugin-ssr/types'
 
-type Page = (pageProps: PageProps) => VNode<unknown>
-type PageProps = Record<string, unknown>
+type Page = <PageProps extends Record<string, unknown>>(
+	pageProps: PageProps,
+) => VNode<unknown>
 
-export type PageContextCustom = {
+export type PageContextCustom<PageProps extends Record<string, unknown>> = {
 	Page: Page
 	pageProps?: PageProps
+	pageMeta?: PageMeta
 	urlPathname: string
 	exports: {
 		documentProps?: {
@@ -18,7 +21,8 @@ export type PageContextCustom = {
 	}
 }
 
-type PageContextClient = PageContextBuiltInClient<Page> & PageContextCustom
+type PageContextClient = PageContextBuiltInClient<Page> &
+	PageContextCustom<Record<string, unknown>>
 
 export const render = (pageContext: PageContextClient) => {
 	const { Page, pageProps } = pageContext
