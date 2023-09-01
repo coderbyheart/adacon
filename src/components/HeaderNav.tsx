@@ -99,7 +99,7 @@ export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 							{navItems.map(([link, title, button]) => (
 								<li class="nav-item">
 									<a
-										class={button === true ? 'btn btn-secondary' : 'nav-link'}
+										class={button === true ? 'btn btn-primary' : 'nav-link'}
 										aria-current="page"
 										href={link}
 									>
@@ -134,7 +134,7 @@ export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 										<a
 											class={
 												button === true
-													? 'btn btn-secondary ms-3 mt-2 mb-4'
+													? 'btn btn-primary ms-3 mt-2 mb-4'
 													: 'nav-link'
 											}
 											aria-current="page"

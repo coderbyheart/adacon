@@ -30,13 +30,6 @@ body {
   --bs-btn-hover-border-color: #551558;
 }
 
-.btn-secondary {
-  --bs-btn-bg: #37c9ff;
-  --bs-btn-border-color: #37c9ff;
-  --bs-btn-hover-bg: #2daddb;
-  --bs-btn-hover-border-color: #2daddb;
-}
-
 h1,
 h2,
 h3,
