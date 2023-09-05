@@ -7,3 +7,7 @@ twitter: linemoseng
 ---
 
 Line is a software developer doing backend and devops with some frontend on top. Line is passionate about the tech industry's social responsibility and making programming and technology common knowledge and she was involved in the movement Lær Kidsa Koding for several years. At work she is digitalising social services at The Norwegian Welfare and Labour Administration (NAV).
+
+## Optimize your Docker images
+
+We are used to containerizing our applications and building Docker images, while we rarely pay attention to the image itself. Optimizing our images will save time and resources. In the talk Line will take a look at some best practices for reducing image size and speeding up the image build time.
