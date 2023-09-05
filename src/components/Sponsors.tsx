@@ -80,6 +80,20 @@ export const Sponsors = () => (
 							/>
 						</a>
 					</p>
+					<p>
+						<a
+							href="https://www.webstep.com/"
+							rel="friend met noopener noreferrer"
+							target="_blank"
+						>
+							<img
+								src="./static/webstep.svg"
+								alt="Webstep"
+								class="img-fluid mt-4 mb-2"
+								style={{ maxWidth: '150px' }}
+							/>
+						</a>
+					</p>
 				</div>
 			</div>
 			<div class="row text-center py-4">
