@@ -68,29 +68,15 @@ export const Sponsors = () => (
 					<h3 class="my-4">Food sponsors</h3>
 					<p>
 						<a
-							href="https://www.redpill-linpro.com/"
+							href="https://www.soprasteria.no/"
 							rel="friend met noopener noreferrer"
 							target="_blank"
 						>
 							<img
-								src="./static/redpill-linpro.svg"
-								alt="Redpill Linpro"
+								src="./static/sopra-steria.svg"
+								alt="Sopra Steria"
 								class="img-fluid mt-4 mb-2"
-								style={{ maxWidth: '150px' }}
-							/>
-						</a>
-					</p>
-					<p>
-						<a
-							href="https://www.webstep.com/"
-							rel="friend met noopener noreferrer"
-							target="_blank"
-						>
-							<img
-								src="./static/webstep.svg"
-								alt="Webstep"
-								class="img-fluid mt-4 mb-2"
-								style={{ maxWidth: '150px' }}
+								style={{ maxWidth: '200px' }}
 							/>
 						</a>
 					</p>
@@ -110,15 +96,29 @@ export const Sponsors = () => (
 					</p>
 					<p>
 						<a
-							href="https://www.soprasteria.no/"
+							href="https://www.webstep.com/"
 							rel="friend met noopener noreferrer"
 							target="_blank"
 						>
 							<img
-								src="./static/sopra-steria.svg"
-								alt="Sopra Steria"
+								src="./static/webstep.svg"
+								alt="Webstep"
 								class="img-fluid mt-4 mb-2"
-								style={{ maxWidth: '200px' }}
+								style={{ maxWidth: '150px' }}
+							/>
+						</a>
+					</p>
+					<p>
+						<a
+							href="https://www.redpill-linpro.com/"
+							rel="friend met noopener noreferrer"
+							target="_blank"
+						>
+							<img
+								src="./static/redpill-linpro.svg"
+								alt="Redpill Linpro"
+								class="img-fluid mt-4 mb-2"
+								style={{ maxWidth: '150px' }}
 							/>
 						</a>
 					</p>
