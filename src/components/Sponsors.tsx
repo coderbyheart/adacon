@@ -94,6 +94,20 @@ export const Sponsors = () => (
 							/>
 						</a>
 					</p>
+					<p>
+						<a
+							href="https://www.soprasteria.no/"
+							rel="friend met noopener noreferrer"
+							target="_blank"
+						>
+							<img
+								src="./static/sopra-steria.svg"
+								alt="Sopra Steria"
+								class="img-fluid mt-4 mb-2"
+								style={{ maxWidth: '200px' }}
+							/>
+						</a>
+					</p>
 				</div>
 			</div>
 			<div class="row text-center py-4">
