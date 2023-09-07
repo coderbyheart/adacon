@@ -96,6 +96,20 @@ export const Sponsors = () => (
 					</p>
 					<p>
 						<a
+							href="https://www.folio.no/"
+							rel="friend met noopener noreferrer"
+							target="_blank"
+						>
+							<img
+								src="./static/folio.svg"
+								alt="Folio"
+								class="img-fluid mt-4 mb-2"
+								style={{ maxWidth: '200px' }}
+							/>
+						</a>
+					</p>
+					<p>
+						<a
 							href="https://www.soprasteria.no/"
 							rel="friend met noopener noreferrer"
 							target="_blank"
