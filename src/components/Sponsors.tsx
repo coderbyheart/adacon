@@ -152,10 +152,10 @@ export const Sponsors = () => (
 						<a href="./contact">contact form</a>.
 					</p>
 					<p>
-						Sponsoring opportunities include (but are not limited to): Food,
-						Drinks, Speaker travel and accommodation, Speaker gifts, Conference
-						Badges, CV review and 1-on-1 career coaching, T-Shirts, and
-						Stickers.
+						Sponsoring opportunities include (but are not limited to):{' '}
+						<del>Food, Drinks</del>, Speaker travel and accommodation, Speaker
+						gifts, Conference Badges, CV review and 1-on-1 career coaching,
+						T-Shirts, and Stickers.
 					</p>
 				</div>
 			</div>
