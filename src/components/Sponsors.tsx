@@ -68,6 +68,20 @@ export const Sponsors = () => (
 					<h3 class="my-4">Food sponsors</h3>
 					<p>
 						<a
+							href="https://www.finn.no/"
+							rel="friend met noopener noreferrer"
+							target="_blank"
+						>
+							<img
+								src="./static/finn.svg"
+								alt="Finn"
+								class="img-fluid mt-4 mb-2"
+								style={{ maxWidth: '175px', width: '175px' }}
+							/>
+						</a>
+					</p>
+					<p>
+						<a
 							href="https://www.soprasteria.no/"
 							rel="friend met noopener noreferrer"
 							target="_blank"
