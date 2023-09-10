@@ -1,5 +1,6 @@
 ---
 name: Ruth Merethe Granevang
+photo: https://cdn.sanity.io/images/q0ipzqdg/production/3e00a6b1c99e5ed99da8671126a50e66fe49c0ca-1170x1362.jpg
 ---
 
 Merethe has been a developer for 18 years, and has a master's degree in Computer science. She is currently working as a senior developer at Creaza.
