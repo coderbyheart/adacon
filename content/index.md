@@ -15,3 +15,8 @@ venue is Rebel, Universitetsgata 2, 0164 Oslo.
 
 AdaCon Norway aims to promote and empower under-indexed people in tech by
 showcasing a lineup of speakers from diverse backgrounds.
+
+## Press corner
+
+- [AdaCon: Gratis tech konferanse hvor alle speakere er fra underrepresenterte grupper](https://adacon.no/announcing-adacon-2023-no/)
+- [AdaCon-arrangør: - Jobba hardt for å gjøre meg mest mulig kjønnsløs](https://www.kode24.no/artikkel/adacon-arrangor-jobba-hardt-for-a-gjore-meg-mest-mulig-kjonnslos/80137380)
