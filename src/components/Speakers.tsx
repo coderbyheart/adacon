@@ -4,27 +4,41 @@ import { useEffect, useState } from 'preact/hooks'
 import type { Speaker } from '../../pages/content.page.server'
 import './Speakers.css'
 
-export const Speakers = ({ speakers }: { speakers: Speaker[] }) => (
-	<section id="speakers" class="bg-highlight py-4">
-		<div class="container mt-4">
-			<div class="row text-center py-4 text-white ">
-				<h2 class="py-4">Speakers</h2>
-			</div>
+export const Speakers = ({ speakers }: { speakers: Speaker[] }) => {
+	const host = speakers.find(({ role }) => role === 'host')
+	return (
+		<section id="speakers" class="bg-highlight py-4">
+			<div class="container mt-4">
+				<div class="row text-center py-4 text-white ">
+					<h2 class="py-4">Speakers</h2>
+				</div>
 
-			<div class="py-lg-5 speakers">
-				{speakers
-					.sort(({ name: n1 }, { name: n2 }) => n1.localeCompare(n2))
-					.sort(
-						({ photo: p1 }, { photo: p2 }) =>
-							(p2 === undefined ? -1 : 1) - (p1 === undefined ? -1 : 1),
-					)
-					.map((speaker) => (
-						<SpeakerCard speaker={speaker} />
-					))}
+				<div class="py-lg-5 speakers">
+					{speakers
+						.filter(({ role }) => role === undefined)
+						.sort(({ name: n1 }, { name: n2 }) => n1.localeCompare(n2))
+						.sort(
+							({ photo: p1 }, { photo: p2 }) =>
+								(p2 === undefined ? -1 : 1) - (p1 === undefined ? -1 : 1),
+						)
+						.map((speaker) => (
+							<SpeakerCard speaker={speaker} />
+						))}
+				</div>
+				{host !== undefined && (
+					<>
+						<div class="row text-center py-4 text-white ">
+							<h2 class="py-4">Hosted by</h2>
+							<div class="d-flex justify-content-center">
+								<SpeakerCard speaker={host} />
+							</div>
+						</div>
+					</>
+				)}
 			</div>
-		</div>
-	</section>
-)
+		</section>
+	)
+}
 
 const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
 	<div
@@ -142,7 +156,6 @@ const Photo = ({ speaker }: { speaker: Speaker }) => {
 	}, [size])
 
 	if (imageUrl !== undefined) return <img alt={speaker.name} src={imageUrl} />
-
 	return (
 		<ViewportObserver
 			render={({ inView, entry }) => {

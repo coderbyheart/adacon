@@ -8,6 +8,7 @@ export type Speaker = {
 	name: string
 	slug: string
 	html: string
+	role?: 'host'
 	photo?: string
 	pronouns?: string
 	homepage?: string

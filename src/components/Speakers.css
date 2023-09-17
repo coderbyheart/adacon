@@ -2,20 +2,6 @@
   display: grid;
   grid-template: auto / 1fr;
 }
-.speakers .speaker {
-  background-color: #fff;
-  padding: 0;
-  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
-  border: 20px solid #fff;
-}
-.speakers .speaker img {
-  max-width: 100%;
-  aspect-ratio: 1/1;
-  height: auto;
-}
-.speakers .speaker h3 {
-  font-weight: 300;
-}
 
 @media screen and (min-width: 600px) {
   .speakers {
@@ -34,4 +20,26 @@
   .speakers {
     grid-template: auto / 1fr 1fr 1fr 1fr;
   }
+}
+
+.speaker a {
+  color: var(--color-highlight);
+}
+.speaker {
+  text-align: left;
+  background-color: #fff;
+  padding: 0;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+  border: 20px solid #fff;
+  max-width: 300px;
+  color: black;
+
+}
+.speaker img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  height: auto;
+}
+.speaker h3 {
+  font-weight: 300;
 }
