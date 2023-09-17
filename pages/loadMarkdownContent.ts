@@ -7,10 +7,12 @@ import extract from 'remark-extract-frontmatter'
 import frontmatter from 'remark-frontmatter'
 import remark2rehype from 'remark-rehype'
 import yaml from 'yaml'
+import remarkGfm from 'remark-gfm'
 
 const parseMarkdown = remark()
 	.use(frontmatter, ['yaml'])
 	.use(extract, { yaml: yaml.parse })
+	.use(remarkGfm)
 	.use(remark2rehype)
 	.use(format)
 	.use(html)

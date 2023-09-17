@@ -98,3 +98,23 @@ li {
 .markdown h6 {
   margin-top: 2rem;
 }
+
+.markdown table {
+  margin-bottom: 2rem;
+}
+
+.markdown table th:first-child {
+  white-space: nowrap;
+}
+
+.markdown table td:nth-child(2) {
+  white-space: nowrap;
+}
+
+.markdown table td, .markdown table th {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.markdown table tr:nth-child(odd) td {
+  background-color: #0000000d;
+}
