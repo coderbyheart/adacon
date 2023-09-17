@@ -106,7 +106,14 @@ export const Header = ({ small }: { small?: true }) => {
 			<div class="container">
 				<div class="text-secondary py-5">
 					<div class="py-5">
-						<h1 class="text-white">AdaCon Norway 2023</h1>
+						<h1 class="text-white">
+							<img
+								width={66 * 4}
+								height={34 * 4}
+								src="./static/logo-white.svg"
+								alt="AdaCon Norway"
+							/>
+						</h1>
 						<p class="fs-4 font-headline text-white">
 							<Calendar />{' '}
 							{Con.date.toLocaleDateString(undefined, {

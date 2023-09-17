@@ -16,10 +16,16 @@ const FixedNav = styled.div`
   left: 0;
   width: 100vw;
   z-index: 1001;
+  .logo {
+	display: none;
+  }
 `
 
 const FixedOpaqueNav = styled(FixedNav)`
   background-color: var(--color-dark-bg);
+  .logo {
+	display: inline-block;
+  }
 `
 
 const MobileNavigation = styled.nav`
@@ -86,13 +92,12 @@ export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 							class="d-flex align-items-center text-decoration-none fw-bold"
 						>
 							<img
-								class="bi me-2"
-								width="40"
-								height="32"
-								src="./static/ada.svg"
+								class="logo me-2"
+								width={66 * 1.25}
+								height={34 * 1.25}
+								src="./static/logo-white.svg"
 								alt="AdaCon Norway"
 							/>
-							<span class="fs-4">#adacon23</span>
 						</a>
 
 						<ul class="nav nav-pills d-none d-lg-flex">
