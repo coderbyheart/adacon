@@ -47,7 +47,7 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 							<p class="mb-1">
 								<Linkedin />{' '}
 								<a
-									href={`htps://linkedin.com/in/${speaker.linkedIn}`}
+									href={`https://linkedin.com/in/${speaker.linkedIn}`}
 									target="_blank"
 									rel="noreferrer noopener friend"
 									title={`${speaker.name} on LinkedIn`}
