@@ -18,33 +18,33 @@ showcasing a lineup of speakers from diverse backgrounds.
 
 ## Agenda
 
-| Time slot | Speaker                                                   | Title                                                                                                 |
-| --------: | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-|      9:00 | Patricia Aas                                              | Opening of AdaCon Norway 2023                                                                         |
-|      9:20 | [Ruth Merethe Granevang](/speaker/ruth-merethe-granevang) | Futureproof your frontends                                                                            |
-|      9:40 | [Johannes Dvorak Lagos](/speaker/johannes-dvorak-lagos)   | How a designer made me a better developer                                                             |
-|     10:00 | —                                                         | _Break_                                                                                               |
-|     10:10 | [Cathrine Wilhelmsen](/speaker/cathrine-wilhelmsen)       | Website Analytics in My Pocket Using Microsoft Fabric                                                 |
-|     10:30 | _TBD_                                                     | _Talk 14_                                                                                             |
-|     10:50 | [Ine Harsten](/speaker/ine-harsten)                       | Once Upon a Time in the Past                                                                          |
-|     11:10 | —                                                         | _Break_                                                                                               |
-|     11:20 | [Line Moseng](/speaker/line-moseng)                       | Optimize your Docker images                                                                           |
-|     11:40 | _TBD_                                                     | _Talk 15_                                                                                             |
-|     12:00 | [Mohammad Ali Khan](/speaker/mohammad-ali-khan)           | How To Radically Simplify UI Development                                                              |
-|     12:20 | —                                                         | _Lunch_                                                                                               |
-|     13:20 | [Sarah Serussi](/speaker/sarah-serussi)                   | PWA feat. Remix                                                                                       |
-|     13:40 | [Erik Kaareng-Sunde](/speaker/erik-kaareng-sunde)         | Kubernetes Security Basics                                                                            |
-|     14:00 | [Tora Grenness Haga](/speaker/tora-grenness-haga)         | Bridging Engineering and Design                                                                       |
-|     14:20 | —                                                         | _Break_                                                                                               |
-|     14:30 | [Alexandra Leisse](/speaker/alexandra-leisse)             | Zero-to-one product development                                                                       |
-|     14:50 | _TBD_                                                     | _Talk 16_                                                                                             |
-|     15:10 | [Lara Okafor](/speaker/lara-okafor)                       | Digital (in)security: safety for queer people of colour in a digitalised world                        |
-|     15:30 | —                                                         | _Break_                                                                                               |
-|     15:40 | [Eirin Sognnes](/speaker/eirin-sognnes)                   | The Adventures of DALL·E 2 - How we created a point and click game using nothing but AI generated art |
-|     16:00 | [Nora Tessem](/speaker/nora-tessem)                       | Look in the basement!                                                                                 |
-|     16:20 | [Marte Haugestøyl Vinje](/speaker/marte-haugestoyl-vinje) | DevOps x Chaos Engineering 👾                                                                         |
-|     16:40 | Patricia Aas                                              | Closing remarks                                                                                       |
-|     17:00 | —                                                         | End                                                                                                   |
+| Time slot | Speaker & Title                                                                                                                                |
+| --------: | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+|      9:00 | Patricia Aas: Opening of AdaCon Norway 2023                                                                                                    |
+|      9:20 | [Ruth Merethe Granevang](/speaker/ruth-merethe-granevang): Futureproof your frontends                                                          |
+|      9:40 | [Johannes Dvorak Lagos](/speaker/johannes-dvorak-lagos): How a designer made me a better developer                                             |
+|     10:00 | _Break_                                                                                                                                        |
+|     10:10 | [Cathrine Wilhelmsen](/speaker/cathrine-wilhelmsen): Website Analytics in My Pocket Using Microsoft Fabric                                     |
+|     10:30 | _TBD: Talk 14_                                                                                                                                 |
+|     10:50 | [Ine Harsten](/speaker/ine-harsten): Once Upon a Time in the Past                                                                              |
+|     11:10 | _Break_                                                                                                                                        |
+|     11:20 | [Line Moseng](/speaker/line-moseng): Optimize your Docker images                                                                               |
+|     11:40 | _TBD: Talk 15_                                                                                                                                 |
+|     12:00 | [Mohammad Ali Khan](/speaker/mohammad-ali-khan): How To Radically Simplify UI Development                                                      |
+|     12:20 | _Lunch_                                                                                                                                        |
+|     13:20 | [Sarah Serussi](/speaker/sarah-serussi): PWA feat. Remix                                                                                       |
+|     13:40 | [Erik Kaareng-Sunde](/speaker/erik-kaareng-sunde): Kubernetes Security Basics                                                                  |
+|     14:00 | [Tora Grenness Haga](/speaker/tora-grenness-haga): Bridging Engineering and Design                                                             |
+|     14:20 | _Break_                                                                                                                                        |
+|     14:30 | [Alexandra Leisse](/speaker/alexandra-leisse): Zero-to-one product development                                                                 |
+|     14:50 | _TBD: Talk 16_                                                                                                                                 |
+|     15:10 | [Lara Okafor](/speaker/lara-okafor): Digital (in)security: safety for queer people of colour in a digitalised world                            |
+|     15:30 | _Break_                                                                                                                                        |
+|     15:40 | [Eirin Sognnes](/speaker/eirin-sognnes): The Adventures of DALL·E 2 - How we created a point and click game using nothing but AI generated art |
+|     16:00 | [Nora Tessem](/speaker/nora-tessem): Look in the basement!                                                                                     |
+|     16:20 | [Marte Haugestøyl Vinje](/speaker/marte-haugestoyl-vinje): DevOps x Chaos Engineering 👾                                                       |
+|     16:40 | Patricia Aas: Closing remarks                                                                                                                  |
+|     17:00 | _End_                                                                                                                                          |
 
 The agenda is subject to change.
 
