@@ -1,8 +1,8 @@
 import { AtSign, Github, Home, Linkedin, MoveRight } from 'lucide-preact'
-import { ViewportObserver } from 'preact-intersection-observer'
-import { useEffect, useState } from 'preact/hooks'
 import type { Speaker } from '../../pages/content.page.server'
 import './Speakers.css'
+import { SpeakerPhoto } from './SpeakerPhoto'
+import { SpeakerPhotoPlaceholder } from './SpeakerPhotoPlaceholder'
 
 export const Speakers = ({ speakers }: { speakers: Speaker[] }) => {
 	const host = speakers.find(({ role }) => role === 'host')
@@ -49,8 +49,10 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
 	>
 		<div>
 			<a href={`/speaker/${speaker.slug}`} class="text-decoration-none">
-				{speaker.photo !== undefined && <Photo speaker={speaker} />}
-				{speaker.photo === undefined && <Placeholder speaker={speaker} />}
+				{speaker.photo !== undefined && <SpeakerPhoto speaker={speaker} />}
+				{speaker.photo === undefined && (
+					<SpeakerPhotoPlaceholder speaker={speaker} />
+				)}
 			</a>
 			<h3 class="mt-4 p-0">{speaker.name}</h3>
 			{speaker.pronouns !== undefined && (
@@ -122,52 +124,4 @@ const Links = ({ speaker }: { speaker: Speaker }) => {
 		)
 	if (links.length === 0) return null
 	return <nav>{links}</nav>
-}
-
-const Placeholder = ({ speaker }: { speaker: Speaker }) => (
-	<img
-		src="/static/ada.svg"
-		width="500"
-		height="500"
-		class="p-4"
-		alt={speaker.name}
-		style={{ backgroundColor: '#6b6b6b29' }}
-	/>
-)
-
-const Photo = ({ speaker }: { speaker: Speaker }) => {
-	const [imageUrl, setImageURL] = useState<string>()
-	const [size, setSize] = useState<number>()
-
-	useEffect(() => {
-		if (size === undefined) return
-		const photoUrl = `${speaker.photo}?${new URLSearchParams({
-			fm: 'webp',
-			w: size.toString(),
-			h: size.toString(),
-			q: '80',
-			crop: 'center',
-			fit: 'crop',
-		}).toString()}`
-
-		fetch(photoUrl, { mode: 'no-cors' }).then(() => {
-			setImageURL(photoUrl)
-		})
-	}, [size])
-
-	if (imageUrl !== undefined) return <img alt={speaker.name} src={imageUrl} />
-	return (
-		<ViewportObserver
-			render={({ inView, entry }) => {
-				if (inView)
-					setSize(
-						Math.floor(
-							(entry?.boundingClientRect?.width ?? 250) *
-								(window.devicePixelRatio ?? 1),
-						),
-					)
-				return <Placeholder speaker={speaker} />
-			}}
-		/>
-	)
 }

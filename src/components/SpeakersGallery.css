@@ -1,0 +1,26 @@
+.speakers-gallery  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.speakers-gallery .speaker {
+    max-width: 400px;
+    width: 400px;
+    margin: 4rem 8rem;
+}
+
+
+.speakers-gallery .speaker p, .speakers-gallery .speaker ul {
+    display: none;
+}
+
+.speakers-gallery .speaker h1 {
+font-size: 28px;
+}
+
+.speakers-gallery .speaker h2 {
+    font-family: var(--sans-serif-font);
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0;
+}
