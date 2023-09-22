@@ -25,7 +25,7 @@ showcasing a lineup of speakers from diverse backgrounds.
 |      9:40 | [Johannes Dvorak Lagos](/speaker/johannes-dvorak-lagos): How a designer made me a better developer                                             |
 |     10:00 | _Break_                                                                                                                                        |
 |     10:10 | [Cathrine Wilhelmsen](/speaker/cathrine-wilhelmsen): Website Analytics in My Pocket Using Microsoft Fabric                                     |
-|     10:30 | _TBA: Talk 14_                                                                                                                                 |
+|     10:30 | [Trish Ryniak](/speaker/trish-ryniak): Modernizing Threat Intelligence 🤓                                                                      |
 |     10:50 | [Ine Harsten](/speaker/ine-harsten): Once Upon a Time in the Past                                                                              |
 |     11:10 | _Break_                                                                                                                                        |
 |     11:20 | [Line Moseng](/speaker/line-moseng): Optimize your Docker images                                                                               |
@@ -43,7 +43,8 @@ showcasing a lineup of speakers from diverse backgrounds.
 |     15:40 | [Eirin Sognnes](/speaker/eirin-sognnes): The Adventures of DALL·E 2 - How we created a point and click game using nothing but AI generated art |
 |     16:00 | [Nora Tessem](/speaker/nora-tessem): Look in the basement!                                                                                     |
 |     16:20 | [Marte Haugestøyl Vinje](/speaker/marte-haugestoyl-vinje): DevOps x Chaos Engineering 👾                                                       |
-|     16:40 | [Patricia Aas](/speaker/patricia-aas): Closing remarks                                                                                         |
+|     16:40 | Community announcements                                                                                                                        |
+|     16:45 | [Patricia Aas](/speaker/patricia-aas): Closing remarks                                                                                         |
 |     17:00 | _End_                                                                                                                                          |
 
 The agenda is subject to change.
