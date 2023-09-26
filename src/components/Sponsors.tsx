@@ -156,6 +156,20 @@ export const Sponsors = () => (
 							/>
 						</a>
 					</p>
+					<p>
+						<a
+							href="https://skatteetaten.no/"
+							rel="friend met noopener noreferrer"
+							target="_blank"
+						>
+							<img
+								src="./static/skatteetaten.svg"
+								alt="Skatteetaten"
+								class="img-fluid mt-4 mb-2"
+								style={{ maxWidth: '225px' }}
+							/>
+						</a>
+					</p>
 				</div>
 			</div>
 			<div class="row py-md-5">
