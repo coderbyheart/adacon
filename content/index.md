@@ -29,22 +29,23 @@ showcasing a lineup of speakers from diverse backgrounds.
 |     10:50 | [Ine Harsten](/speaker/ine-harsten): Once Upon a Time in the Past                                                                              |
 |     11:10 | _Break_                                                                                                                                        |
 |     11:20 | [Line Moseng](/speaker/line-moseng): Optimize your Docker images                                                                               |
-|     11:40 | _TBA: Talk 15_                                                                                                                                 |
+|     11:40 | _TBA: Talk 14_                                                                                                                                 |
 |     12:00 | [Mohammad Ali Khan](/speaker/mohammad-ali-khan): How To Radically Simplify UI Development                                                      |
 |     12:20 | _Lunch_                                                                                                                                        |
-|     13:20 | [Erik Kaareng-Sunde](/speaker/erik-kaareng-sunde): Kubernetes Security Basics                                                                  |
-|     13:40 | [Tora Grenness Haga](/speaker/tora-grenness-haga): Bridging Engineering and Design                                                             |
-|     14:00 | [Alexandra Leisse](/speaker/alexandra-leisse): Zero-to-one product development                                                                 |
+|     13:20 | _TBA: Talk 15_                                                                                                                                 |
+|     13:40 | [Erik Kaareng-Sunde](/speaker/erik-kaareng-sunde): Kubernetes Security Basics                                                                  |
+|     14:00 | [Tora Grenness Haga](/speaker/tora-grenness-haga): Bridging Engineering and Design                                                             |
 |     14:20 | _Break_                                                                                                                                        |
-|     14:30 | _TBA: Talk 16_                                                                                                                                 |
-|     14:50 | [Lara Okafor](/speaker/lara-okafor): Digital (in)security: safety for queer people of colour in a digitalised world                            |
-|     15:10 | [Eirin Sognnes](/speaker/eirin-sognnes): The Adventures of DALL·E 2 - How we created a point and click game using nothing but AI generated art |
+|     14:30 | [Alexandra Leisse](/speaker/alexandra-leisse): Zero-to-one product development                                                                 |
+|     14:50 | _TBA: Talk 16_                                                                                                                                 |
+|     15:10 | [Lara Okafor](/speaker/lara-okafor): Digital (in)security: safety for queer people of colour in a digitalised world                            |
 |     15:30 | _Break_                                                                                                                                        |
-|     15:40 | [Nora Tessem](/speaker/nora-tessem): Look in the basement!                                                                                     |
-|     16:00 | [Marte Haugestøyl Vinje](/speaker/marte-haugestoyl-vinje): DevOps x Chaos Engineering 👾                                                       |
-|     16:20 | Community announcements                                                                                                                        |
-|     16:25 | [Patricia Aas](/speaker/patricia-aas): Closing remarks                                                                                         |
-|     16:40 | _End_                                                                                                                                          |
+|     15:40 | [Eirin Sognnes](/speaker/eirin-sognnes): The Adventures of DALL·E 2 - How we created a point and click game using nothing but AI generated art |
+|     16:00 | [Nora Tessem](/speaker/nora-tessem): Look in the basement!                                                                                     |
+|     16:20 | [Marte Haugestøyl Vinje](/speaker/marte-haugestoyl-vinje): DevOps x Chaos Engineering 👾                                                       |
+|     16:40 | Community announcements                                                                                                                        |
+|     16:45 | [Patricia Aas](/speaker/patricia-aas): Closing remarks                                                                                         |
+|     17:00 | _End_                                                                                                                                          |
 
 The agenda is subject to change.
 
