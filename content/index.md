@@ -45,7 +45,7 @@ showcasing a lineup of speakers from diverse backgrounds.
 |     16:20 | [Marte Haugestøyl Vinje](/speaker/marte-haugestoyl-vinje): DevOps x Chaos Engineering 👾                                                       |
 |     16:40 | Community announcements                                                                                                                        |
 |     16:45 | [Patricia Aas](/speaker/patricia-aas): Closing remarks                                                                                         |
-|     17:00 | _End_                                                                                                                                          |
+|     17:00 | After-conference hangout with food and drinks at [Skråplanet](https://skraplanet.no/) (in the same building)                                   |
 
 The agenda is subject to change.
 
