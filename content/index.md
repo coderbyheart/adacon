@@ -20,6 +20,7 @@ showcasing a lineup of speakers from diverse backgrounds.
 
 | Time slot | Speaker & Title                                                                                                                                |
 | --------: | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+|      8:30 | Doors open                                                                                                                                     |
 |      9:00 | [Patricia Aas](/speaker/patricia-aas): Opening of AdaCon Norway 2023                                                                           |
 |      9:20 | [Ruth Merethe Granevang](/speaker/ruth-merethe-granevang): Futureproof your frontends                                                          |
 |      9:40 | [Johannes Dvorak Lagos](/speaker/johannes-dvorak-lagos): How a designer made me a better developer                                             |
