@@ -26,7 +26,7 @@ showcasing a lineup of speakers from diverse backgrounds.
 |      9:40 | [Johannes Dvorak Lagos](/speaker/johannes-dvorak-lagos): How a designer made me a better developer                                             |
 |     10:00 | _Break_                                                                                                                                        |
 |     10:10 | [Cathrine Wilhelmsen](/speaker/cathrine-wilhelmsen): Website Analytics in My Pocket Using Microsoft Fabric                                     |
-|     10:30 | [Trish Ryniak](/speaker/trish-ryniak): Modernizing Threat Intelligence 🤓                                                                      |
+|     10:30 | _TBA: Talk 12_                                                                                                                                 |
 |     10:50 | [Ine Harsten](/speaker/ine-harsten): Once Upon a Time in the Past                                                                              |
 |     11:10 | _Break_                                                                                                                                        |
 |     11:20 | [Line Moseng](/speaker/line-moseng): Optimize your Docker images                                                                               |
