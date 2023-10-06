@@ -31,7 +31,7 @@ showcasing a lineup of speakers from diverse backgrounds.
 |     11:10 | _Break_                                                                                                                                        |
 |     11:20 | [Line Moseng](/speaker/line-moseng): Optimize your Docker images                                                                               |
 |     11:40 | _TBA: Talk 14_                                                                                                                                 |
-|     12:00 | [Mohammad Ali Khan](/speaker/mohammad-ali-khan): How To Radically Simplify UI Development                                                      |
+|     12:00 | _TBA: Talk 13_                                                                                                                                 |
 |     12:20 | _Lunch_                                                                                                                                        |
 |     13:20 | _TBA: Talk 15_                                                                                                                                 |
 |     13:40 | [Erik Kaareng-Sunde](/speaker/erik-kaareng-sunde): Kubernetes Security Basics                                                                  |
