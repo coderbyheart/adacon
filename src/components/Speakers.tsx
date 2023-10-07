@@ -6,14 +6,18 @@ import { SpeakerPhotoPlaceholder } from './SpeakerPhotoPlaceholder'
 import { Mastodon } from './Mastodon'
 
 export const Speakers = ({ speakers }: { speakers: Speaker[] }) => {
-	const host = speakers.find(({ role }) => role === 'host')
+	const hosts = speakers
+		.filter(({ role }) => role === 'host')
+		.sort(
+			({ order: o1 }, { order: o2 }) =>
+				(o1 ?? Number.MAX_SAFE_INTEGER) - (o2 ?? Number.MAX_SAFE_INTEGER),
+		)
 	return (
 		<section id="speakers" class="bg-highlight py-4">
 			<div class="container mt-4">
 				<div class="row text-center py-4 text-white ">
 					<h2 class="py-4">Speakers</h2>
 				</div>
-
 				<div class="py-lg-5 speakers">
 					{speakers
 						.filter(({ role }) => role === undefined)
@@ -26,12 +30,14 @@ export const Speakers = ({ speakers }: { speakers: Speaker[] }) => {
 							<SpeakerCard speaker={speaker} />
 						))}
 				</div>
-				{host !== undefined && (
+				{hosts.length > 0 && (
 					<>
 						<div class="row text-center py-4 text-white ">
 							<h2 class="py-4">Hosted by</h2>
 							<div class="d-flex justify-content-center">
-								<SpeakerCard speaker={host} />
+								{hosts.map((host) => (
+									<SpeakerCard speaker={host} />
+								))}
 							</div>
 						</div>
 					</>

@@ -9,6 +9,7 @@ export type Speaker = {
 	slug: string
 	html: string
 	role?: 'host'
+	order?: number
 	photo?: string
 	pronouns?: string
 	homepage?: string
