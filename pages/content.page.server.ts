@@ -15,6 +15,7 @@ export type Speaker = {
 	linkedIn?: string
 	gitHub?: string
 	email?: string
+	mastodon?: string
 	/**
 	 * @deprecated Avoid, full of Nazis.
 	 */

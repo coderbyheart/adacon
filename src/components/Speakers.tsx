@@ -3,6 +3,7 @@ import type { Speaker } from '../../pages/content.page.server'
 import './Speakers.css'
 import { SpeakerPhoto } from './SpeakerPhoto'
 import { SpeakerPhotoPlaceholder } from './SpeakerPhotoPlaceholder'
+import { Mastodon } from './Mastodon'
 
 export const Speakers = ({ speakers }: { speakers: Speaker[] }) => {
 	const host = speakers.find(({ role }) => role === 'host')
@@ -122,6 +123,19 @@ const Links = ({ speaker }: { speaker: Speaker }) => {
 				<AtSign />
 			</a>,
 		)
+
+	if (speaker.mastodon !== undefined) {
+		links.push(
+			<a
+				href={speaker.mastodon}
+				target="_blank"
+				rel="noreferrer noopener friend"
+				title={`${speaker.name}'s Mastodon profile`}
+			>
+				<Mastodon style={{ width: '24px', height: '24px' }} />
+			</a>,
+		)
+	}
 	if (links.length === 0) return null
 	return <nav>{links}</nav>
 }

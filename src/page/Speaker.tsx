@@ -4,6 +4,7 @@ import { HeaderNav } from '#components/HeaderNav'
 import { AtSign, Blocks, Github, Home, Linkedin, Twitter } from 'lucide-preact'
 import type { Speaker as TSpeaker } from '../../pages/content.page.server'
 import './Speaker.css'
+import { Mastodon } from '#components/Mastodon'
 
 export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 	<>
@@ -82,7 +83,21 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 								</a>
 							</p>
 						)}
-
+						{speaker.mastodon !== undefined && (
+							<p class="mb-1">
+								<Mastodon style={{ width: '24px', height: '24px' }} />{' '}
+								<abbr title={`${speaker.name}'s Mastodon profile`}>
+									<a
+										href={speaker.mastodon}
+										target="_blank"
+										rel="noreferrer noopener friend"
+										title={`${speaker.name}'s Mastodon profile`}
+									>
+										Mastodon
+									</a>
+								</abbr>
+							</p>
+						)}
 						{speaker.twitter !== undefined && (
 							<p class="mb-1">
 								<Twitter />{' '}
