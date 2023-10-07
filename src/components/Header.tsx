@@ -4,6 +4,7 @@ import { styled } from 'styled-components'
 import { Con } from '../con'
 import { shuffleArray } from '../shuffleArray'
 import { Countdown } from './Countdown'
+import { useCountdown } from '#context/ConfCountdown'
 
 const TitleWrapper = styled.header`
   width: 100%;
@@ -63,6 +64,7 @@ export const Header = ({ small }: { small?: true }) => {
 	const [currentImage, setCurrentImage] = useState<string>(
 		imagesIter.next().value,
 	)
+	const { hasStarted } = useCountdown()
 
 	useEffect(() => {
 		if (bgEl.current === null) return
@@ -125,19 +127,38 @@ export const Header = ({ small }: { small?: true }) => {
 							<MapPin /> Rebel, Oslo, Norway
 						</p>
 						<div class="col-lg-6">
-							<p class="fs-4 text-white fw-semibold">
-								Celebrating the Diversity of the Norwegian Tech Scene in:
-								<br />
-								<Countdown />
-							</p>
-							<p>
-								<a
-									href="./#tickets"
-									class="btn btn-primary fs-5 fw-bold font-headline "
-								>
-									Get Tickets
-								</a>
-							</p>
+							{hasStarted && (
+								<>
+									<p class="fs-4 text-white fw-semibold">
+										Celebrating the Diversity of the Norwegian Tech Scene.
+									</p>
+									<p>
+										<a
+											href="./#live"
+											class="btn btn-primary fs-5 fw-bold font-headline "
+										>
+											Watch the live stream now!
+										</a>
+									</p>
+								</>
+							)}
+							{!hasStarted && (
+								<>
+									<p>
+										<a
+											href="./#tickets"
+											class="btn btn-primary fs-5 fw-bold font-headline "
+										>
+											Get Tickets
+										</a>
+									</p>
+									<p class="fs-4 text-white fw-semibold">
+										Celebrating the Diversity of the Norwegian Tech Scene in:
+										<br />
+										<Countdown />
+									</p>
+								</>
+							)}
 						</div>
 					</div>
 				</div>

@@ -1,3 +1,4 @@
+import { useCountdown } from '#context/ConfCountdown'
 import { Menu, X } from 'lucide-preact'
 import { useEffect, useRef, useState } from 'preact/hooks'
 import { styled } from 'styled-components'
@@ -42,20 +43,23 @@ const MobileNavigation = styled.nav`
   }
 `
 
-const navItems: [link: string, title: string, button?: boolean][] = [
-	['./#about', 'About'],
-	['./#speakers', 'Speakers'],
-	['./#sponsors', 'Sponsors'],
-	['./#location', 'Location'],
-	['./matrix', 'Chat'],
-	['./contact', 'Contact'],
-	['./#tickets', 'Tickets', true],
-]
-
 export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 	const [menuVisible, showMenu] = useState<boolean>(false)
 	const [scrolling, setScrolling] = useState<boolean>(false)
 	const t = useRef<NodeJS.Timeout>()
+	const { hasStarted } = useCountdown()
+
+	const navItems: [link: string, title: string, button?: boolean][] = [
+		['./#about', 'About'],
+		['./#speakers', 'Speakers'],
+		['./#sponsors', 'Sponsors'],
+		['./#location', 'Location'],
+		['./matrix', 'Chat'],
+		['./contact', 'Contact'],
+	]
+	if (!hasStarted) navItems.push(['./#tickets', 'Tickets', true])
+	if (hasStarted) navItems.push(['./#live', 'Watch the live stream', true])
+
 	useEffect(() => {
 		const onScroll = () => {
 			if (t.current !== undefined) {

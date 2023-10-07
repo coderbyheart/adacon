@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'preact/hooks'
-import { Con } from '../con'
 import { Pluralize } from './Pluralize'
+import { useCountdown } from '#context/ConfCountdown'
 
 const diff = (target_date: Date) => {
 	// find the amount of "seconds" between now and target
@@ -25,23 +25,24 @@ const diff = (target_date: Date) => {
 }
 
 export const Countdown = () => {
+	const { startDate: date } = useCountdown()
 	const [cd, setCd] = useState<{
 		days: number
 		hours: number
 		minutes: number
 		seconds: number
-	}>(diff(Con.date))
+	}>(diff(date))
 
 	useEffect(() => {
 		const i = setInterval(() => {
-			setCd(diff(Con.date))
+			setCd(diff(date))
 		}, 1000)
 		return () => {
 			clearInterval(i)
 		}
 	}, [])
 	return (
-		<time dateTime={Con.date.toISOString()}>
+		<time dateTime={date.toISOString()}>
 			{cd.days}{' '}
 			<Pluralize
 				value={cd.days}
