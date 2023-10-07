@@ -18,35 +18,34 @@ showcasing a lineup of speakers from diverse backgrounds.
 
 ## Agenda
 
-| Time slot | Speaker & Title                                                                                                                                |
-| --------: | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-|      8:30 | Doors open                                                                                                                                     |
-|      9:00 | [Patricia Aas](/speaker/patricia-aas): Opening of AdaCon Norway 2023                                                                           |
-|      9:20 | [Ruth Merethe Granevang](/speaker/ruth-merethe-granevang): Futureproof your frontends                                                          |
-|      9:40 | [Johannes Dvorak Lagos](/speaker/johannes-dvorak-lagos): How a designer made me a better developer                                             |
-|     10:00 | _Break_                                                                                                                                        |
-|     10:10 | [Cathrine Wilhelmsen](/speaker/cathrine-wilhelmsen): Website Analytics in My Pocket Using Microsoft Fabric                                     |
-|     10:30 | [Elisabeth Irgens](/speaker/elisabeth-irgens): git stash pop tales and cherry-pick rants                                                       |
-|     10:50 | [Ine Harsten](/speaker/ine-harsten): Once Upon a Time in the Past                                                                              |
-|     11:10 | _Break_                                                                                                                                        |
-|     11:20 | [Line Moseng](/speaker/line-moseng): Optimize your Docker images                                                                               |
-|     11:40 | _TBA: Talk 14_                                                                                                                                 |
-|     12:00 | _TBA: Talk 13_                                                                                                                                 |
-|     12:20 | _Lunch_                                                                                                                                        |
-|     13:20 | _TBA: Talk 15_                                                                                                                                 |
-|     13:40 | [Erik Kaareng-Sunde](/speaker/erik-kaareng-sunde): Kubernetes Security Basics                                                                  |
-|     14:00 | [Tora Grenness Haga](/speaker/tora-grenness-haga): Bridging Engineering and Design                                                             |
-|     14:20 | _Break_                                                                                                                                        |
-|     14:30 | [Alexandra Leisse](/speaker/alexandra-leisse): Zero-to-one product development                                                                 |
-|     14:50 | _TBA: Talk 16_                                                                                                                                 |
-|     15:10 | [Lara Okafor](/speaker/lara-okafor): Digital (in)security: safety for queer people of colour in a digitalised world                            |
-|     15:30 | _Break_                                                                                                                                        |
-|     15:40 | [Eirin Sognnes](/speaker/eirin-sognnes): The Adventures of DALL·E 2 - How we created a point and click game using nothing but AI generated art |
-|     16:00 | [Nora Tessem](/speaker/nora-tessem): Look in the basement!                                                                                     |
-|     16:20 | [Marte Haugestøyl Vinje](/speaker/marte-haugestoyl-vinje): DevOps x Chaos Engineering 👾                                                       |
-|     16:40 | Community announcements                                                                                                                        |
-|     16:45 | [Patricia Aas](/speaker/patricia-aas): Closing remarks                                                                                         |
-|     17:00 | After-conference hangout with food and drinks at [Skråplanet](https://skraplanet.no/) (in the same building)                                   |
+| Time slot | Speaker & Title                                                                                                                                                  |
+| --------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      8:30 | Doors open                                                                                                                                                       |
+|      9:00 | [Patricia Aas](/speaker/patricia-aas): Opening of AdaCon Norway 2023                                                                                             |
+|      9:10 | [Ruth Merethe Granevang](/speaker/ruth-merethe-granevang): Futureproof your frontends                                                                            |
+|      9:30 | [Johannes Dvorak Lagos](/speaker/johannes-dvorak-lagos): How a designer made me a better developer                                                               |
+|      9:50 | [Marte Haugestøyl Vinje](/speaker/marte-haugestoyl-vinje): DevOps x Chaos Engineering 👾                                                                         |
+|     10:10 | _Break_                                                                                                                                                          |
+|     10:25 | [Cathrine Wilhelmsen](/speaker/cathrine-wilhelmsen): Website Analytics in My Pocket Using Microsoft Fabric                                                       |
+|     10:45 | [Elisabeth Irgens](/speaker/elisabeth-irgens): git stash pop tales and cherry-pick rants                                                                         |
+|     11:05 | [Eirin Sognnes](/speaker/eirin-sognnes): The Adventures of DALL·E 2 - How we created a point and click game using nothing but AI generated art                   |
+|     11:25 | _Break_                                                                                                                                                          |
+|     11:40 | [Line Moseng](/speaker/line-moseng): Optimize your Docker images                                                                                                 |
+|     12:00 | [Ine Harsten](/speaker/ine-harsten): Once Upon a Time in the Past                                                                                                |
+|     12:30 | _Lunch at Hangout_                                                                                                                                               |
+|     13:30 | [Benedicte Emilie Brækken](/speaker/benedicte-emilie-braekken): Video editing on the command line aka. what happens when you ask a programmer to edit your video |
+|     13:50 | [Erik Kaareng-Sunde](/speaker/erik-kaareng-sunde): Kubernetes Security Basics                                                                                    |
+|     14:10 | [Tora Grenness Haga](/speaker/tora-grenness-haga): Bridging Engineering and Design                                                                               |
+|     14:30 | _Break_                                                                                                                                                          |
+|     14:45 | [Lara Okafor](/speaker/lara-okafor): Digital (in)security: safety for queer people of colour in a digitalised world                                              |
+|     15:05 | [Alexandra Leisse](/speaker/alexandra-leisse): Zero-to-one product development                                                                                   |
+|     15:25 | [Nora Tessem](/speaker/nora-tessem): Look in the basement!                                                                                                       |
+|     15:45 | Community announcements                                                                                                                                          |
+|     15:50 | [Patricia Aas](/speaker/patricia-aas) and [Markus Tacker](/speaker/markus-tacker): Closing remarks and intro to the OpenSpace                                    |
+|     16:00 | Break                                                                                                                                                            |
+|     16:15 | OpenSpace ([what is that?](https://www.liberatingstructures.com/25-open-space-technology/))                                                                      |
+|     17:45 | End                                                                                                                                                              |
+|     17:45 | After-conference hangout with food and drinks at [Skråplanet](https://skraplanet.no/) (in the same building)                                                     |
 
 The agenda is subject to change.
 
