@@ -40,13 +40,14 @@ export const Location = () => (
 				<div class="col-12 col-lg-7">
 					<h3 class="py-4">Rebel</h3>
 					<p>
-						Universitetsgata 2
+						Universitetsgata 2 (
+						<strong>use the entrance from Munchs gate</strong>)
 						<br />
 						0164 Oslo
 					</p>
 					<p>
 						<a
-							href="https://goo.gl/maps/EtBqWKXHNEsUAddr5"
+							href="https://maps.app.goo.gl/VSHnb6gEAxWRaoxj6"
 							target="_blank"
 							rel="noreferrer noopener"
 						>
