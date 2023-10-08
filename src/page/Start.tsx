@@ -47,7 +47,7 @@ export const Start = ({
 				<Speakers speakers={speakers} />
 				<Previously />
 				{!hasStarted && <Tickets />}
-				<LiveStream />
+				{hasStarted && <LiveStream />}
 				<Sponsors />
 				<Location />
 			</main>
