@@ -24,7 +24,7 @@ showcasing a lineup of speakers from diverse backgrounds.
 |      9:00 | [Patricia Aas](/speaker/patricia-aas): Opening of AdaCon Norway 2023                                                                                             |
 |      9:10 | [Ruth Merethe Granevang](/speaker/ruth-merethe-granevang): Futureproof your frontends                                                                            |
 |      9:30 | [Johannes Dvorak Lagos](/speaker/johannes-dvorak-lagos): How a designer made me a better developer                                                               |
-|      9:50 | [Marte Haugestøyl Vinje](/speaker/marte-haugestoyl-vinje): DevOps x Chaos Engineering 👾                                                                         |
+|      9:50 | [Pavneet Singh Saund](/speaker/pavneet-singh-saund): Things I wish I knew about scaling a front-end component architecture                                       |
 |     10:10 | _Break_                                                                                                                                                          |
 |     10:25 | [Cathrine Wilhelmsen](/speaker/cathrine-wilhelmsen): Website Analytics in My Pocket Using Microsoft Fabric                                                       |
 |     10:45 | [Elisabeth Irgens](/speaker/elisabeth-irgens): git stash pop tales and cherry-pick rants                                                                         |
@@ -41,7 +41,7 @@ showcasing a lineup of speakers from diverse backgrounds.
 |     15:05 | [Alexandra Leisse](/speaker/alexandra-leisse): Zero-to-one product development                                                                                   |
 |     15:25 | [Nora Tessem](/speaker/nora-tessem): Look in the basement!                                                                                                       |
 |     15:45 | _Break_                                                                                                                                                          |
-|     16:00 | [Pavneet Singh Saund](/speaker/pavneet-singh-saund): Things I wish I knew about scaling a front-end component architecture                                       |
+|     16:00 | [Marte Haugestøyl Vinje](/speaker/marte-haugestoyl-vinje): DevOps x Chaos Engineering 👾                                                                         |
 |     16:20 | Community announcements                                                                                                                                          |
 |     16:25 | [Patricia Aas](/speaker/patricia-aas) and [Markus Tacker](/speaker/markus-tacker): Closing remarks and intro to the OpenSpace                                    |
 |     16:35 | Break                                                                                                                                                            |
