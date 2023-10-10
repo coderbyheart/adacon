@@ -38,14 +38,12 @@ showcasing a lineup of speakers from diverse backgrounds.
 |     14:10 | [Tora Grenness Haga](/speaker/tora-grenness-haga): Bridging Engineering and Design                                                                               |
 |     14:30 | _Break_                                                                                                                                                          |
 |     14:45 | [Lara Okafor](/speaker/lara-okafor): Digital (in)security: safety for queer people of colour in a digitalised world                                              |
-|     15:05 | [Alexandra Leisse](/speaker/alexandra-leisse): Zero-to-one product development                                                                                   |
-|     15:25 | [Nora Tessem](/speaker/nora-tessem): Look in the basement!                                                                                                       |
-|     15:45 | _Break_                                                                                                                                                          |
-|     16:00 | [Marte Haugestøyl Vinje](/speaker/marte-haugestoyl-vinje): DevOps x Chaos Engineering 👾                                                                         |
-|     16:20 | Community announcements                                                                                                                                          |
-|     16:25 | [Patricia Aas](/speaker/patricia-aas) and [Markus Tacker](/speaker/markus-tacker): Closing remarks and intro to the OpenSpace                                    |
-|     16:35 | Break                                                                                                                                                            |
-|     16:45 | OpenSpace ([what is that?](https://www.liberatingstructures.com/25-open-space-technology/))                                                                      |
+|     15:05 | [Nora Tessem](/speaker/nora-tessem): Look in the basement!                                                                                                       |
+|     15:25 | [Marte Haugestøyl Vinje](/speaker/marte-haugestoyl-vinje): DevOps x Chaos Engineering 👾                                                                         |
+|     15:45 | Community announcements                                                                                                                                          |
+|     15:55 | [Patricia Aas](/speaker/patricia-aas) and [Markus Tacker](/speaker/markus-tacker): Closing remarks and intro to the OpenSpace                                    |
+|     16:05 | Break                                                                                                                                                            |
+|     16:15 | OpenSpace ([what is that?](https://www.liberatingstructures.com/25-open-space-technology/))                                                                      |
 |     17:45 | End                                                                                                                                                              |
 |     17:45 | After-conference hangout with food and drinks at [Skråplanet](https://skraplanet.no/) (in the same building)                                                     |
 
