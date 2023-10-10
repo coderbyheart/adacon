@@ -3,6 +3,7 @@ import { Footer } from '#components/Footer'
 import { Header } from '#components/Header'
 import { HeaderNav } from '#components/HeaderNav'
 import { LiveStream } from '#components/LiveStream'
+import { LiveUpdates } from '#components/LiveUpdates'
 import { Location } from '#components/Location'
 import { Previously } from '#components/Previously'
 import { Speakers } from '#components/Speakers'
@@ -24,6 +25,7 @@ export const Start = ({
 		<>
 			<HeaderNav transparent={true} />
 			<Header />
+			<LiveUpdates />
 			<div id="about">
 				<ConfStats />
 			</div>
