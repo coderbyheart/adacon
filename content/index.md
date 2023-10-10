@@ -47,8 +47,6 @@ showcasing a lineup of speakers from diverse backgrounds.
 |     17:45 | End                                                                                                                                                              |
 |     17:45 | After-conference hangout with food and drinks at [Skråplanet](https://skraplanet.no/) (in the same building)                                                     |
 
-[Agenda in your timezone, with Calendar export](https://4wer.short.gy/adaCon2023).
-
 The agenda is subject to change.
 
 ## Press corner
