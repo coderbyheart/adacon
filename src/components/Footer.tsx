@@ -1,4 +1,4 @@
-import { Github, Instagram, Youtube } from 'lucide-preact'
+import { Cloud, Github, Instagram, Youtube } from 'lucide-preact'
 
 export const Footer = () => (
 	<div class="container text-center mt-4">
@@ -48,7 +48,7 @@ export const Footer = () => (
 					<a
 						href="https://matrix.to/#/#space:adacon.no"
 						rel="me"
-						title="AdaCon on Matrix"
+						title="AdaCon Norway on Matrix"
 						class="ms-4"
 					>
 						<svg
@@ -82,6 +82,15 @@ export const Footer = () => (
 						class="ms-4"
 					>
 						<Github />
+					</a>
+
+					<a
+						href="https://bsky.app/profile/adacon.bsky.social"
+						rel="me"
+						title="AdaCon Norway on Bluesky"
+						class="ms-4"
+					>
+						<Cloud />
 					</a>
 				</nav>
 				<nav class="mt-4">
