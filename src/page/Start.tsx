@@ -21,11 +21,12 @@ export const Start = ({
 	speakers: Speaker[]
 }) => {
 	const { hasStarted } = useCountdown()
+
 	return (
 		<>
 			<HeaderNav transparent={true} />
 			<Header />
-			<LiveUpdates />
+			{hasStarted && <LiveUpdates />}
 			<div id="about">
 				<ConfStats />
 			</div>
@@ -47,9 +48,9 @@ export const Start = ({
 					</div>
 				</div>
 				<Speakers speakers={speakers} />
-				<Previously />
+				<Previously speakers={speakers} />
 				{!hasStarted && <Tickets />}
-				{hasStarted && <LiveStream />}
+				<LiveStream />
 				<Sponsors />
 				<Location />
 			</main>

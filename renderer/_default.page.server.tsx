@@ -3,6 +3,7 @@ import { ServerStyleSheet } from 'styled-components'
 import { dangerouslySkipEscape, escapeInject } from 'vite-plugin-ssr/server'
 import { version } from '../siteInfo'
 import type { PageContextCustom } from './_default.page.client'
+import { Con } from '../src/con.js'
 
 export type PageMeta = {
 	title?: string
@@ -25,7 +26,9 @@ export const render = async (
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta name="application-name" content="AdaCon Norway 2023" />
+        <meta name="application-name" content="AdaCon Norway ${Con.date
+					.getFullYear()
+					.toString()}" />
         <base href="${import.meta.env.BASE_URL}">
         <title>
           AdaCon Norway 2023 in Oslo${

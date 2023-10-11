@@ -45,6 +45,11 @@ const images = [
 	'https://cdn.sanity.io/images/q0ipzqdg/production/ed06da4037fc2cd3e516e37e5fda7e34a9d6815a-4184x3138.jpg',
 	'https://cdn.sanity.io/images/q0ipzqdg/production/0b6d1317e9faf9dfed591a85051fa946e2ecb9dd-4002x2358.jpg',
 	'https://cdn.sanity.io/images/q0ipzqdg/production/5c39b1e2a482c736647af41d7f82253b27d7dee7-4032x3024.jpg',
+	'https://cdn.sanity.io/images/q0ipzqdg/production/7cf467764cde0749f24d0057816403aed5644680-4222x1965.jpg',
+	'https://cdn.sanity.io/images/q0ipzqdg/production/ab56d947aec6b89271f4fa3ae9aa9077a5bc8750-3320x2497.jpg',
+	'https://cdn.sanity.io/images/q0ipzqdg/production/a84416dd0c44988121d606b01e6eefa74da0583b-3325x2494.jpg',
+	'https://cdn.sanity.io/images/q0ipzqdg/production/edb965dbbe8fc46219c157f06b2d26d73392afae-3325x2494.jpg',
+	'https://cdn.sanity.io/images/q0ipzqdg/production/171e1238723a96553716ead83bea3a2e9251a197-2497x3320.jpg',
 ]
 shuffleArray(images)
 

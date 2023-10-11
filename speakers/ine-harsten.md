@@ -1,6 +1,8 @@
 ---
 name: Ine Harsten
 photo: https://cdn.sanity.io/images/q0ipzqdg/production/10ebfe0429f07be8243a7229adcda21f485d5226-3088x2320.jpg
+events:
+  - 2023
 ---
 
 Born: November 1943, Arendal, Norway. I’ve always suspected I was conceived during victory celebrations in occupied Norway, after Paulus’ capitulation at Stalingrad. Never had the courage to ask.

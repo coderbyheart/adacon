@@ -5,21 +5,51 @@
 
 @media screen and (min-width: 600px) {
   .speakers {
-    grid-template: auto / 1fr 1fr;
+    grid-template: auto / repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .speakers.previously {
+    grid-template: auto / repeat(4, 1fr);
     grid-gap: 1rem;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .speakers {
-    grid-template: auto / 1fr 1fr 1fr;
+    grid-template: auto / repeat(3, 1fr);
+  }
+  .speakers.previously {
+    grid-template: auto / repeat(6, 1fr);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .speakers {
-    grid-template: auto / 1fr 1fr 1fr 1fr;
+    grid-template: auto / repeat(4, 1fr);
   }
+  .speakers.previously {
+    grid-template: auto / repeat(6, 1fr);
+  }
+}
+
+.speaker h3 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.speakers.previously .speaker h3 {
+  font-size: 20px;
+  margin-top: 0.5rem;
+}
+.speakers.previously .speaker {
+  border: 10px solid #fff;
+}
+
+.speaker footer {
+  margin-top: 1rem;
+}
+
+.speakers.previously .speaker footer {
+  display: none;
 }
 
 .speaker a {
@@ -33,7 +63,6 @@
   border: 20px solid #fff;
   max-width: 300px;
   color: black;
-
 }
 .speaker img {
   max-width: 100%;

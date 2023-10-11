@@ -1,7 +1,7 @@
 {
 	"name": "@adacon-norway/adacon",
 	"version": "0.0.0-development",
-	"description": "AdaCon Norway 2023 in Oslo",
+	"description": "AdaCon Norway in Oslo",
 	"type": "module",
 	"scripts": {
 		"prepare": "husky install",

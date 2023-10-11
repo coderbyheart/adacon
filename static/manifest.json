@@ -1,6 +1,6 @@
 {
-	"short_name": "AdaCon Norway 2023",
-	"name": "AdaCon Norway 2023 in Oslo",
+	"short_name": "AdaCon",
+	"name": "AdaCon Norway",
 	"icons": [
 		{
 			"src": "./static/favicon.svg",

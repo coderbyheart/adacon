@@ -8,8 +8,6 @@ export type Speaker = {
 	name: string
 	slug: string
 	html: string
-	role?: 'host'
-	order?: number
 	photo?: string
 	pronouns?: string
 	homepage?: string
@@ -25,6 +23,19 @@ export type Speaker = {
 	 * @deprecated Avoid, full of Nazis.
 	 */
 	bluesky?: string
+} & (
+	| {
+			role: 'host'
+			order: number
+	  }
+	| {
+			events: number[]
+	  }
+)
+
+export type Host = Speaker & {
+	role: 'host'
+	order: number
 }
 
 export type IndexPageProps = { pages: Page[]; page: Page; speakers: Speaker[] }

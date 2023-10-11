@@ -1,35 +1,64 @@
-import { AtSign, Github, Home, Linkedin, MoveRight } from 'lucide-preact'
-import type { Speaker } from '../../pages/content.page.server'
+import type { Host, Speaker } from '../../pages/content.page.server'
 import './Speakers.css'
-import { SpeakerPhoto } from './SpeakerPhoto'
-import { SpeakerPhotoPlaceholder } from './SpeakerPhotoPlaceholder'
-import { Mastodon } from './Mastodon'
+import { SpeakerCard } from './SpeakerCard'
+import { speakersByYear } from '../speakersByYear'
+import { Con } from '../con.js'
 
 export const Speakers = ({ speakers }: { speakers: Speaker[] }) => {
+	const year = Con.date.getFullYear()
+	const upcomingSpeakers = speakersByYear(speakers, year)
 	const hosts = speakers
-		.filter(({ role }) => role === 'host')
+		.filter((speaker) => 'role' in speaker && speaker.role === 'host')
 		.sort(
-			({ order: o1 }, { order: o2 }) =>
-				(o1 ?? Number.MAX_SAFE_INTEGER) - (o2 ?? Number.MAX_SAFE_INTEGER),
-		)
+			(s1, s2) =>
+				('order' in s1 ? s1.order : Number.MAX_SAFE_INTEGER) -
+				('order' in s2 ? s2.order : Number.MAX_SAFE_INTEGER),
+		) as Host[]
+
 	return (
 		<section id="speakers" class="bg-highlight py-4">
 			<div class="container mt-4">
-				<div class="row text-center py-4 text-white ">
-					<h2 class="py-4">Speakers</h2>
+				<div class="row py-4 text-white ">
+					<div class="col-12 col-md-8 offset-md-2">
+						<h2 class="py-4 text-center ">Speakers {year}</h2>
+						{upcomingSpeakers.length === 0 && (
+							<>
+								<p>
+									Help us build an amazing line-up by tipping us great speakers
+									and workshop facilitators using our Help us build an amazing
+									line-up for the next AdaCon Norway by tipping us great
+									speakers and workshop facilitators using our
+								</p>
+								<p class="text-center">
+									<a
+										href="https://forms.gle/53atUvDmZvn3ypTc6"
+										target="_blank"
+										rel="noreferrer noopener"
+										class="btn btn-success"
+									>
+										speaker submission form
+									</a>
+								</p>
+								<p>
+									We plan a full day conference with talks and workshops. We are
+									looking for members of the tech scene in Norway that are
+									hands-on creators, builders, and makers of technology. We want
+									to see those who love to share about a topic or a project that
+									matters to them and that the audience will benefit from
+									learning about. We do not care about experience as a speaker.
+									We will pair all our speakers with a personal coach to help
+									prepare for the event.
+								</p>
+							</>
+						)}
+					</div>
 				</div>
 				<div class="py-lg-5 speakers">
-					{speakers
-						.filter(({ role }) => role === undefined)
-						.sort(({ name: n1 }, { name: n2 }) => n1.localeCompare(n2))
-						.sort(
-							({ photo: p1 }, { photo: p2 }) =>
-								(p2 === undefined ? -1 : 1) - (p1 === undefined ? -1 : 1),
-						)
-						.map((speaker) => (
-							<SpeakerCard speaker={speaker} />
-						))}
+					{upcomingSpeakers.map((speaker) => (
+						<SpeakerCard speaker={speaker} />
+					))}
 				</div>
+
 				{hosts.length > 0 && (
 					<>
 						<div class="row text-center py-4 text-white ">
@@ -45,103 +74,4 @@ export const Speakers = ({ speakers }: { speakers: Speaker[] }) => {
 			</div>
 		</section>
 	)
-}
-
-const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
-	<div
-		class="speaker d-flex justify-content-between flex-column"
-		style={{
-			transform: `rotate(${Math.random() * 8 - 4}deg)`,
-		}}
-	>
-		<div>
-			<a href={`/speaker/${speaker.slug}`} class="text-decoration-none">
-				{speaker.photo !== undefined && <SpeakerPhoto speaker={speaker} />}
-				{speaker.photo === undefined && (
-					<SpeakerPhotoPlaceholder speaker={speaker} />
-				)}
-			</a>
-			<h3 class="mt-4 p-0">{speaker.name}</h3>
-			{speaker.pronouns !== undefined && (
-				<small class="text-secondary" style={{ fontSize: 14 }}>
-					{speaker.pronouns}
-				</small>
-			)}
-		</div>
-		<div class="d-flex justify-content-between flex-row-reverse">
-			{speaker.html.length > 0 && (
-				<a href={`/speaker/${speaker.slug}`} class="text-decoration-none">
-					Read more <MoveRight />
-				</a>
-			)}
-			<Links speaker={speaker} />
-		</div>
-	</div>
-)
-
-const Links = ({ speaker }: { speaker: Speaker }) => {
-	const links = []
-	if (speaker.homepage !== undefined)
-		links.push(
-			<a
-				href={speaker.homepage}
-				rel="noopener noreferrer"
-				target="_blank"
-				title={`${speaker.name}'s Homepage`}
-				class="me-2"
-			>
-				<Home />
-			</a>,
-		)
-	if (speaker.linkedIn !== undefined)
-		links.push(
-			<a
-				href={`https://linkedin.com/in/${speaker.linkedIn}`}
-				rel="noopener noreferrer"
-				target="_blank"
-				title={`${speaker.name} on LinkedIn`}
-				class="me-2"
-			>
-				<Linkedin />
-			</a>,
-		)
-	if (speaker.gitHub !== undefined)
-		links.push(
-			<a
-				href={`https://github.com/${speaker.gitHub}`}
-				rel="noopener noreferrer"
-				target="_blank"
-				title={`${speaker.name} on GitHub`}
-				class="me-2"
-			>
-				<Github />
-			</a>,
-		)
-	if (speaker.email !== undefined)
-		links.push(
-			<a
-				href={`mailto:${speaker.email}`}
-				rel="noopener noreferrer"
-				target="_blank"
-				title={`${speaker.name}'s email`}
-				class="me-2"
-			>
-				<AtSign />
-			</a>,
-		)
-
-	if (speaker.mastodon !== undefined) {
-		links.push(
-			<a
-				href={speaker.mastodon}
-				target="_blank"
-				rel="noreferrer noopener friend"
-				title={`${speaker.name}'s Mastodon profile`}
-			>
-				<Mastodon style={{ width: '24px', height: '24px' }} />
-			</a>,
-		)
-	}
-	if (links.length === 0) return null
-	return <nav>{links}</nav>
 }
