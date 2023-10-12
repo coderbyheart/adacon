@@ -5,6 +5,7 @@ import { AtSign, Blocks, Github, Home, Linkedin, Twitter } from 'lucide-preact'
 import type { Speaker as TSpeaker } from '../../pages/content.page.server'
 import './Speaker.css'
 import { Mastodon } from '#components/Mastodon'
+import { EmbedVideo } from '#components/EmbedVideo'
 
 export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 	<>
@@ -13,7 +14,7 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 		<main class="bg-off-white">
 			<div class="container py-4">
 				<div class="row pb-4">
-					<header class="col-12 mx-auto ">
+					<header class="col-12 col-lg-10 offset-lg-1">
 						<h1 class="text-center pt-4">{speaker.name}</h1>
 						{speaker.pronouns !== undefined && (
 							<p class="text-center ">
@@ -23,7 +24,7 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 					</header>
 				</div>
 				<div class="row mb-4">
-					<div class="col-lg-6 mx-auto mb-4 mb-lg-0">
+					<div class="col-lg-5 mb-4 mb-lg-0 offset-lg-1">
 						<div
 							class="markdown"
 							// rome-ignore lint/security/noDangerouslySetInnerHtml: needed here
@@ -31,6 +32,25 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 								__html: speaker.html,
 							}}
 						/>
+					</div>
+					<div class="col-lg-3 mt-4 mt-lg-0 offset-lg-1">
+						{speaker.photo !== undefined && (
+							<img
+								alt={speaker.name}
+								src={`${speaker.photo}?${new URLSearchParams({
+									fm: 'webp',
+									w: '500',
+									h: '500',
+									q: '80',
+									crop: 'center',
+									fit: 'crop',
+								}).toString()}`}
+								class="speaker mb-4"
+								style={{
+									transform: `rotate(${Math.random() * 20 - 10}deg)`,
+								}}
+							/>
+						)}
 						{speaker.homepage !== undefined && (
 							<p class="mb-1">
 								<Home />{' '}
@@ -115,23 +135,11 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 							</p>
 						)}
 					</div>
-					<div class="col-lg-3 mx-auto mt-4 mt-lg-0 d-flex justify-content-center align-items-start">
-						{speaker.photo !== undefined && (
-							<img
-								alt={speaker.name}
-								src={`${speaker.photo}?${new URLSearchParams({
-									fm: 'webp',
-									w: '500',
-									h: '500',
-									q: '80',
-									crop: 'center',
-									fit: 'crop',
-								}).toString()}`}
-								class="speaker"
-								style={{
-									transform: `rotate(${Math.random() * 20 - 10}deg)`,
-								}}
-							/>
+				</div>
+				<div class="row">
+					<div class="col-12 col-lg-5 offset-lg-1">
+						{speaker.video !== undefined && (
+							<EmbedVideo video={speaker.video} />
 						)}
 					</div>
 				</div>

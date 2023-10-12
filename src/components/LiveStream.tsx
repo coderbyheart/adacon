@@ -1,4 +1,4 @@
-import { ViewportObserver } from 'preact-intersection-observer'
+import { EmbedVideo } from './EmbedVideo'
 
 export const LiveStream = () => (
 	<section class="py-4  bg-highlight text-white" id="live">
@@ -22,26 +22,4 @@ export const LiveStream = () => (
 			</div>
 		</div>
 	</section>
-)
-
-const EmbedVideo = ({ video }: { video: string }) => (
-	<ViewportObserver
-		render={({ inView, entry }) => {
-			if (!inView) return null
-			const width = entry?.boundingClientRect.width ?? 560
-			const height = (width / 560) * 315
-			return (
-				<iframe
-					width={width}
-					height={height}
-					src={`https://www.youtube-nocookie.com/embed/${video}`}
-					title={'Live stream'}
-					frameBorder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowFullScreen
-				/>
-			)
-		}}
-		options={{ triggerOnce: true }}
-	/>
 )

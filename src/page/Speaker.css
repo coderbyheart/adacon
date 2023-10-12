@@ -3,5 +3,5 @@ img.speaker {
   border: 20px solid #fff;
   z-index: 2;
   width: 500px;
-  max-width: 100%;
+  max-width: 350px;
 }
