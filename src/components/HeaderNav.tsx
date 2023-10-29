@@ -54,7 +54,6 @@ export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 		['./#speakers', 'Speakers'],
 		['./#sponsors', 'Sponsors'],
 		['./#location', 'Location'],
-		['./matrix', 'Chat'],
 		['./contact', 'Contact'],
 	]
 	if (!hasStarted) navItems.push(['./#tickets', 'Tickets', true])
