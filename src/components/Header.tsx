@@ -137,14 +137,16 @@ export const Header = ({ small }: { small?: true }) => {
 									<p class="fs-4 text-white fw-semibold">
 										Celebrating the Diversity of the Norwegian Tech Scene.
 									</p>
-									<p>
-										<a
-											href="./#live"
-											class="btn btn-primary fs-5 fw-bold font-headline "
-										>
-											Watch the live stream now!
-										</a>
-									</p>
+									{Con.livestream !== undefined && (
+										<p>
+											<a
+												href="./#live"
+												class="btn btn-primary fs-5 fw-bold font-headline "
+											>
+												Watch the live stream now!
+											</a>
+										</p>
+									)}
 								</>
 							)}
 							{!hasStarted && (

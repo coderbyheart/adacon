@@ -5,7 +5,6 @@ import { HeaderNav } from '#components/HeaderNav'
 import { LiveStream } from '#components/LiveStream'
 import { LiveUpdates } from '#components/LiveUpdates'
 import { Location } from '#components/Location'
-import { Previously } from '#components/Previously'
 import { Speakers } from '#components/Speakers'
 import { Sponsors } from '#components/Sponsors'
 import { Tickets } from '#components/Tickets'
@@ -53,9 +52,13 @@ export const Start = ({
 					</div>
 				</div>
 				<Speakers speakers={speakers} />
-				<Previously />
 				{!hasStarted && <Tickets />}
-				{hasStarted && <LiveStream />}
+				{Con.livestream !== undefined && (
+					<LiveStream
+						youtube={Con.livestream.youtube}
+						vimeo={Con.livestream.vimeo}
+					/>
+				)}
 				<Sponsors />
 				<Location />
 			</main>

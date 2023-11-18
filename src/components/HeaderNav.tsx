@@ -1,4 +1,5 @@
 import { useCountdown } from '#context/ConfCountdown'
+import { Con } from '../con.js'
 import { Menu, X } from 'lucide-preact'
 import { useEffect, useRef, useState } from 'preact/hooks'
 import { styled } from 'styled-components'
@@ -57,7 +58,8 @@ export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 		['./contact', 'Contact'],
 	]
 	if (!hasStarted) navItems.push(['./#tickets', 'Tickets', true])
-	if (hasStarted) navItems.push(['./#live', 'Watch the live stream', true])
+	if (Con.livestream !== undefined)
+		navItems.push(['./#live', 'Watch the live stream', true])
 
 	useEffect(() => {
 		const onScroll = () => {
