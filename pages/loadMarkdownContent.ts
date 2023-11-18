@@ -19,7 +19,7 @@ const parseMarkdown = remark()
 export const loadMarkdownContent = async <
 	T extends { html: string; slug: string },
 >(
-	type: 'content' | 'speakers',
+	type: 'content' | 'speakers' | 'talks',
 ): Promise<T[]> => {
 	const resourceFiles = (await readdir(path.join(process.cwd(), type))).filter(
 		(f) => f.endsWith('.md'),

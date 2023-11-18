@@ -1,6 +1,6 @@
 import preact from '@preact/preset-vite'
 import { defineConfig } from 'vite'
-import ssr from 'vite-plugin-ssr/plugin'
+import ssr from 'vike/plugin'
 import { homepage, version } from './siteInfo'
 
 // https://vitejs.dev/config/
