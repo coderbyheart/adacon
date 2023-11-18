@@ -5,7 +5,6 @@ import { AtSign, Blocks, Github, Home, Linkedin, Twitter } from 'lucide-preact'
 import type { Speaker as TSpeaker } from '../../pages/content.page.server'
 import './Speaker.css'
 import { Mastodon } from '#components/Mastodon'
-import { EmbedVideo } from '#components/EmbedVideo'
 import type { Talk } from '../../pages/talk.page.server'
 
 export const Speaker = ({
@@ -160,11 +159,6 @@ export const SpeakerInfo = ({
 						</abbr>
 					</p>
 				)}
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12 col-lg-5 offset-lg-1">
-				{speaker.video !== undefined && <EmbedVideo video={speaker.video} />}
 			</div>
 		</div>
 	</div>

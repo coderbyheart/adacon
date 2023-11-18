@@ -24,7 +24,12 @@ export const Talk = ({
 				</div>
 				<div class="row">
 					<div class="col-12 col-lg-8 offset-lg-2">
-						{talk.video !== undefined && <EmbedVideo video={talk.video} />}
+						{talk.video !== undefined && (
+							<EmbedVideo
+								video={talk.video}
+								title={`${talk.title} (${speaker.name})`}
+							/>
+						)}
 					</div>
 				</div>
 				<div class="row mb-4">

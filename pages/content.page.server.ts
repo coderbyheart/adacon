@@ -25,7 +25,6 @@ export type Speaker = {
 	 * @deprecated Avoid, full of Nazis.
 	 */
 	bluesky?: string
-	video?: string
 }
 
 export type IndexPageProps = { pages: Page[]; page: Page; speakers: Speaker[] }
