@@ -55,7 +55,7 @@ export const Speakers = ({ speakers }: { speakers: Speaker[] }) => {
 				</div>
 				<div class="py-lg-5 speakers">
 					{upcomingSpeakers.map((speaker) => (
-						<SpeakerCard speaker={speaker} />
+						<SpeakerCard speaker={speaker} key={speaker.slug} />
 					))}
 				</div>
 
@@ -65,7 +65,7 @@ export const Speakers = ({ speakers }: { speakers: Speaker[] }) => {
 							<h2 class="py-4">Hosted by</h2>
 							<div class="d-flex justify-content-center">
 								{hosts.map((host) => (
-									<SpeakerCard speaker={host} />
+									<SpeakerCard speaker={host} key={host.slug} />
 								))}
 							</div>
 						</div>

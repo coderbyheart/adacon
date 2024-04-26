@@ -9,10 +9,10 @@ const diff = (target_date: Date) => {
 
 	// do some time calculations
 	const days = Math.floor(seconds_left / 86400)
-	seconds_left = seconds_left % 86400
+	seconds_left %= 86400
 
 	const hours = Math.floor(seconds_left / 3600)
-	seconds_left = seconds_left % 3600
+	seconds_left %= 3600
 
 	const minutes = Math.floor(seconds_left / 60)
 	const seconds = Math.floor(seconds_left % 60)
@@ -40,7 +40,7 @@ export const Countdown = () => {
 		return () => {
 			clearInterval(i)
 		}
-	}, [])
+	}, [date])
 	return (
 		<time dateTime={date.toISOString()}>
 			{cd.days}{' '}

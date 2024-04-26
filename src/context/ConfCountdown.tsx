@@ -33,7 +33,7 @@ export const Provider = ({
 		return () => {
 			clearInterval(i)
 		}
-	}, [conferenceStart])
+	}, [])
 
 	return (
 		<ConfCountdown.Provider

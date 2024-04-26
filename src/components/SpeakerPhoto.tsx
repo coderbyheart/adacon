@@ -21,9 +21,11 @@ export const SpeakerPhoto = ({ speaker }: { speaker: Speaker }) => {
 		fetch(photoUrl, { mode: 'no-cors' }).then(() => {
 			setImageURL(photoUrl)
 		})
-	}, [size])
+	}, [size, speaker])
 
-	if (imageUrl !== undefined) return <img alt={speaker.name} src={imageUrl} />
+	if (imageUrl !== undefined) {
+		return <img alt={speaker.name} src={imageUrl} />
+	}
 	return (
 		<ViewportObserver
 			render={({ inView, entry }) => {

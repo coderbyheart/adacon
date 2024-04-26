@@ -609,137 +609,116 @@ export const Logo = ({
 					d="M 120.83332,120.83333 H 2362.4999 V 2362.4999 H 120.83332 Z"
 					style={`fill:${background};`}
 				/>
-				<g id="text841" style={`fill:${id};`} aria-label="#hair" />
-				<g id="text845" style={`fill:${token};`} aria-label="{" />
-				<g id="text849" style={`fill:${keyword};`} aria-label="position" />
-				<g id="text853" style={`fill:${token};`} aria-label=": " />
-				<g id="text857" style={`fill:${value};`} aria-label="absolute" />
-				<g id="text861" style={`fill:${token};`} aria-label="; " />
-				<g id="text865" style={`fill:${keyword};`} aria-label="top" />
-				<g id="text869" style={`fill:${token};`} aria-label=": " />
-				<g id="text873" style={`fill:${value};`} aria-label="0vw" />
-				<g id="text877" style={`fill:${token};`} aria-label=";" />
-				<g id="text881" style={`fill:${keyword};`} aria-label="left" />
-				<g id="text885" style={`fill:${token};`} aria-label=": " />
-				<g id="text889" style={`fill:${value};`} aria-label="0vw" />
-				<g id="text893" style={`fill:${token};`} aria-label="; " />
-				<g id="text897" style={`fill:${keyword};`} aria-label="width" />
-				<g id="text901" style={`fill:${token};`} aria-label=": " />
-				<g id="text905" style={`fill:${value};`} aria-label="100vw" />
-				<g id="text909" style={`fill:${token};`} aria-label="; " />
-				<g id="text913" style={`fill:${keyword};`} aria-label="height" />
-				<g id="text917" style={`fill:${token};`} aria-label=":" />
-				<g id="text921" style={`fill:${value};`} aria-label="100vw" />
-				<g id="text925" style={`fill:${token};`} aria-label=";" />
-				<g
-					id="text929"
-					style={`fill:${keyword};`}
-					aria-label="background-image"
-				/>
-				<g id="text933" style={`fill:${token};`} aria-label=":" />
-				<g id="text937" style={`fill:${resource};`} aria-label="url" />
-				<g id="text941" style={`fill:${value};`} aria-label="(" />
-				<g
-					id="text945"
-					style={`fill:${resource};`}
-					aria-label="../images/tech-women-norway.png"
-				/>
-				<g id="text949" style={`fill:${value};`} aria-label=")" />
-				<g id="text953" style={`fill:${token};`} aria-label=";" />
-				<g
-					id="text957"
-					style={`fill:${keyword};`}
-					aria-label="background-size"
-				/>
-				<g id="text961" style={`fill:${token};`} aria-label=": " />
-				<g id="text965" style={`fill:${value};`} aria-label="100%" />
-				<g id="text969" style={`fill:${token};`} aria-label=";" />
-				<g id="text973" style={`fill:${token};`} aria-label="}" />
-				<g id="text977" style={`fill:${id};`} aria-label="#hair" />
-				<g id="text981" style={`fill:${token};`} aria-label="::before" />
-				<g id="text985" style={`fill:${token};`} aria-label="{" />
-				<g id="text989" style={`fill:${keyword};`} aria-label="content" />
-				<g id="text993" style={`fill:${token};`} aria-label=": " />
+				<g id="text841" style={`fill:${id};`} />
+				<g id="text845" style={`fill:${token};`} />
+				<g id="text849" style={`fill:${keyword};`} />
+				<g id="text853" style={`fill:${token};`} />
+				<g id="text857" style={`fill:${value};`} />
+				<g id="text861" style={`fill:${token};`} />
+				<g id="text865" style={`fill:${keyword};`} />
+				<g id="text869" style={`fill:${token};`} />
+				<g id="text873" style={`fill:${value};`} />
+				<g id="text877" style={`fill:${token};`} />
+				<g id="text881" style={`fill:${keyword};`} />
+				<g id="text885" style={`fill:${token};`} />
+				<g id="text889" style={`fill:${value};`} />
+				<g id="text893" style={`fill:${token};`} />
+				<g id="text897" style={`fill:${keyword};`} />
+				<g id="text901" style={`fill:${token};`} />
+				<g id="text905" style={`fill:${value};`} />
+				<g id="text909" style={`fill:${token};`} />
+				<g id="text913" style={`fill:${keyword};`} />
+				<g id="text917" style={`fill:${token};`} />
+				<g id="text921" style={`fill:${value};`} />
+				<g id="text925" style={`fill:${token};`} />
+				<g id="text929" style={`fill:${keyword};`} />
+				<g id="text933" style={`fill:${token};`} />
+				<g id="text937" style={`fill:${resource};`} />
+				<g id="text941" style={`fill:${value};`} />
+				<g id="text945" style={`fill:${resource};`} />
+				<g id="text949" style={`fill:${value};`} />
+				<g id="text953" style={`fill:${token};`} />
+				<g id="text957" style={`fill:${keyword};`} />
+				<g id="text961" style={`fill:${token};`} />
+				<g id="text965" style={`fill:${value};`} />
+				<g id="text969" style={`fill:${token};`} />
+				<g id="text973" style={`fill:${token};`} />
+				<g id="text977" style={`fill:${id};`} />
+				<g id="text981" style={`fill:${token};`} />
+				<g id="text985" style={`fill:${token};`} />
+				<g id="text989" style={`fill:${keyword};`} />
+				<g id="text993" style={`fill:${token};`} />
 				<g id="text997" style={`fill:${value};`} aria-label='""' />
-				<g id="text1001" style={`fill:${token};`} aria-label="; " />
-				<g id="text1005" style={`fill:${keyword};`} aria-label="position" />
-				<g id="text1009" style={`fill:${token};`} aria-label=": " />
-				<g id="text1013" style={`fill:${value};`} aria-label="absolute" />
-				<g id="text1017" style={`fill:${token};`} aria-label=";" />
-				<g id="text1021" style={`fill:${keyword};`} aria-label="top" />
-				<g id="text1025" style={`fill:${token};`} aria-label=": " />
-				<g id="text1029" style={`fill:${value};`} aria-label="25vw" />
-				<g id="text1033" style={`fill:${token};`} aria-label="; " />
-				<g id="text1037" style={`fill:${keyword};`} aria-label="left" />
-				<g id="text1041" style={`fill:${token};`} aria-label=": " />
-				<g id="text1045" style={`fill:${value};`} aria-label="24vw" />
-				<g id="text1049" style={`fill:${token};`} aria-label="; " />
-				<g id="text1053" style={`fill:${keyword};`} aria-label="width" />
-				<g id="text1057" style={`fill:${token};`} aria-label=": " />
-				<g id="text1061" style={`fill:${value};`} aria-label="52vw" />
-				<g id="text1065" style={`fill:${token};`} aria-label=";" />
-				<g id="text1069" style={`fill:${keyword};`} aria-label="height" />
-				<g id="text1073" style={`fill:${token};`} aria-label=": " />
-				<g id="text1077" style={`fill:${value};`} aria-label="57vw" />
-				<g id="text1081" style={`fill:${token};`} aria-label="; " />
-				<g id="text1085" style={`fill:${keyword};`} aria-label="background" />
-				<g id="text1089" style={`fill:${token};`} aria-label=": " />
-				<g id="text1093" style={`fill:${value};`} aria-label="#000000" />
-				<g id="text1097" style={`fill:${token};`} aria-label=";" />
-				<g
-					id="text1101"
-					style={`fill:${keyword};`}
-					aria-label="border-radius"
-				/>
-				<g id="text1105" style={`fill:${token};`} aria-label=": " />
-				<g
-					id="text1109"
-					style={`fill:${value};`}
-					aria-label="50% 50% 50% 50% / 40%"
-				/>
-				<g id="text1113" style={`fill:${value};`} aria-label="40% 60% 60%" />
-				<g id="text1117" style={`fill:${token};`} aria-label=";" />
-				<g id="text1121" style={`fill:${token};`} aria-label="}" />
-				<g id="text1125" style={`fill:${id};`} aria-label="#text" />
-				<g id="text1129" style={`fill:${token};`} aria-label="{" />
-				<g id="text1133" style={`fill:${keyword};`} aria-label="width" />
-				<g id="text1137" style={`fill:${token};`} aria-label=": " />
-				<g id="text1141" style={`fill:${value};`} aria-label="100vw" />
-				<g id="text1145" style={`fill:${token};`} aria-label=";" />
-				<g id="text1149" style={`fill:${keyword};`} aria-label="height" />
-				<g id="text1153" style={`fill:${token};`} aria-label=": " />
-				<g id="text1157" style={`fill:${value};`} aria-label="100vw" />
-				<g id="text1161" style={`fill:${token};`} aria-label="; " />
-				<g id="text1165" style={`fill:${keyword};`} aria-label="text-align" />
-				<g id="text1169" style={`fill:${token};`} aria-label=": " />
-				<g id="text1173" style={`fill:${value};`} aria-label="center" />
-				<g id="text1177" style={`fill:${token};`} aria-label=";" />
-				<g id="text1181" style={`fill:${keyword};`} aria-label="background" />
-				<g id="text1185" style={`fill:${token};`} aria-label=": " />
-				<g id="text1189" style={`fill:${value};`} aria-label="#b2b2b2" />
-				<g id="text1193" style={`fill:${token};`} aria-label="; " />
-				<g id="text1197" style={`fill:${keyword};`} aria-label="font-family" />
-				<g id="text1201" style={`fill:${token};`} aria-label=":" />
+				<g id="text1001" style={`fill:${token};`} />
+				<g id="text1005" style={`fill:${keyword};`} />
+				<g id="text1009" style={`fill:${token};`} />
+				<g id="text1013" style={`fill:${value};`} />
+				<g id="text1017" style={`fill:${token};`} />
+				<g id="text1021" style={`fill:${keyword};`} />
+				<g id="text1025" style={`fill:${token};`} />
+				<g id="text1029" style={`fill:${value};`} />
+				<g id="text1033" style={`fill:${token};`} />
+				<g id="text1037" style={`fill:${keyword};`} />
+				<g id="text1041" style={`fill:${token};`} />
+				<g id="text1045" style={`fill:${value};`} />
+				<g id="text1049" style={`fill:${token};`} />
+				<g id="text1053" style={`fill:${keyword};`} />
+				<g id="text1057" style={`fill:${token};`} />
+				<g id="text1061" style={`fill:${value};`} />
+				<g id="text1065" style={`fill:${token};`} />
+				<g id="text1069" style={`fill:${keyword};`} />
+				<g id="text1073" style={`fill:${token};`} />
+				<g id="text1077" style={`fill:${value};`} />
+				<g id="text1081" style={`fill:${token};`} />
+				<g id="text1085" style={`fill:${keyword};`} />
+				<g id="text1089" style={`fill:${token};`} />
+				<g id="text1093" style={`fill:${value};`} />
+				<g id="text1097" style={`fill:${token};`} />
+				<g id="text1101" style={`fill:${keyword};`} />
+				<g id="text1105" style={`fill:${token};`} />
+				<g id="text1109" style={`fill:${value};`} />
+				<g id="text1113" style={`fill:${value};`} />
+				<g id="text1117" style={`fill:${token};`} />
+				<g id="text1121" style={`fill:${token};`} />
+				<g id="text1125" style={`fill:${id};`} />
+				<g id="text1129" style={`fill:${token};`} />
+				<g id="text1133" style={`fill:${keyword};`} />
+				<g id="text1137" style={`fill:${token};`} />
+				<g id="text1141" style={`fill:${value};`} />
+				<g id="text1145" style={`fill:${token};`} />
+				<g id="text1149" style={`fill:${keyword};`} />
+				<g id="text1153" style={`fill:${token};`} />
+				<g id="text1157" style={`fill:${value};`} />
+				<g id="text1161" style={`fill:${token};`} />
+				<g id="text1165" style={`fill:${keyword};`} />
+				<g id="text1169" style={`fill:${token};`} />
+				<g id="text1173" style={`fill:${value};`} />
+				<g id="text1177" style={`fill:${token};`} />
+				<g id="text1181" style={`fill:${keyword};`} />
+				<g id="text1185" style={`fill:${token};`} />
+				<g id="text1189" style={`fill:${value};`} />
+				<g id="text1193" style={`fill:${token};`} />
+				<g id="text1197" style={`fill:${keyword};`} />
+				<g id="text1201" style={`fill:${token};`} />
 				<g
 					id="text1205"
 					style={`fill:${value};`}
 					aria-label='"Roboto Mono", monospace'
 				/>
-				<g id="text1209" style={`fill:${token};`} aria-label="; " />
-				<g id="text1213" style={`fill:${keyword};`} aria-label="font-size" />
-				<g id="text1217" style={`fill:${token};`} aria-label=":" />
-				<g id="text1221" style={`fill:${value};`} aria-label="4.5vw" />
-				<g id="text1225" style={`fill:${token};`} aria-label="; " />
-				<g id="text1233" style={`fill:${token};`} aria-label=": " />
-				<g id="text1237" style={`fill:${value};`} aria-label="1.44" />
-				<g id="text1241" style={`fill:${token};`} aria-label=";" />
-				<g id="text1245" style={`fill:${token};`} aria-label="}" />
+				<g id="text1209" style={`fill:${token};`} />
+				<g id="text1213" style={`fill:${keyword};`} />
+				<g id="text1217" style={`fill:${token};`} />
+				<g id="text1221" style={`fill:${value};`} />
+				<g id="text1225" style={`fill:${token};`} />
+				<g id="text1233" style={`fill:${token};`} />
+				<g id="text1237" style={`fill:${value};`} />
+				<g id="text1241" style={`fill:${token};`} />
+				<g id="text1245" style={`fill:${token};`} />
 			</g>
 			<g
 				clip-path="url(#clipPath8896)"
 				id="text1229"
 				style={`fill:${keyword}`}
-				aria-label="line-height"
 				transform="matrix(0.31999998,0,0,0.31999998,-61.267314,-50.576708)"
 			>
 				<g id="g5296">
@@ -2461,119 +2440,111 @@ export const Logo = ({
 				id="g7931"
 				style={`fill:${token}`}
 			>
-				<g id="g7729" style={`fill:${token}`} aria-label="#hair" />
-				<g id="g7731" style={`fill:${token}`} aria-label="{" />
-				<g id="g7733" style={`fill:${token}`} aria-label="position" />
-				<g id="g7735" style={`fill:${token}`} aria-label=": " />
-				<g id="g7737" style={`fill:${token}`} aria-label="absolute" />
-				<g id="g7739" style={`fill:${token}`} aria-label="; " />
-				<g id="g7741" style={`fill:${token}`} aria-label="top" />
-				<g id="g7743" style={`fill:${token}`} aria-label=": " />
-				<g id="g7745" style={`fill:${token}`} aria-label="0vw" />
-				<g id="g7747" style={`fill:${token}`} aria-label=";" />
-				<g id="g7749" style={`fill:${token}`} aria-label="left" />
-				<g id="g7751" style={`fill:${token}`} aria-label=": " />
-				<g id="g7753" style={`fill:${token}`} aria-label="0vw" />
-				<g id="g7755" style={`fill:${token}`} aria-label="; " />
-				<g id="g7757" style={`fill:${token}`} aria-label="width" />
-				<g id="g7759" style={`fill:${token}`} aria-label=": " />
-				<g id="g7761" style={`fill:${token}`} aria-label="100vw" />
-				<g id="g7763" style={`fill:${token}`} aria-label="; " />
-				<g id="g7765" style={`fill:${token}`} aria-label="height" />
-				<g id="g7767" style={`fill:${token}`} aria-label=":" />
-				<g id="g7769" style={`fill:${token}`} aria-label="100vw" />
-				<g id="g7771" style={`fill:${token}`} aria-label=";" />
-				<g id="g7773" style={`fill:${token}`} aria-label="background-image" />
-				<g id="g7775" style={`fill:${token}`} aria-label=":" />
-				<g id="g7777" style={`fill:${token}`} aria-label="url" />
-				<g id="g7779" style={`fill:${token}`} aria-label="(" />
-				<g
-					id="g7781"
-					style={`fill:${token}`}
-					aria-label="../images/tech-women-norway.png"
-				/>
-				<g id="g7783" style={`fill:${token}`} aria-label=")" />
-				<g id="g7785" style={`fill:${token}`} aria-label=";" />
-				<g id="g7787" style={`fill:${token}`} aria-label="background-size" />
-				<g id="g7789" style={`fill:${token}`} aria-label=": " />
-				<g id="g7791" style={`fill:${token}`} aria-label="100%" />
-				<g id="g7793" style={`fill:${token}`} aria-label=";" />
-				<g id="g7795" style={`fill:${token}`} aria-label="}" />
-				<g id="g7797" style={`fill:${token}`} aria-label="#hair" />
-				<g id="g7799" style={`fill:${token}`} aria-label="::before" />
-				<g id="g7801" style={`fill:${token}`} aria-label="{" />
-				<g id="g7803" style={`fill:${token}`} aria-label="content" />
-				<g id="g7805" style={`fill:${token}`} aria-label=": " />
+				<g id="g7729" style={`fill:${token}`} />
+				<g id="g7731" style={`fill:${token}`} />
+				<g id="g7733" style={`fill:${token}`} />
+				<g id="g7735" style={`fill:${token}`} />
+				<g id="g7737" style={`fill:${token}`} />
+				<g id="g7739" style={`fill:${token}`} />
+				<g id="g7741" style={`fill:${token}`} />
+				<g id="g7743" style={`fill:${token}`} />
+				<g id="g7745" style={`fill:${token}`} />
+				<g id="g7747" style={`fill:${token}`} />
+				<g id="g7749" style={`fill:${token}`} />
+				<g id="g7751" style={`fill:${token}`} />
+				<g id="g7753" style={`fill:${token}`} />
+				<g id="g7755" style={`fill:${token}`} />
+				<g id="g7757" style={`fill:${token}`} />
+				<g id="g7759" style={`fill:${token}`} />
+				<g id="g7761" style={`fill:${token}`} />
+				<g id="g7763" style={`fill:${token}`} />
+				<g id="g7765" style={`fill:${token}`} />
+				<g id="g7767" style={`fill:${token}`} />
+				<g id="g7769" style={`fill:${token}`} />
+				<g id="g7771" style={`fill:${token}`} />
+				<g id="g7773" style={`fill:${token}`} />
+				<g id="g7775" style={`fill:${token}`} />
+				<g id="g7777" style={`fill:${token}`} />
+				<g id="g7779" style={`fill:${token}`} />
+				<g id="g7781" style={`fill:${token}`} />
+				<g id="g7783" style={`fill:${token}`} />
+				<g id="g7785" style={`fill:${token}`} />
+				<g id="g7787" style={`fill:${token}`} />
+				<g id="g7789" style={`fill:${token}`} />
+				<g id="g7791" style={`fill:${token}`} />
+				<g id="g7793" style={`fill:${token}`} />
+				<g id="g7795" style={`fill:${token}`} />
+				<g id="g7797" style={`fill:${token}`} />
+				<g id="g7799" style={`fill:${token}`} />
+				<g id="g7801" style={`fill:${token}`} />
+				<g id="g7803" style={`fill:${token}`} />
+				<g id="g7805" style={`fill:${token}`} />
 				<g id="g7807" style={`fill:${token}`} aria-label='""' />
-				<g id="g7809" style={`fill:${token}`} aria-label="; " />
-				<g id="g7811" style={`fill:${token}`} aria-label="position" />
-				<g id="g7813" style={`fill:${token}`} aria-label=": " />
-				<g id="g7815" style={`fill:${token}`} aria-label="absolute" />
-				<g id="g7817" style={`fill:${token}`} aria-label=";" />
-				<g id="g7819" style={`fill:${token}`} aria-label="top" />
-				<g id="g7821" style={`fill:${token}`} aria-label=": " />
-				<g id="g7823" style={`fill:${token}`} aria-label="25vw" />
-				<g id="g7825" style={`fill:${token}`} aria-label="; " />
-				<g id="g7827" style={`fill:${token}`} aria-label="left" />
-				<g id="g7829" style={`fill:${token}`} aria-label=": " />
-				<g id="g7831" style={`fill:${token}`} aria-label="24vw" />
-				<g id="g7833" style={`fill:${token}`} aria-label="; " />
-				<g id="g7835" style={`fill:${token}`} aria-label="width" />
-				<g id="g7837" style={`fill:${token}`} aria-label=": " />
-				<g id="g7839" style={`fill:${token}`} aria-label="52vw" />
-				<g id="g7841" style={`fill:${token}`} aria-label=";" />
-				<g id="g7843" style={`fill:${token}`} aria-label="height" />
-				<g id="g7845" style={`fill:${token}`} aria-label=": " />
-				<g id="g7847" style={`fill:${token}`} aria-label="57vw" />
-				<g id="g7849" style={`fill:${token}`} aria-label="; " />
-				<g id="g7851" style={`fill:${token}`} aria-label="background" />
-				<g id="g7853" style={`fill:${token}`} aria-label=": " />
-				<g id="g7855" style={`fill:${token}`} aria-label="#000000" />
-				<g id="g7857" style={`fill:${token}`} aria-label=";" />
-				<g id="g7859" style={`fill:${token}`} aria-label="border-radius" />
-				<g id="g7861" style={`fill:${token}`} aria-label=": " />
-				<g
-					id="g7863"
-					style={`fill:${token}`}
-					aria-label="50% 50% 50% 50% / 40%"
-				/>
-				<g id="g7865" style={`fill:${token}`} aria-label="40% 60% 60%" />
-				<g id="g7867" style={`fill:${token}`} aria-label=";" />
-				<g id="g7869" style={`fill:${token}`} aria-label="}" />
-				<g id="g7871" style={`fill:${token}`} aria-label="#text" />
-				<g id="g7873" style={`fill:${token}`} aria-label="{" />
-				<g id="g7875" style={`fill:${token}`} aria-label="width" />
-				<g id="g7877" style={`fill:${token}`} aria-label=": " />
-				<g id="g7879" style={`fill:${token}`} aria-label="100vw" />
-				<g id="g7881" style={`fill:${token}`} aria-label=";" />
-				<g id="g7883" style={`fill:${token}`} aria-label="height" />
-				<g id="g7885" style={`fill:${token}`} aria-label=": " />
-				<g id="g7887" style={`fill:${token}`} aria-label="100vw" />
-				<g id="g7889" style={`fill:${token}`} aria-label="; " />
-				<g id="g7891" style={`fill:${token}`} aria-label="text-align" />
-				<g id="g7893" style={`fill:${token}`} aria-label=": " />
-				<g id="g7895" style={`fill:${token}`} aria-label="center" />
-				<g id="g7897" style={`fill:${token}`} aria-label=";" />
-				<g id="g7899" style={`fill:${token}`} aria-label="background" />
-				<g id="g7901" style={`fill:${token}`} aria-label=": " />
-				<g id="g7903" style={`fill:${token}`} aria-label="#b2b2b2" />
-				<g id="g7905" style={`fill:${token}`} aria-label="; " />
-				<g id="g7907" style={`fill:${token}`} aria-label="font-family" />
-				<g id="g7909" style={`fill:${token}`} aria-label=":" />
+				<g id="g7809" style={`fill:${token}`} />
+				<g id="g7811" style={`fill:${token}`} />
+				<g id="g7813" style={`fill:${token}`} />
+				<g id="g7815" style={`fill:${token}`} />
+				<g id="g7817" style={`fill:${token}`} />
+				<g id="g7819" style={`fill:${token}`} />
+				<g id="g7821" style={`fill:${token}`} />
+				<g id="g7823" style={`fill:${token}`} />
+				<g id="g7825" style={`fill:${token}`} />
+				<g id="g7827" style={`fill:${token}`} />
+				<g id="g7829" style={`fill:${token}`} />
+				<g id="g7831" style={`fill:${token}`} />
+				<g id="g7833" style={`fill:${token}`} />
+				<g id="g7835" style={`fill:${token}`} />
+				<g id="g7837" style={`fill:${token}`} />
+				<g id="g7839" style={`fill:${token}`} />
+				<g id="g7841" style={`fill:${token}`} />
+				<g id="g7843" style={`fill:${token}`} />
+				<g id="g7845" style={`fill:${token}`} />
+				<g id="g7847" style={`fill:${token}`} />
+				<g id="g7849" style={`fill:${token}`} />
+				<g id="g7851" style={`fill:${token}`} />
+				<g id="g7853" style={`fill:${token}`} />
+				<g id="g7855" style={`fill:${token}`} />
+				<g id="g7857" style={`fill:${token}`} />
+				<g id="g7859" style={`fill:${token}`} />
+				<g id="g7861" style={`fill:${token}`} />
+				<g id="g7863" style={`fill:${token}`} />
+				<g id="g7865" style={`fill:${token}`} />
+				<g id="g7867" style={`fill:${token}`} />
+				<g id="g7869" style={`fill:${token}`} />
+				<g id="g7871" style={`fill:${token}`} />
+				<g id="g7873" style={`fill:${token}`} />
+				<g id="g7875" style={`fill:${token}`} />
+				<g id="g7877" style={`fill:${token}`} />
+				<g id="g7879" style={`fill:${token}`} />
+				<g id="g7881" style={`fill:${token}`} />
+				<g id="g7883" style={`fill:${token}`} />
+				<g id="g7885" style={`fill:${token}`} />
+				<g id="g7887" style={`fill:${token}`} />
+				<g id="g7889" style={`fill:${token}`} />
+				<g id="g7891" style={`fill:${token}`} />
+				<g id="g7893" style={`fill:${token}`} />
+				<g id="g7895" style={`fill:${token}`} />
+				<g id="g7897" style={`fill:${token}`} />
+				<g id="g7899" style={`fill:${token}`} />
+				<g id="g7901" style={`fill:${token}`} />
+				<g id="g7903" style={`fill:${token}`} />
+				<g id="g7905" style={`fill:${token}`} />
+				<g id="g7907" style={`fill:${token}`} />
+				<g id="g7909" style={`fill:${token}`} />
 				<g
 					id="g7911"
 					style={`fill:${token}`}
 					aria-label='"Roboto Mono", monospace'
 				/>
-				<g id="g7913" style={`fill:${token}`} aria-label="; " />
-				<g id="g7915" style={`fill:${token}`} aria-label="font-size" />
-				<g id="g7917" style={`fill:${token}`} aria-label=":" />
-				<g id="g7919" style={`fill:${token}`} aria-label="4.5vw" />
-				<g id="g7921" style={`fill:${token}`} aria-label="; " />
-				<g id="g7923" style={`fill:${token}`} aria-label=": " />
-				<g id="g7925" style={`fill:${token}`} aria-label="1.44" />
-				<g id="g7927" style={`fill:${token}`} aria-label=";" />
-				<g id="g7929" style={`fill:${token}`} aria-label="}" />
+				<g id="g7913" style={`fill:${token}`} />
+				<g id="g7915" style={`fill:${token}`} />
+				<g id="g7917" style={`fill:${token}`} />
+				<g id="g7919" style={`fill:${token}`} />
+				<g id="g7921" style={`fill:${token}`} />
+				<g id="g7923" style={`fill:${token}`} />
+				<g id="g7925" style={`fill:${token}`} />
+				<g id="g7927" style={`fill:${token}`} />
+				<g id="g7929" style={`fill:${token}`} />
 			</g>
 		</svg>
 	)

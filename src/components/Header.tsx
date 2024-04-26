@@ -81,7 +81,7 @@ export const Header = ({ small }: { small?: true }) => {
 			(el.clientHeight / 100) * 100 * (window.devicePixelRatio ?? 1),
 		)
 		setSize([w, h])
-	}, [bgEl])
+	}, [])
 
 	useEffect(() => {
 		const i = setInterval(() => {

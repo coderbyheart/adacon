@@ -106,7 +106,7 @@ export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 
 						<ul class="nav nav-pills d-none d-lg-flex">
 							{navItems.map(([link, title, button]) => (
-								<li class="nav-item">
+								<li class="nav-item" key={link}>
 									<a
 										class={button === true ? 'btn btn-primary' : 'nav-link'}
 										aria-current="page"
@@ -138,8 +138,7 @@ export const HeaderNav = ({ transparent }: { transparent?: boolean }) => {
 						<div class="container">
 							<ul class="nav flex-column">
 								{navItems.map(([link, title, button]) => (
-									<li class="nav-item">
-										{/* rome-ignore lint/a11y/useValidAnchor: needs to close the overlay */}
+									<li class="nav-item" key={link}>
 										<a
 											class={
 												button === true

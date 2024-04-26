@@ -26,7 +26,7 @@ export const Speaker = ({ speaker }: { speaker: TSpeaker }) => (
 					<div class="col-lg-6 mx-auto mb-4 mb-lg-0">
 						<div
 							class="markdown"
-							// rome-ignore lint/security/noDangerouslySetInnerHtml: needed here
+							// biome-ignore lint/security/noDangerouslySetInnerHtml: needed here
 							dangerouslySetInnerHTML={{
 								__html: speaker.html,
 							}}

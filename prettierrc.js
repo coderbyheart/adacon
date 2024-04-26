@@ -1,3 +1,4 @@
+// biome-ignore lint/style/noDefaultExport: needed by prettier
 export default {
 	printWidth: 80,
 	endOfLine: 'lf',

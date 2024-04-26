@@ -10,7 +10,7 @@ export type PageMeta = {
 	lang?: string
 }
 
-export const render = async (
+export const render = (
 	pageContext: PageContextCustom<Record<string, unknown>>,
 ) => {
 	const { Page, pageProps } = pageContext

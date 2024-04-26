@@ -14,7 +14,7 @@ export const SpeakersGallery = ({ speakers }: { speakers: Speaker[] }) => (
 					(p2 === undefined ? -1 : 1) - (p1 === undefined ? -1 : 1),
 			)
 			.map((speaker) => (
-				<SpeakerCard speaker={speaker} />
+				<SpeakerCard speaker={speaker} key={speaker.slug} />
 			))}
 	</section>
 )
@@ -41,7 +41,7 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
 			)}
 			<div
 				class="markdown"
-				// rome-ignore lint/security/noDangerouslySetInnerHtml: needed here
+				// biome-ignore lint/security/noDangerouslySetInnerHtml: needed here
 				dangerouslySetInnerHTML={{
 					__html: speaker.html,
 				}}

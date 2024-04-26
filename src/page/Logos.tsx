@@ -107,6 +107,7 @@ export const Logos = () => {
 										resource={resource}
 										id={id}
 										class="small"
+										key={id}
 									/>
 								))}
 						</div>

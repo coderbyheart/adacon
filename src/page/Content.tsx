@@ -21,7 +21,7 @@ export const Content = ({ page }: { page: Page }) => (
 				<div class="row">
 					<div
 						class="col-lg-8 mx-auto markdown"
-						// rome-ignore lint/security/noDangerouslySetInnerHtml: Needed
+						// biome-ignore lint/security/noDangerouslySetInnerHtml: Needed
 						dangerouslySetInnerHTML={{
 							__html: page.html,
 						}}

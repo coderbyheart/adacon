@@ -40,7 +40,7 @@ export const Start = ({
 					<div class="row">
 						<div
 							class="col-lg-8 mx-auto markdown"
-							// rome-ignore lint/security/noDangerouslySetInnerHtml: needed here
+							// biome-ignore lint/security/noDangerouslySetInnerHtml: needed here
 							dangerouslySetInnerHTML={{
 								__html: page.html,
 							}}

@@ -1,3 +1,5 @@
+import type React from 'react'
+
 export const Mastodon = ({ style }: { style?: React.CSSProperties }) => (
 	<svg
 		width="61.076954mm"

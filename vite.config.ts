@@ -4,6 +4,7 @@ import ssr from 'vite-plugin-ssr/plugin'
 import { homepage, version } from './siteInfo'
 
 // https://vitejs.dev/config/
+// biome-ignore lint/style/noDefaultExport: needed by vite
 export default defineConfig({
 	plugins: [
 		preact(),

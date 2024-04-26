@@ -56,7 +56,7 @@ export const Previously = ({ speakers }: { speakers: Speaker[] }) => {
 				<div class="row">
 					<div class="py-lg-5 speakers previously">
 						{speakers2023.map((speaker) => (
-							<SpeakerCard speaker={speaker} />
+							<SpeakerCard speaker={speaker} key={speaker.slug} />
 						))}
 					</div>
 				</div>

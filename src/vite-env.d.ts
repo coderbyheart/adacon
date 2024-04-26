@@ -4,7 +4,6 @@ declare const VERSION: string
 declare const HOMEPAGE: string
 declare const BUILD_TIME: string
 
-// rome-ignore lint/correctness/noUnusedVariables: defines global type
 interface ImportMeta {
 	readonly env: ImportMetaEnv
 }
