@@ -49,8 +49,8 @@
 		"*.{json,ts,tsx}": ["npx rome format --write", "npx rome lint"]
 	},
 	"engines": {
-		"node": ">=18.0.0",
-		"npm": ">=9.0.0"
+		"node": ">=20",
+		"npm": ">=9"
 	},
 	"release": {
 		"branches": ["saga"],
