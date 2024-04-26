@@ -51,7 +51,7 @@ export const SpeakerInfo = ({
 						<ul>
 							{talks.map((talk) => (
 								<li key={talk.slug}>
-									<a href={`/talk/${talk.slug}`}>{talk.title}</a>
+									<a href={`./talk/${talk.slug}`}>{talk.title}</a>
 								</li>
 							))}
 						</ul>
