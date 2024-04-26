@@ -1,4 +1,4 @@
-import type { Speaker } from '../../pages/content.page.server'
+import type { Speaker } from '../../pages/content/+onBeforeRender'
 import { SpeakerPhotoPlaceholder } from './SpeakerPhotoPlaceholder'
 import { SpeakerPhoto } from './SpeakerPhoto'
 

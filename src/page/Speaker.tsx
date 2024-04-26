@@ -2,7 +2,7 @@ import { Footer } from '#components/Footer'
 import { Header } from '#components/Header'
 import { HeaderNav } from '#components/HeaderNav'
 import { AtSign, Blocks, Github, Home, Linkedin, Twitter } from 'lucide-preact'
-import type { Speaker as TSpeaker } from '../../pages/content.page.server'
+import type { Speaker as TSpeaker } from '../../pages/content/+onBeforeRender'
 import './Speaker.css'
 import { Mastodon } from '#components/Mastodon'
 

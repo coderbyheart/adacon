@@ -1,5 +1,5 @@
 import { AtSign, Github, Home, Linkedin, MoveRight } from 'lucide-preact'
-import type { Speaker } from '../../pages/content.page.server'
+import type { Speaker } from '../../pages/content/+onBeforeRender'
 import { SpeakerPhoto } from './SpeakerPhoto'
 import { SpeakerPhotoPlaceholder } from './SpeakerPhotoPlaceholder'
 import { Mastodon } from './Mastodon'

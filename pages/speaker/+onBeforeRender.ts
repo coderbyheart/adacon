@@ -1,9 +1,9 @@
 import { readdir } from 'node:fs/promises'
 import path from 'node:path'
-import { loadMarkdownContent } from './loadMarkdownContent.js'
-import type { Speaker } from './content.page.server.js'
+import { loadMarkdownContent } from '../loadMarkdownContent.js'
+import type { Speaker } from '../content/+onBeforeRender.js'
 import type { Page } from '#context/Pages.js'
-import type { PageMeta } from '../renderer/_default.page.server.js'
+import type { PageMeta } from '../../renderer/+onRenderHtml.js'
 
 export type SpeakerPageProps = { speaker: Speaker; pages: Page[] }
 

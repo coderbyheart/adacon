@@ -1,4 +1,4 @@
-import type { Host, Speaker } from '../../pages/content.page.server'
+import type { Host, Speaker } from '../../pages/content/+onBeforeRender'
 import './Speakers.css'
 import { SpeakerCard } from './SpeakerCard'
 import { speakersByYear } from '../speakersByYear'

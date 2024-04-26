@@ -1,4 +1,4 @@
-import type { Speaker } from '../pages/content.page.server'
+import type { Speaker } from '../pages/content/+onBeforeRender'
 
 export const speakersByYear = (speakers: Speaker[], year: number) =>
 	speakers

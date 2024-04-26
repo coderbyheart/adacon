@@ -2,7 +2,7 @@ import type { Page } from '#context/Pages'
 import {
 	onBeforeRender as contentOnBeforeRender,
 	type Speaker,
-} from './content.page.server'
+} from './content/+onBeforeRender'
 
 export type IndexPageProps = { pages: Page[]; page: Page; speakers: Speaker[] }
 

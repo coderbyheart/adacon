@@ -1,8 +1,8 @@
 import renderPreact from 'preact-render-to-string'
 import { ServerStyleSheet } from 'styled-components'
-import { dangerouslySkipEscape, escapeInject } from 'vite-plugin-ssr/server'
-import { version } from '../siteInfo'
-import type { PageContextCustom } from './_default.page.client'
+import { dangerouslySkipEscape, escapeInject } from 'vike/server'
+import { version } from '../siteInfo.js'
+import type { PageContextCustom } from './+onRenderClient.js'
 import { Con } from '../src/con.js'
 
 export type PageMeta = {
@@ -10,7 +10,7 @@ export type PageMeta = {
 	lang?: string
 }
 
-export const render = (
+export const onRenderHtml = (
 	pageContext: PageContextCustom<Record<string, unknown>>,
 ) => {
 	const { Page, pageProps } = pageContext

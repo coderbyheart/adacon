@@ -1,8 +1,8 @@
 import type { Page } from '#context/Pages'
 import { readdir } from 'node:fs/promises'
 import path from 'node:path'
-import { loadMarkdownContent } from './loadMarkdownContent'
-import type { PageMeta } from '../renderer/_default.page.server'
+import { loadMarkdownContent } from '../loadMarkdownContent'
+import type { PageMeta } from '../../renderer/+onRenderHtml'
 
 export type Speaker = {
 	name: string

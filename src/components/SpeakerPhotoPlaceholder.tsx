@@ -1,8 +1,8 @@
-import type { Speaker } from '../../pages/content.page.server'
+import type { Speaker } from '../../pages/content/+onBeforeRender'
 
 export const SpeakerPhotoPlaceholder = ({ speaker }: { speaker: Speaker }) => (
 	<img
-		src="/static/ada.svg"
+		src="./static/ada.svg"
 		width="500"
 		height="500"
 		class="p-4"

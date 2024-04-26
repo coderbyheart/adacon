@@ -1,6 +1,6 @@
 import { ViewportObserver } from 'preact-intersection-observer'
 import { useEffect, useState } from 'preact/hooks'
-import type { Speaker } from '../../pages/content.page.server'
+import type { Speaker } from '../../pages/content/+onBeforeRender'
 import { SpeakerPhotoPlaceholder } from './SpeakerPhotoPlaceholder'
 
 export const SpeakerPhoto = ({ speaker }: { speaker: Speaker }) => {

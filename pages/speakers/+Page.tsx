@@ -1,5 +1,5 @@
 import { SpeakersGallery } from '#components/SpeakersGallery'
-import type { IndexPageProps } from './index.page.server'
+import type { IndexPageProps } from '../+onBeforeRender'
 
 export const Page = ({ speakers }: IndexPageProps) => (
 	<SpeakersGallery speakers={speakers} />

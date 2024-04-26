@@ -11,7 +11,7 @@ import { Sponsors } from '#components/Sponsors'
 import { Tickets } from '#components/Tickets'
 import { useCountdown } from '#context/ConfCountdown'
 import type { Page } from '#context/Pages'
-import type { Speaker } from '../../pages/content.page.server'
+import type { Speaker } from '../../pages/content/+onBeforeRender'
 
 export const Start = ({
 	page,

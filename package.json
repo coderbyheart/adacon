@@ -35,8 +35,8 @@
 		"remark-frontmatter": "5.0.0",
 		"remark-rehype": "11.1.0",
 		"typescript": "5.4.5",
+		"vike": "0.4.171",
 		"vite": "5.2.10",
-		"vite-plugin-ssr": "0.4.142",
 		"yaml": "2.4.1"
 	},
 	"husky": {

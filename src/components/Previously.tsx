@@ -1,6 +1,6 @@
 import { ViewportObserver } from 'preact-intersection-observer'
 import { EmbedYouTubeVideo } from './EmbedYouTubeVideo'
-import type { Speaker } from '../../pages/content.page.server'
+import type { Speaker } from '../../pages/content/+onBeforeRender'
 import { speakersByYear } from '../speakersByYear.js'
 import './Speakers.css'
 import { SpeakerCard } from './SpeakerCard'
