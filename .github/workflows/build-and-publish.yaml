@@ -57,26 +57,9 @@ jobs:
         continue-on-error: true
         run: npx semantic-release
 
-      - name: Archive artifact
-        shell: sh
-        run: |
-          chmod -c -R +rX build/client | while read line; do
-            echo "::warning title=Invalid file permissions automatically fixed::$line"
-          done
-          tar \
-            --dereference --hard-dereference \
-            --directory build/client \
-            -cvf "$RUNNER_TEMP/artifact.tar" \
-            --exclude=.git \
-            --exclude=.github \
-            .
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@main
+      - uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
-          path: ${{ runner.temp }}/artifact.tar
-          retention-days: 1
+          path: ./build/client
 
   deploy:
     needs: build
@@ -93,4 +76,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
