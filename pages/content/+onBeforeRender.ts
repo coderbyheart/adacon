@@ -1,6 +1,4 @@
 import type { Page } from '#context/Pages'
-import { readdir } from 'node:fs/promises'
-import path from 'node:path'
 import { loadMarkdownContent } from '../loadMarkdownContent'
 import type { PageMeta } from '../../renderer/+onRenderHtml'
 
@@ -64,9 +62,3 @@ export const onBeforeRender = async (args: {
 		},
 	}
 }
-
-export const prerender = async (): Promise<string[]> =>
-	(await readdir(path.join(process.cwd(), 'content')))
-		.filter((s) => s.endsWith('.md') && s !== 'index.md')
-		.map((s) => s.replace(/\.md$/, ''))
-		.map((slug) => `/${slug}`)

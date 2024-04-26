@@ -14,5 +14,3 @@ export const onBeforeRender = async (): Promise<{
 			slug: 'index',
 		},
 	})
-
-export const prerender = (): string[] => ['/']
