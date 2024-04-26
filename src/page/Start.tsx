@@ -12,6 +12,7 @@ import { Tickets } from '#components/Tickets'
 import { useCountdown } from '#context/ConfCountdown'
 import type { Page } from '#context/Pages'
 import type { Speaker } from '../../pages/content/+onBeforeRender'
+import { Con } from '../con.js'
 
 export const Start = ({
 	page,
@@ -21,12 +22,17 @@ export const Start = ({
 	speakers: Speaker[]
 }) => {
 	const { hasStarted } = useCountdown()
+	const isNextDay =
+		new Date()
+			.toISOString()
+			.slice(0, 10)
+			.localeCompare(Con.date.toISOString().slice(0, 10)) > 0
 
 	return (
 		<>
 			<HeaderNav transparent={true} />
 			<Header />
-			{hasStarted && <LiveUpdates />}
+			{hasStarted && !isNextDay && <LiveUpdates />}
 			<div id="about">
 				<ConfStats />
 			</div>
