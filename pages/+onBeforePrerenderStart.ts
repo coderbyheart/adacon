@@ -1,1 +1,0 @@
-export const onBeforePrerenderStart = (): string[] => ['/']
