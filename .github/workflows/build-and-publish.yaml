@@ -54,7 +54,7 @@ jobs:
           cp -v -L -r ./static ./build/client
 
       - name: Semantic release
-        continue-on-error: true
+        if: github.ref == 'refs/heads/saga'
         run: npx semantic-release
 
       - uses: actions/upload-pages-artifact@v3
