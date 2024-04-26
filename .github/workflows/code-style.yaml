@@ -2,7 +2,7 @@ name: Ensure source code is properly formatted
 
 on:
   push:
-    branches: [saga]
+    branches: [2024]
 
 permissions:
   contents: write

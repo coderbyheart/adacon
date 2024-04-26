@@ -3,7 +3,7 @@ name: Build and Release
 on:
   push:
     branches:
-      - saga
+      - 2024
 
 permissions:
   id-token: write
@@ -42,7 +42,7 @@ jobs:
         uses: nordicsemiconductor/cloud-get-next-version-action@saga
         id: version
         with:
-          branch: saga
+          branch: 2024
           defaultVersion: "${{ env.currentRelease }}-${{ github.sha }}"
 
       - name: Build
