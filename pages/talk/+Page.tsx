@@ -1,12 +1,12 @@
 import { Provider as CountdownProvider } from '#context/ConfCountdown'
 import { Provider as PagesProvider } from '#context/Pages'
-import { Speaker } from '#page/Speaker'
-import type { SpeakerPageProps } from './+onBeforeRender'
+import { Talk } from '#page/Talk'
+import type { TalkPageProps } from './+onBeforeRender'
 
-export const Page = ({ speaker, pages, talks }: SpeakerPageProps) => (
+export const Page = ({ talk, speaker, pages, talks }: TalkPageProps) => (
 	<PagesProvider pages={pages}>
 		<CountdownProvider>
-			<Speaker speaker={speaker} talks={talks} />
+			<Talk talk={talk} speaker={speaker} talks={talks} />
 		</CountdownProvider>
 	</PagesProvider>
 )

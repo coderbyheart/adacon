@@ -11,9 +11,3 @@ Merethe has been a developer for 18 years, and has a master's degree in Computer
 She won the female developer of the year 2022 award for her creation of Robi, a game for teaching programming to kids. It is now a part of Gyldendal's digital math resources.
 
 In her spare time she likes playing and creating games, and is currently busy designing a new board game.
-
-## Futureproof your frontends
-
-Technical debt is constantly hunting us. Until our code is so outdated or heavy to work with that we want to start over.
-
-In this presentation I will give you some pointers on how to make your frontend code more robust and potentially increase its lifespan. While we cannot foresee the future, we can draw valuable lessons from the past.

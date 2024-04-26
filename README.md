@@ -6,7 +6,7 @@
 
 Website for the AdaCon built using [Vite](https://vitejs.dev/),
 [Bootstrap 5.2](https://getbootstrap.com/docs/5.2/getting-started/introduction/),
-[Lucide](https://lucide.dev/), [vite-plugin-ssr](https://vite-plugin-ssr.com/),
+[Lucide](https://lucide.dev/), [vike](https://vike.dev/),
 [GitHub Pages](https://docs.github.com/en/pages), and more.
 
 ## Setup
