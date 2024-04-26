@@ -27,7 +27,7 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
 		}}
 	>
 		<div>
-			<a href={`/speaker/${speaker.slug}`} class="text-decoration-none">
+			<a href={`./speaker/${speaker.slug}`} class="text-decoration-none">
 				{speaker.photo !== undefined && <SpeakerPhoto speaker={speaker} />}
 				{speaker.photo === undefined && (
 					<SpeakerPhotoPlaceholder speaker={speaker} />

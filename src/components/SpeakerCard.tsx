@@ -12,7 +12,7 @@ export const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
 		}}
 	>
 		<div>
-			<a href={`/speaker/${speaker.slug}`} class="text-decoration-none">
+			<a href={`./speaker/${speaker.slug}`} class="text-decoration-none">
 				{speaker.photo !== undefined && <SpeakerPhoto speaker={speaker} />}
 				{speaker.photo === undefined && (
 					<SpeakerPhotoPlaceholder speaker={speaker} />
@@ -28,7 +28,7 @@ export const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
 		<footer>
 			<div class="d-flex justify-content-between flex-row-reverse">
 				{speaker.html.length > 0 && (
-					<a href={`/speaker/${speaker.slug}`} class="text-decoration-none">
+					<a href={`./speaker/${speaker.slug}`} class="text-decoration-none">
 						Read more <MoveRight />
 					</a>
 				)}
