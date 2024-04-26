@@ -9,7 +9,10 @@ export const LiveStream = () => {
 				<div class="row">
 					<div class="col-md-8 offset-md-2 pt-4 pb-4">
 						<h2 class="fs-4 py-4">Live Stream</h2>
-						<EmbedYouTubeVideo video={Con.liveStream?.youtubeVideoId} />
+						<EmbedYouTubeVideo
+							video={Con.liveStream?.youtubeVideoId}
+							title="Live stream"
+						/>
 						{Con.liveStream?.vimeoId !== undefined && (
 							<p>
 								You can watch the live stream{' '}

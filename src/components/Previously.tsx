@@ -45,7 +45,7 @@ export const Previously = ({ speakers }: { speakers: Speaker[] }) => {
 				</div>
 				<div class="row pb-4">
 					<div class="col-lg-8 offset-lg-2">
-						<EmbedYouTubeVideo video="rt_eM_KRfK4" />
+						<EmbedYouTubeVideo video="rt_eM_KRfK4" title="Live Stream 2023" />
 					</div>
 				</div>
 				<div class="row">
