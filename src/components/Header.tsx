@@ -135,7 +135,7 @@ export const Header = ({ small }: { small?: true }) => {
 							{hasStarted && (
 								<>
 									<p class="fs-4 text-white fw-semibold">
-										Celebrating the people in the Norwegian Tech Scene.
+										Celebrating the Norwegian tech scene.
 									</p>
 									<p>
 										<a
@@ -158,7 +158,7 @@ export const Header = ({ small }: { small?: true }) => {
 										</a>
 									</p>
 									<p class="fs-4 text-white fw-semibold">
-										Celebrating the people in the Norwegian Tech Scene in:
+										Celebrating the Norwegian tech scene in:
 										<br />
 										<Countdown />
 									</p>

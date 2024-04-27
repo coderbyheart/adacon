@@ -1,9 +1,9 @@
 ---
-title: A yearly conference celebrating the people in Tech in Norway
+title: A yearly tech conference in Oslo, Norway
 ---
 
 AdaCon Norway is proud to announce the third AdaCon Norway,
-celebrating the people in the Norwegian tech scene.
+celebrating the Norwegian tech scene.
 
 AdaCon Norway aims to promote and empower under-indexed people in tech by
 showcasing a lineup of speakers from all backgrounds.

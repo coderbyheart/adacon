@@ -37,7 +37,7 @@ export const onRenderHtml = (
         </title>
         <meta
           name="description"
-          content="AdaCon Norway is a yearly conference celebrating underrepresented folks in Tech in Norway."
+          content="AdaCon Norway is a yearly tech conference celebrating the people in Tech in Norway."
         />
         <link
           rel="stylesheet"
