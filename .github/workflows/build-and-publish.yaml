@@ -48,7 +48,6 @@ jobs:
       - name: Build
         env:
           VERSION: ${{ steps.version.outputs.nextRelease }}
-          BASE_URL: /adacon/
         run: |
           npm run build
           cp -v -L -r ./static ./build/client
