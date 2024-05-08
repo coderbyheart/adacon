@@ -9,6 +9,7 @@ permissions:
   id-token: write
   contents: write
   issues: write
+  pages: write
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -53,26 +54,11 @@ jobs:
           cp -v -L -r ./static ./build/client
 
       - name: Semantic release
-        if: github.ref == 'refs/heads/saga'
         run: npx semantic-release
 
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./build/client
 
-  deploy:
-    needs: build
-
-    permissions:
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
