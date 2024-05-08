@@ -31,13 +31,13 @@ export const onRenderHtml = (
 					.toString()}" />
         <base href="${import.meta.env.BASE_URL}">
         <title>
-          AdaCon Norway 2023 in Oslo${
+          AdaCon Norway ${Con.date.getFullYear().toString()} in Oslo${
 						meta?.title !== undefined ? ` · ${meta.title}` : ''
 					}
         </title>
         <meta
           name="description"
-          content="AdaCon Norway is a yearly conference celebrating underrepresented folks in Tech in Norway."
+          content="AdaCon Norway is a yearly tech-conference that aims promote and empower underrepresented people in tech from Norway by showcasing a full lineup of speakers from all backgrounds."
         />
         <link
           rel="stylesheet"

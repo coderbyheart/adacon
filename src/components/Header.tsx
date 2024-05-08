@@ -134,9 +134,6 @@ export const Header = ({ small }: { small?: true }) => {
 						<div class="col-lg-6">
 							{hasStarted && (
 								<>
-									<p class="fs-4 text-white fw-semibold">
-										Celebrating the Diversity of the Norwegian Tech Scene.
-									</p>
 									<p>
 										<a
 											href="./#live"
@@ -158,7 +155,7 @@ export const Header = ({ small }: { small?: true }) => {
 										</a>
 									</p>
 									<p class="fs-4 text-white fw-semibold">
-										Celebrating the Diversity of the Norwegian Tech Scene in:
+										AdaCon Norway {Con.date.getFullYear().toString()} starts in:
 										<br />
 										<Countdown />
 									</p>

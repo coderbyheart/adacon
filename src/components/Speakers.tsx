@@ -41,7 +41,7 @@ export const Speakers = ({ speakers }: { speakers: Speaker[] }) => {
 								</p>
 								<p>
 									We plan a full day conference with talks and workshops. We are
-									looking for members of the tech scene in Norway that are
+									looking for members of the tech-scene in Norway that are
 									hands-on creators, builders, and makers of technology. We want
 									to see those who love to share about a topic or a project that
 									matters to them and that the audience will benefit from
