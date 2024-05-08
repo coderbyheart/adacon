@@ -6,8 +6,9 @@ title: Code of Conduct
 > Conduct. This Code of Conduct applies not only to our events but to all
 > digital spaces that are operated by us, such as GitHub.
 
-_AdaCon Norway_ is a yearly conference celebrating underrepresented folks in
-Tech in Norway.
+_AdaCon Norway_ is a yearly tech-conference that
+aims promote and empower underrepresented people in tech from Norway by
+showcasing a full lineup of speakers from all backgrounds.
 
 We value the participation of everyone who wants to celebrate with us and want
 all attendees to have an enjoyable and fulfilling experience. Accordingly, all

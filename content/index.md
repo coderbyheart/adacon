@@ -1,12 +1,12 @@
 ---
-title: A yearly tech conference in Oslo, Norway
+title: A yearly tech-conference in Oslo, Norway
 ---
 
-AdaCon Norway is proud to announce the third AdaCon Norway,
-celebrating the Norwegian tech scene.
+We are proud to announce the third AdaCon Norway,
+showcasing diversity in tech.
 
-AdaCon Norway aims to promote and empower under-indexed people in tech by
-showcasing a lineup of speakers from all backgrounds.
+AdaCon Norway aims to promote and empower underrepresented people in tech by
+showcasing a full lineup of speakers from all backgrounds.
 
 The event will be held on Ada Lovelace Day, which is the second
 Tuesday in October every year. In 2024 it falls on Tuesday October 8th. Our
